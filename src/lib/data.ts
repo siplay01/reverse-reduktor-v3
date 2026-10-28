@@ -12,13 +12,13 @@ export interface Part {
   id: string; designation: string; name: string; names: Sourced[]; spellings: string[];
   models: string[]; type: string; description: string[]; photos: Photo[];
   assemblies: { figure: number; pos: number | null }[];
-  confidence: string; sources: string[]; oldUrl: string | null;
+  confidence: string; sources: string[]; oldUrl: string | null; price: number | null;
 }
 export interface Variant { code: string; rot: string; hp: number; fwd: string; rev: string; fingers: number; full: string }
 export interface Model {
   id: string; slug: string; name: string; designation: string; kind: string;
   specs: { label: string; values: Sourced[] }[]; variants: Variant[]; variantsSource: string;
-  description: string[]; photos: Photo[]; oldUrl: string | null;
+  description: string[]; photos: Photo[]; oldUrl: string | null; price: number | null;
   conflicts: { subject: string; values: string; resolution: string }[];
   specsClient: { label: string; value: string }[];
   keySpecs: { label: string; value: string }[];

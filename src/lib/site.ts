@@ -24,5 +24,8 @@ export const SETTINGS = {
 /** Build a link that works under the GitHub Pages base path and on an own domain. */
 export const url = (path = "") => import.meta.env.BASE_URL + path.replace(/^\//, "");
 
+/** Price in rubles, or the fallback text when the old store had none. */
+export const rub = (n: number | null) => (n ? new Intl.NumberFormat("ru-RU").format(n) + "\u00a0₽" : "Цена по запросу");
+
 export const fmtSize = (bytes: number) =>
   new Intl.NumberFormat("ru-RU", { maximumFractionDigits: 1 }).format(bytes / 1048576) + " МБ";

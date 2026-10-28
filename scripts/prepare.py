@@ -71,6 +71,17 @@ def clean_description(text, designation=""):
     return out
 
 
+def price(archive):
+    """Rubles from the old store: revers-remont.ru first (the operator's own site), else revers-reduktor.ru. Demo: archive prices shown as is."""
+    for src in ("revers-remont.ru", "revers-reduktor.ru"):
+        for x in archive or []:
+            if x["source"].startswith(src):
+                n = x["value"] if isinstance(x["value"], (int, float)) else float(re.sub(r"[^\d.]", "", x["value"]) or 0)
+                if n > 0:
+                    return int(n)
+    return None
+
+
 def part_type(name):
     w = name.split()[0] if name else ""
     return next((g for g, words in TYPES if w in words), "Прочие детали")
@@ -155,7 +166,7 @@ def main():
             "assemblies": [{"figure": a["figure"], "pos": a["pos"], "status": a["status"]} for a in p["assemblies"]],
             "description": clean_description(p["description"], p["designation"]) if p["description"] else [],
             "photos": [photo(REC / x["file"], "p", x["source"]) for x in photos],
-            "confidence": p["confidence"], "sources": p["sources"], "oldUrl": p["old_url"],
+            "confidence": p["confidence"], "sources": p["sources"], "oldUrl": p["old_url"], "price": price(p["price_archive"]),
         })
 
     conflicts = [r for r in csv.DictReader((REC / "manifests" / "conflicts.csv").open(encoding="utf-8")) if r["type"] == "model_spec"]
@@ -168,11 +179,14 @@ def main():
             "specs": [{"label": s["label"], "values": [{"value": ru(v["value"]), "source": v["source"]} for v in s["values"]]} for s in m["specs"]],
             "variants": m["variants"], "variantsSource": m["variants_source"], "description": desc,
             "photos": [photo(REC / x["file"], "m", x["source"]) for x in sorted(m["photos"], key=lambda x: -x["bytes"])],
-            "oldUrl": m["old_card"], "specsClient": client_specs(m), "keySpecs": [{"label": k, "value": v} for k, v in KEY_SPECS[m["id"]]],
+            "oldUrl": m["old_card"], "price": price(m["price_archive"]), "specsClient": client_specs(m), "keySpecs": [{"label": k, "value": v} for k, v in KEY_SPECS[m["id"]]],
             "conflicts": [{"subject": ru(c["subject"]), "values": ru(c["values"]), "resolution": ru(c["resolution"])}
                           for c in conflicts if m["name"] in c["subject"]],
         })
 
+    model_price = {norm(m["designation"]): m["price"] for m in out_models}
+    for p in out_parts:  # the catalog lists the whole gear as a part too: same price as the model
+        p["price"] = p["price"] or model_price.get(norm(p["designation"]))
     # designation (any spelling) -> part id, for linking table rows to catalog pages
     by_des = {}
     for p in parts:
@@ -204,9 +218,9 @@ def main():
                 links.setdefault(r["part"], []).append({"figure": a["figure"], "pos": r["pos"]})
     for p in out_parts:
         p["assemblies"] = links.get(p["id"], [])
-    # OCR-only designations that no checked table confirms are OCR artefacts (footnote digits glued on): not published.
+    # OCR-only designations that no checked table confirms may carry footnote digits glued on. Published as read
+    # (Dmitry, 2026-10-28: every catalog part stays on the site); listed for checking against the scan.
     dropped = [p for p in out_parts if p["confidence"].startswith("OCR") and not p["assemblies"]]
-    out_parts = [p for p in out_parts if p not in dropped]
     (DATA / "dropped-parts.json").write_text(json.dumps([{"designation": p["designation"], "name": p["name"]} for p in dropped], ensure_ascii=False, indent=1), encoding="utf-8")
 
     scans = sorted(SCANS.glob("*.jpg"), key=lambda f: int(re.search(r"(\d+)", f.stem).group(1)))

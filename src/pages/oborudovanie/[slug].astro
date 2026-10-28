@@ -5,7 +5,7 @@ import PartCard from "../../components/PartCard.astro";
 import Icon from "../../components/Icon.astro";
 import { models, partsOf, assemblies, manual } from "../../lib/data";
 import type { Model } from "../../lib/data";
-import { COMPANY, url } from "../../lib/site";
+import { COMPANY, url, rub } from "../../lib/site";
 export const getStaticPaths = () => models.map((m) => ({ params: { slug: m.slug }, props: { m } }));
 const { m } = Astro.props as { m: Model };
 const list = partsOf(m.id);
@@ -25,6 +25,7 @@ const ld = { "@context": "https://schema.org", "@type": "Product", name: `Рев
       <p class="for">{m.kind[0].toUpperCase() + m.kind.slice(1)} судовой реверс-редуктор</p>
       <dl class="keys big" style="margin-bottom:24px">{m.keySpecs.map((k) => <div><dt>{k.label}</dt><dd>{k.value}</dd></div>)}</dl>
       <div class="buy">
+        <p class="price big" class:list={[{ none: !m.price }]}>{rub(m.price)}</p>
         <div class="row">
           <div class="field"><label for="qty">Количество, шт.</label>
             <div class="qty"><button type="button" data-step="-1" aria-label="Уменьшить количество"><Icon name="minus" size={18} /></button><input id="qty" type="number" inputmode="numeric" min="1" max="9999" value="1"><button type="button" data-step="1" aria-label="Увеличить количество"><Icon name="plus" size={18} /></button></div></div>
@@ -32,7 +33,7 @@ const ld = { "@context": "https://schema.org", "@type": "Product", name: `Рев
             data-img={m.photos[0] ? url(m.photos[0].t.src) : ""} data-href={url(`oborudovanie/${m.slug}/`)}>Добавить в запрос</button>
         </div>
         <p class="status" data-in-list={`model-${m.id}`} hidden><b data-in-list-text></b> <a href={url("zapros/")}>Открыть список</a></p>
-        <p class="status muted">Цена, наличие и исполнение по запросу: <a href={`tel:${COMPANY.tel}`}>{COMPANY.phone}</a></p>
+        <p class="status muted">Наличие и исполнение по запросу: <a href={`tel:${COMPANY.tel}`}>{COMPANY.phone}</a></p>
       </div>
       {m.description.map((d) => <p>{d}</p>)}
     </div>

@@ -260,6 +260,9 @@ main { display: block; min-height: 50vh; }
 .card .ttl { text-decoration: none; font-size: 15px; line-height: 1.35; font-weight: 600; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; }
 .card .ttl:hover { color: var(--accent); }
 .card .meta { font-size: 13px; color: var(--muted); }
+.price { font-weight: 600; font-size: 16px; color: var(--text); margin: 0; font-variant-numeric: tabular-nums; }
+.price.big { font-size: 26px; }
+.price.none { font-weight: 400; font-size: 14px; color: var(--muted); }
 .card .act { margin-top: auto; padding-top: 10px; }
 .card .act .btn { width: 100%; }
 @media (max-width: 519px) { .card .bd { padding: 10px; } .card .ttl { font-size: 14px; } .card .sku { font-size: 13px; } }

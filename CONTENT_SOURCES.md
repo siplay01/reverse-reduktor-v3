@@ -49,9 +49,16 @@ site/docs/rr300-re.pdf ─────────────┘
 | Доставка и оплата | revers-remont.ru block «Как оформить заявку?» and product-card order terms. |
 | Тендеры | One sentence on the archived April 2025 home page: «Мы работаем по всей России и активно участвуем в государственных контрактах и закупках.» No list of tenders, contract numbers or dates exists in any recovered source (`original-replica/reports/CONTENT_GAPS.md`). The page says so and links a ЕИС search by ИНН instead of inventing a history. |
 
+## Prices
+
+Shown on cards, part and model pages (Dmitry, 2026-10-28: internal demo): revers-remont.ru archive 2025-2026 first, else revers-reduktor.ru (`price()` in `scripts/prepare.py`). Not in structured data. Parts without any price say «Цена по запросу».
+
+## Owner list of gaps
+
+`python3 -I scripts/missing_report.py` writes `../results/12_chego_ne_hvataet.html` (no price, no photo, no description, OCR numbers, documents).
+
 ## Deliberately not published
 
-- Prices: archive prices (2025) exist in `parts.json` `price_archive` but are not current. Not shown, not in structured data.
 - Stock availability: no data.
 - Claims from the old site with no supporting document: «официальный представитель производителя», «гарантия 12 месяцев», «сертифицированное оборудование», «оригинальные запчасти», «бесплатная консультация». V1 still shows «гарантия 12 месяцев»; V3 does not.
 - Phones of revers-reduktor.ru (+7 903 990-11-49, +7 960 966-55-77): different from the operator's contact set.
@@ -59,7 +66,7 @@ site/docs/rr300-re.pdf ─────────────┘
 
 ## Not on the site
 
-- 9 OCR artefact designations (footnote digits glued on, e.g. `353-201`) are dropped: `src/data/dropped-parts.json`.
+- 9 OCR-only designations (e.g. `353-201`) are published as read (Dmitry, 2026-10-28) and listed in `src/data/dropped-parts.json` for checking against the scan.
 - The sources page, verification badges and archive remarks of the first V3 were removed on Dmitry's request; the same facts are in this file and in the memo.
 
 ## Open questions for the owner

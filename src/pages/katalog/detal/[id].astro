@@ -5,7 +5,7 @@ import PartCard from "../../../components/PartCard.astro";
 import Icon from "../../../components/Icon.astro";
 import { parts, partById, modelById, asmByFigure, modelNames, manual } from "../../../lib/data";
 import type { Part } from "../../../lib/data";
-import { COMPANY, url } from "../../../lib/site";
+import { COMPANY, url, rub } from "../../../lib/site";
 
 export const getStaticPaths = () => parts.map((p) => ({ params: { id: p.id }, props: { p } }));
 const { p } = Astro.props as { p: Part };
@@ -39,6 +39,7 @@ const ld = {
       <h1>{p.name}</h1>
       <p class="for">Запчасть для реверс-редуктора {ms.map((m, i) => <>{i > 0 && ", "}<a href={url(`oborudovanie/${m.slug}/`)}>{m.name}</a></>)}</p>
       <div class="buy">
+        <p class="price big" class:list={[{ none: !p.price }]}>{rub(p.price)}</p>
         <div class="row">
           <div class="field">
             <label for="qty">Количество, шт.</label>
@@ -48,7 +49,7 @@ const ld = {
             data-img={p.photos[0] ? url(p.photos[0].t.src) : ""} data-href={url(`katalog/detal/${p.id}/`)}>Добавить в запрос</button>
         </div>
         <p class="status" data-in-list={p.id} hidden><b data-in-list-text></b> <a href={url("zapros/")}>Открыть список</a></p>
-        <p class="status muted">Цена и наличие по запросу: <a href={`tel:${COMPANY.tel}`}>{COMPANY.phone}</a>, <a href={`mailto:${COMPANY.email}?subject=${encodeURIComponent(`Запрос: ${p.designation}`)}`}>{COMPANY.email}</a></p>
+        <p class="status muted">Наличие и срок поставки по запросу: <a href={`tel:${COMPANY.tel}`}>{COMPANY.phone}</a>, <a href={`mailto:${COMPANY.email}?subject=${encodeURIComponent(`Запрос: ${p.designation}`)}`}>{COMPANY.email}</a></p>
       </div>
       <dl class="facts">
         <dt>Обозначение</dt><dd><span class="sku">{p.designation}</span>{altSpell.length > 0 && <span class="muted small"> (также {altSpell.join(", ")})</span>}</dd>
