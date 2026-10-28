@@ -1,5 +1,6 @@
 import { defineConfig, devices } from "@playwright/test";
-const root = `http://localhost:4321${process.env.PW_BASE || process.env.BASE_PATH || "/reverse-reduktor-v3/"}`;
+// PW_URL=https://.../ runs the suite against a deployed site instead of the local preview.
+const root = process.env.PW_URL || `http://localhost:4321${process.env.PW_BASE || process.env.BASE_PATH || "/reverse-reduktor-v3/"}`;
 export default defineConfig({
   testDir: "qa/tests",
   outputDir: "qa/test-results",
@@ -7,7 +8,7 @@ export default defineConfig({
   fullyParallel: true,
   retries: 0,
   use: { baseURL: root, trace: "off" },
-  webServer: { command: "npx astro preview --port 4321", url: root, reuseExistingServer: !process.env.CI },
+  webServer: process.env.PW_URL ? undefined : { command: "npx astro preview --port 4321", url: root, reuseExistingServer: !process.env.CI },
   projects: [
     { name: "chromium", use: { ...devices["Desktop Chrome"] } },
     { name: "firefox", use: { ...devices["Desktop Firefox"] } },

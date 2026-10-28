@@ -24,7 +24,7 @@ const org = {
         <p class="lead">Продажа реверс-редукторов и запасных частей, ремонт реверс-редукторов, муфт сцепления и рулевых машин серии РГ. Деталь можно найти по заводскому обозначению или по рисунку узла из каталога.</p>
         <form class="search big" role="search" action={url("katalog/")}>
           <label class="sr" for="hq">Поиск детали по обозначению или названию</label>
-          <input id="hq" name="q" type="search" placeholder="Обозначение или название" autocomplete="off" spellcheck="false" enterkeyhint="search">
+          <input id="hq" name="q" type="search" placeholder="Артикул или название" autocomplete="off" spellcheck="false" enterkeyhint="search">
           <button class="btn" type="submit">Найти</button>
         </form>
         <p class="hint small">Например: <a href={url("katalog/?q=СБ525-12-104")}><span class="sku">СБ525-12-104</span></a>, <a href={url("katalog/?q=шестерня")}>шестерня</a>, <a href={url("katalog/?q=ремкомплект")}>ремкомплект</a></p>
