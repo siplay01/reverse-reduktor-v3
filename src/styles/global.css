@@ -384,8 +384,11 @@ main { display: block; min-height: 50vh; }
 @media (min-width: 620px) { .rfq-row { grid-template-columns: 64px minmax(0, 1fr) auto; } .rfq-row .ctl { grid-column: 3; } }
 .rfq-form { display: grid; gap: 16px; background: var(--surface); border: 1px solid var(--line); padding: 24px; }
 @media (min-width: 1000px) { .rfq-form { position: sticky; top: calc(var(--header-h) + 20px); } }
-.rfq-form .pair { display: grid; gap: 16px; }
-@media (min-width: 560px) { .rfq-form .pair { grid-template-columns: 1fr 1fr; } }
+.rfq-form .pair { display: grid; gap: 16px; grid-template-columns: minmax(0, 1fr); }
+.rfq-form > *, .rfq-form .field, .rfq > * { min-width: 0; }
+.rfq-form input, .rfq-form textarea { min-width: 0; }
+@media (max-width: 479px) { .rfq-form { padding: 16px; } }
+@media (min-width: 560px) { .rfq-form .pair { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); } }
 .rfq-preview { white-space: pre-wrap; font: 13px/1.55 var(--mono); background: var(--surface-2); padding: 12px; max-height: 240px; overflow: auto; margin: 8px 0 0; }
 .rfq-form summary { cursor: pointer; font-size: 14px; font-weight: 600; }
 
