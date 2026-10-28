@@ -5,6 +5,7 @@ import PartCard from "./PartCard.astro";
 import type { Part } from "../lib/data";
 import { modelsInOrder, asmByFigure } from "../lib/data";
 import { COMPANY, url } from "../lib/site";
+import Icon from "./Icon.astro";
 interface Props { list: Part[]; showModels?: boolean }
 const { list, showModels = true } = Astro.props;
 const count = <T,>(f: (p: Part) => T[]) => {
@@ -18,15 +19,15 @@ const byFig = [...count((p) => p.assemblies.map((a) => a.figure))].sort((a, b) =
 const withPhoto = list.filter((p) => p.photos.length).length;
 ---
 <div data-catalog>
-  <div class="cat-top">
-    <form class="search big" role="search" data-search action="">
+  <div class="cat-search">
+    <form class="search" role="search" data-search action="">
       <label class="sr" for="cq">Поиск по обозначению или названию</label>
       <input id="cq" name="q" type="search" placeholder="Артикул или название" autocomplete="off" spellcheck="false" enterkeyhint="search">
-      <button class="btn" type="submit">Найти</button>
+      <button class="btn" type="submit"><Icon name="search" size={18} />Найти</button>
     </form>
     <p class="hint">Пробелы, дефисы, регистр и латинские буквы вместо русских не важны: <span class="sku">SB525</span> = <span class="sku">СБ525</span>.</p>
   </div>
-  <button type="button" class="btn ghost filters-toggle" aria-expanded="false" aria-controls="filters" data-filters-toggle>Фильтры<span data-fcount></span></button>
+  <button type="button" class="btn ghost sm filters-toggle" aria-expanded="false" aria-controls="filters" data-filters-toggle>Фильтры<span data-fcount></span></button>
   <div class="cat">
     <div class="filters" id="filters" aria-label="Фильтры">
       {showModels && (

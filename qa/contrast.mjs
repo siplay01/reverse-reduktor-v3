@@ -8,9 +8,8 @@ const lum = (h) => { const c = [1, 3, 5].map((i) => parseInt(h.slice(i, i + 2), 
 const ratio = (a, b) => { const [x, y] = [lum(a), lum(b)].sort((p, q) => q - p); return (x + 0.05) / (y + 0.05); };
 const pairs = [ // [fg, bg, minimum]
   ["text", "bg", 4.5], ["text", "surface", 4.5], ["text", "surface-2", 4.5], ["muted", "bg", 4.5], ["muted", "surface", 4.5], ["muted", "surface-2", 4.5],
-  ["link", "bg", 4.5], ["link", "surface", 4.5], ["accent-ink", "accent", 4.5], ["accent-ink", "accent-hover", 4.5], ["accent-text", "bg", 4.5], ["accent-text", "surface", 4.5],
-  ["on-band", "band", 4.5], ["on-band-muted", "band", 4.5], ["on-band", "band-2", 4.5], ["ok", "ok-bg", 4.5], ["warn", "warn-bg", 4.5], ["danger", "surface", 4.5],
-  ["line-strong", "surface", 3], ["accent", "bg", 3], ["focus-on-band", "band", 3], ["focus-on-band", "band-2", 3],
+  ["accent", "surface", 4.5], ["accent", "bg", 4.5], ["accent", "surface-2", 4.5], ["on-accent", "accent", 4.5], ["on-accent", "accent-hover", 4.5],
+  ["on-ink", "ink", 4.5], ["danger", "surface", 4.5], ["text", "accent-soft", 4.5], ["line-strong", "surface", 3], ["line-strong", "bg", 3],
 ];
 let fail = 0;
 for (const [name, t] of [["light", light], ["dark", dark]])

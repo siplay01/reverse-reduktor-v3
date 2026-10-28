@@ -11,7 +11,7 @@ const visibleCards = (page: Page) => page.locator("[data-card]:visible");
 test("direct open of key routes: 200, h1, no JS errors, no broken images", async ({ page }) => {
   const errs = errors(page);
   for (const r of ["", "katalog/", "katalog/rr-300/", "katalog/3d6/", "katalog/detal/525-16-400/", "katalog/rr-300/uzly/", "katalog/rr-300/uzly/ris-05/",
-    "oborudovanie/", "oborudovanie/rr-300/", "remont/", "dokumentaciya/", "dokumentaciya/katalog-rr-300/", "tendery/", "o-kompanii/", "kontakty/", "dostavka-i-oplata/", "zapros/", "istochniki/"]) {
+    "oborudovanie/", "oborudovanie/rr-300/", "remont/", "dokumentaciya/", "dokumentaciya/katalog-rr-300/", "tendery/", "o-kompanii/", "kontakty/", "dostavka-i-oplata/", "zapros/"]) {
     const res = await page.goto(r);
     expect(res?.status(), r).toBe(200);
     await expect(page.locator("h1")).toHaveCount(1);
@@ -21,6 +21,16 @@ test("direct open of key routes: 200, h1, no JS errors, no broken images", async
     expect(broken, r).toEqual([]);
   }
   expect(errs).toEqual([]);
+});
+
+test("client-facing pages carry no internal notes", async ({ page }) => {
+  const banned = /сверен|распознан|OCR|в архиве|архивн|источник|Демонстрац|не подтвержд|в найденных/i;
+  for (const r of ["", "katalog/", "katalog/detal/525-16-400/", "katalog/detal/1225m-48-1/", "katalog/rr-300/uzly/", "katalog/rr-300/uzly/ris-25/",
+    "oborudovanie/rr-300/", "oborudovanie/3d6/", "remont/", "dokumentaciya/", "tendery/", "o-kompanii/", "kontakty/", "dostavka-i-oplata/", "zapros/"]) {
+    await page.goto(r);
+    const text = await page.locator("body").innerText();
+    expect(text.match(banned)?.[0] ?? null, r).toBeNull();
+  }
 });
 
 test("unknown URL shows the 404 page", async ({ page }) => {
@@ -89,13 +99,14 @@ test("show more reveals the next page of cards", async ({ page }) => {
 
 test("category navigation: catalog -> model -> part -> node", async ({ page }) => {
   await page.goto("katalog/");
-  await page.locator("main").getByRole("link", { name: "РР-300 (205)" }).click();
+  await page.locator("main").getByRole("link", { name: "РР-300", exact: true }).first().click();
   await expect(page.locator("h1")).toContainText("Запчасти РР-300");
   await visibleCards(page).first().locator(".ttl").click();
-  await expect(page.locator("h1 .sku")).toBeVisible();
+  await expect(page.locator(".prod .code")).toBeVisible();
   await page.goto("katalog/detal/525-16-400/");
-  await page.locator("main ul a", { hasText: "рис." }).first().click();
-  await expect(page.locator("h1")).toContainText("Рис.");
+  await page.locator(".facts a", { hasText: "рис." }).first().click();
+  await expect(page).toHaveURL(/uzly\/ris-0[56]\/#poz-/);
+  await expect(page.locator("tr:target")).toContainText("525-16-400");
 });
 
 test("request list: add, quantity, remove, persist after reload, mail text, validation", async ({ page }) => {

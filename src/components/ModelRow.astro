@@ -1,0 +1,27 @@
+---
+import type { Model } from "../lib/data";
+import { partsOf } from "../lib/data";
+import { url } from "../lib/site";
+import Icon from "./Icon.astro";
+interface Props { m: Model; level?: 2 | 3 }
+const { m, level = 3 } = Astro.props;
+const ph = m.photos[0];
+const H = `h${level}` as "h2" | "h3";
+const n = partsOf(m.id).length;
+---
+<article class="model">
+  <a class="ph" href={url(`oborudovanie/${m.slug}/`)} tabindex="-1" aria-hidden="true">
+    {ph && <img src={url(ph.t.src)} width={ph.t.w} height={ph.t.h} alt="" loading="lazy" decoding="async" />}
+  </a>
+  <div class="bd">
+    <div>
+      <p class="kind">{m.kind[0].toUpperCase() + m.kind.slice(1)} реверс-редуктор</p>
+      <H><a href={url(`oborudovanie/${m.slug}/`)}>{m.name}</a><span class="sku">{m.designation}</span></H>
+    </div>
+    <dl class="keys">{m.keySpecs.map((k) => <div><dt>{k.label}</dt><dd>{k.value}</dd></div>)}</dl>
+    <div class="btns">
+      <a class="btn ink sm" href={url(`katalog/${m.slug}/`)}>Запчасти {m.name} ({n})</a>
+      <a class="btn ghost sm" href={url(`oborudovanie/${m.slug}/`)}>Характеристики</a>
+    </div>
+  </div>
+</article>

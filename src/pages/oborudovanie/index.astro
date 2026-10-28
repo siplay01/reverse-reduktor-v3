@@ -1,21 +1,11 @@
 ---
 import Base from "../../layouts/Base.astro";
-import { modelsInOrder, partsOf } from "../../lib/data";
-import { url } from "../../lib/site";
+import ModelRow from "../../components/ModelRow.astro";
+import { modelsInOrder } from "../../lib/data";
 ---
 <Base title="Судовые реверс-редукторы РР-300, РР-238, 3Д6, 3Д12" section="oborudovanie/" crumbs={[["oborudovanie/", "Реверс-редукторы"]]}
-  description="Гидравлические реверс-редукторы РР-300 (СБ525-01-13), РР-238 (СБ238-25-01-13) и механические 3Д6 (СБ525-00-4), 3Д12 (СБ1225-00-5): характеристики с источниками, исполнения, запчасти.">
+  description="Гидравлические реверс-редукторы РР-300 (СБ525-01-13), РР-238 (СБ238-25-01-13) и механические 3Д6 (СБ525-00-4), 3Д12 (СБ1225-00-5): характеристики, исполнения, запчасти.">
   <h1>Реверс-редукторы</h1>
-  <p class="lead">Гидравлические: РР-300 <span class="sku">СБ525-01-13</span>, РР-238 <span class="sku">СБ238-25-01-13</span>. Механические: 3Д6 <span class="sku">СБ525-00-4</span>, 3Д12 <span class="sku">СБ1225-00-5</span>. Поставка реверс-редукторов и запчастей к ним, стоимость по запросу.</p>
-  <ul class="tiles">
-    {modelsInOrder.map((m, i) => {
-      const ph = m.photos[0];
-      return <li><a class="tile" href={url(`oborudovanie/${m.slug}/`)}>
-        <span class="ph">{ph && <img src={url(ph.t.src)} width={ph.t.w} height={ph.t.h} alt="" loading={i < 2 ? "eager" : "lazy"} />}</span>
-        <span class="bd"><span class="kind">{m.kind[0].toUpperCase() + m.kind.slice(1)}</span><h2 class="h3" style="margin:0">{m.name} <span class="sku muted small">{m.designation}</span></h2>
-        <span class="meta">{m.specs.find((s) => s.label === "Применяемость")?.values[0]?.value}</span>
-        <span class="meta">Запчастей в каталоге: {partsOf(m.id).length}</span><span class="go">Характеристики и исполнения</span></span>
-      </a></li>;
-    })}
-  </ul>
+  <p class="lead">Гидравлические РР-300 и РР-238, механические 3Д6 и 3Д12. Поставка реверс-редукторов и запасных частей, стоимость по запросу.</p>
+  <div class="models" style="margin-top:32px">{modelsInOrder.map((m) => <ModelRow m={m} level={2} />)}</div>
 </Base>

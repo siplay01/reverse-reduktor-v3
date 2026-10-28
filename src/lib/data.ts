@@ -11,7 +11,7 @@ export interface Sourced { value: string; source: string }
 export interface Part {
   id: string; designation: string; name: string; names: Sourced[]; spellings: string[];
   models: string[]; type: string; description: string[]; photos: Photo[];
-  assemblies: { figure: number; pos: number | null; status: string }[];
+  assemblies: { figure: number; pos: number | null }[];
   confidence: string; sources: string[]; oldUrl: string | null;
 }
 export interface Variant { code: string; rot: string; hp: number; fwd: string; rev: string; fingers: number; full: string }
@@ -20,14 +20,16 @@ export interface Model {
   specs: { label: string; values: Sourced[] }[]; variants: Variant[]; variantsSource: string;
   description: string[]; photos: Photo[]; oldUrl: string | null;
   conflicts: { subject: string; values: string; resolution: string }[];
+  specsClient: { label: string; value: string }[];
+  keySpecs: { label: string; value: string }[];
 }
 export interface Row {
   pos: number | null; designation: string; name: string; qty: (number | null)[] | null;
-  mass: string | null; note: string | null; check: boolean; part: string | null;
+  mass: string | null; material: string | null; note: string | null; part: string | null;
 }
 export interface Assembly {
   id: string; figure: number; slug: string; title: string; designation: string; variants: string[];
-  footnotes: Record<string, string>; verified: boolean; verifiedNote: string | null; catalogPages: number[] | null;
+  footnotes: Record<string, string>; catalogPages: number[] | null;
   drawing: Photo; spec: Photo; rows: Row[];
 }
 export interface Scan extends Photo { n: number; title: string }
@@ -52,10 +54,6 @@ export const sortedParts = [...parts].sort(
 export const partsOf = (modelId: string) => sortedParts.filter((p) => p.models.includes(modelId));
 export const modelsInOrder = MODEL_ORDER.map((id) => modelById.get(id)!);
 
-export const ASM_STATUS: Record<string, string> = {
-  verified_scan: "сверено со сканом", ocr_unverified: "распознано, не сверено", ocr_needs_check: "распознано, проверить",
-  index_ocr: "по номерному указателю", assembly_itself: "сборочная единица целиком",
-};
 
 // Documents with a real file in public/. Size is measured at build time in the pages that list them.
 export const manual = {

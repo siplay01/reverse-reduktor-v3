@@ -1,71 +1,74 @@
 ---
 import Base from "../../layouts/Base.astro";
 import Gallery from "../../components/Gallery.astro";
+import PartCard from "../../components/PartCard.astro";
+import Icon from "../../components/Icon.astro";
 import { models, partsOf, assemblies, manual } from "../../lib/data";
 import type { Model } from "../../lib/data";
 import { COMPANY, url } from "../../lib/site";
 export const getStaticPaths = () => models.map((m) => ({ params: { slug: m.slug }, props: { m } }));
 const { m } = Astro.props as { m: Model };
-const n = partsOf(m.id).length;
+const list = partsOf(m.id);
+const preview = list.filter((p) => p.photos.length).slice(0, 10);
 const hasManual = manual.models.includes(m.id);
 const ld = { "@context": "https://schema.org", "@type": "Product", name: `Реверс-редуктор ${m.name} ${m.designation}`, mpn: m.designation,
   category: `Судовые реверс-редукторы, ${m.kind}`, ...(m.photos[0] ? { image: new URL(url(m.photos[0].f.src), Astro.site).href } : {}) };
 ---
-<Base title={`Реверс-редуктор ${m.name} ${m.designation}: характеристики, исполнения, запчасти`} section="oborudovanie/"
+<Base title={`Реверс-редуктор ${m.name} ${m.designation}: характеристики и запчасти`} section="oborudovanie/"
   crumbs={[["oborudovanie/", "Реверс-редукторы"], [`oborudovanie/${m.slug}/`, m.name]]} image={m.photos[0]?.f.src} jsonld={[ld]}
-  description={`Судовой ${m.kind} реверс-редуктор ${m.name} (${m.designation}): технические характеристики с указанием источника${m.variants.length ? ", исполнения" : ""}, запчасти, документация. Стоимость по запросу.`}>
+  description={`Судовой ${m.kind} реверс-редуктор ${m.name} (${m.designation}): технические характеристики${m.variants.length ? ", исполнения" : ""}, запчасти, документация. Стоимость по запросу.`}>
   <div class="prod">
-    <Gallery photos={m.photos} alt={`Реверс-редуктор ${m.name} ${m.designation}`} />
+    <Gallery photos={m.photos} alt={`Реверс-редуктор ${m.name} ${m.designation}`} code={m.designation} />
     <div>
-      <h1><span class="sku">{m.designation}</span>Реверс-редуктор {m.name}</h1>
-      <p class="muted">{m.kind[0].toUpperCase() + m.kind.slice(1)} судовой реверс-редуктор.</p>
-      {m.description.map((d) => <p>{d}</p>)}
+      <p class="code">{m.designation}</p>
+      <h1>Реверс-редуктор {m.name}</h1>
+      <p class="for">{m.kind[0].toUpperCase() + m.kind.slice(1)} судовой реверс-редуктор</p>
+      <dl class="keys big" style="margin-bottom:24px">{m.keySpecs.map((k) => <div><dt>{k.label}</dt><dd>{k.value}</dd></div>)}</dl>
       <div class="buy">
         <div class="row">
           <div class="field"><label for="qty">Количество, шт.</label>
-            <div class="qty"><button type="button" data-step="-1" aria-label="Уменьшить количество">−</button><input id="qty" type="number" inputmode="numeric" min="1" max="9999" value="1"><button type="button" data-step="1" aria-label="Увеличить количество">+</button></div></div>
+            <div class="qty"><button type="button" data-step="-1" aria-label="Уменьшить количество"><Icon name="minus" size={18} /></button><input id="qty" type="number" inputmode="numeric" min="1" max="9999" value="1"><button type="button" data-step="1" aria-label="Увеличить количество"><Icon name="plus" size={18} /></button></div></div>
           <button type="button" class="btn" data-rfq-add data-qty="#qty" data-id={`model-${m.id}`} data-d={m.designation} data-n={`Реверс-редуктор ${m.name}`}
             data-img={m.photos[0] ? url(m.photos[0].t.src) : ""} data-href={url(`oborudovanie/${m.slug}/`)}>Добавить в запрос</button>
         </div>
         <p class="status" data-in-list={`model-${m.id}`} hidden><b data-in-list-text></b> <a href={url("zapros/")}>Открыть список</a></p>
-        <p class="status muted">Цена, наличие и исполнение по запросу: <a href={`tel:${COMPANY.tel}`}>{COMPANY.phone}</a>.</p>
+        <p class="status muted">Цена, наличие и исполнение по запросу: <a href={`tel:${COMPANY.tel}`}>{COMPANY.phone}</a></p>
       </div>
-      <div class="btns"><a class="btn ghost" href={url(`katalog/${m.slug}/`)}>Запчасти {m.name} ({n})</a>{m.id === "rr300" && <a class="btn ghost" href={url("katalog/rr-300/uzly/")}>Узлы по каталогу ({assemblies.length})</a>}</div>
+      {m.description.map((d) => <p>{d}</p>)}
     </div>
   </div>
 
   <section class="sec" aria-labelledby="h-spec">
     <div class="sec-head"><h2 id="h-spec">Технические характеристики</h2></div>
-    <p class="small muted">Значения приведены по каждому найденному источнику. Где источники расходятся, показаны все варианты.</p>
-    <table class="kv">
-      <caption class="sr">Характеристики {m.name} по источникам</caption>
-      <tbody>
-        {m.specs.map((s) => <tr><th scope="row">{s.label}</th><td>{s.values.map((v) => <div class="val">{v.value}<span class="src">{v.source}</span></div>)}</td></tr>)}
-      </tbody>
-    </table>
-    {m.conflicts.length > 0 && (
-      <div class="note warn"><p><b>Расхождения в источниках</b></p><ul>{m.conflicts.map((c) => <li>{c.subject}: {c.values}. <span class="muted">{c.resolution}.</span></li>)}</ul></div>
-    )}
+    <div class="spec-groups">{m.specsClient.map((s) => <dl class="spec"><dt>{s.label}</dt><dd>{s.value}</dd></dl>)}</div>
   </section>
 
   {m.variants.length > 0 && (
     <section class="sec" aria-labelledby="h-var" id="ispolneniya">
       <div class="sec-head"><h2 id="h-var">Исполнения</h2></div>
-      <div class="tbl-wrap" tabindex="0" role="region" aria-label="Исполнения, прокручивается по горизонтали">
+      <div class="tbl-wrap" tabindex="0" role="region" aria-label="Исполнения">
         <table class="tbl">
-          <thead><tr><th scope="col">Обозначение</th><th scope="col">Вращение</th><th scope="col" class="num">Мощность, л.с.</th><th scope="col">Передний ход</th><th scope="col">Задний ход</th><th scope="col" class="num">Муфта, пальцев</th></tr></thead>
-          <tbody>{m.variants.map((v) => <tr><td class="sku">{v.full}</td><td>{v.rot}</td><td class="num">{v.hp}</td><td class="num">{v.fwd}</td><td class="num">{v.rev}</td><td class="num">{v.fingers}</td></tr>)}</tbody>
+          <thead><tr><th scope="col">Обозначение</th><th scope="col">Вращение</th><th scope="col" class="q">Мощность, л.с.</th><th scope="col" class="q">Передний ход</th><th scope="col" class="q">Задний ход</th><th scope="col" class="q">Муфта, пальцев</th></tr></thead>
+          <tbody>{m.variants.map((v) => <tr><td class="sku">{v.full}</td><td>{v.rot}</td><td class="q">{v.hp}</td><td class="q">{v.fwd}</td><td class="q">{v.rev}</td><td class="q">{v.fingers}</td></tr>)}</tbody>
         </table>
       </div>
-      <p class="src">Источник: {m.variantsSource}.</p>
     </section>
   )}
+
+  <section class="sec" aria-labelledby="h-parts">
+    <div class="sec-head"><h2 id="h-parts">Запчасти {m.name}</h2><a class="textlink" href={url(`katalog/${m.slug}/`)}>Все {list.length} позиций <Icon name="arrow-right" size={16} /></a></div>
+    {preview.length > 0 ? <div class="strip">{preview.map((p, i) => <PartCard p={p} order={i} />)}</div>
+      : <div class="grid">{list.map((p, i) => <PartCard p={p} order={i} />)}</div>}
+    {m.id === "rr300" && <p style="margin-top:20px"><a class="textlink" href={url("katalog/rr-300/uzly/")}>Подбор по чертежам: {assemblies.length} узлов РР-300 <Icon name="arrow-right" size={16} /></a></p>}
+  </section>
 
   {hasManual && (
     <section class="sec" aria-labelledby="h-doc">
       <div class="sec-head"><h2 id="h-doc">Документация</h2></div>
-      <ul><li><a href={url(manual.href)}>{manual.title}</a> <span class="muted small">PDF, {manual.pages} стр.</span></li>
-      {m.id === "rr300" && <li><a href={url("dokumentaciya/katalog-rr-300/")}>Каталог деталей и сборочных единиц РР-300</a> <span class="muted small">сканы, 89 стр.</span></li>}</ul>
+      <div class="btns">
+        <a class="btn ghost" href={url(manual.href)} target="_blank" rel="noopener"><Icon name="file-type-pdf" size={18} />Руководство по эксплуатации, PDF</a>
+        {m.id === "rr300" && <a class="btn ghost" href={url("dokumentaciya/katalog-rr-300/")}><Icon name="book" size={18} />Каталог деталей РР-300</a>}
+      </div>
     </section>
   )}
 </Base>

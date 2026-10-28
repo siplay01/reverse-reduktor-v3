@@ -6,7 +6,7 @@ import { COMPANY, url } from "../../lib/site";
   description="Выбранные запчасти и реверс-редукторы: количество, контактные данные и готовое письмо с перечнем для запроса коммерческого предложения.">
   <div data-rfq-page data-email={COMPANY.email}>
     <h1 tabindex="-1">Список запроса</h1>
-    <p class="lead">Укажите количество и контакты: сайт подготовит письмо с перечнем позиций. Сайт ничего не отправляет сам, письмо уходит из вашей почтовой программы.</p>
+    <p class="lead">Укажите количество и контакты: письмо с перечнем позиций откроется в вашей почтовой программе.</p>
     <div class="rfq">
       <div>
         <div data-empty-list class="empty">
@@ -20,7 +20,7 @@ import { COMPANY, url } from "../../lib/site";
         </div>
         <template id="rfq-row">
           <li class="rfq-row">
-            <span class="th"><span class="noph" aria-hidden="true">Нет фото</span></span>
+            <span class="th"></span>
             <span class="rfq-info"><span class="sku" data-d></span><br><a data-link href="#"></a></span>
             <span class="ctl">
               <label class="sr" for="q-x">Количество</label>
@@ -32,7 +32,7 @@ import { COMPANY, url } from "../../lib/site";
         </template>
       </div>
       <form class="rfq-form" novalidate onsubmit="return false" aria-labelledby="h-form">
-        <h2 id="h-form" class="h3">Контакты для ответа</h2>
+        <h2 id="h-form" style="font-size:22px">Контакты для ответа</h2>
         <p class="hint">Нужно указать телефон или e-mail. Остальные поля по желанию.</p>
         <div class="pair">
           <div class="field"><label for="f-name">Имя</label><input id="f-name" name="name" type="text" autocomplete="name"></div>
@@ -42,12 +42,12 @@ import { COMPANY, url } from "../../lib/site";
           <div class="field"><label for="f-tel">Телефон</label><input id="f-tel" name="tel" type="tel" autocomplete="tel" inputmode="tel" placeholder="+7 900 000-00-00" aria-describedby="f-err"></div>
           <div class="field"><label for="f-email">E-mail</label><input id="f-email" name="email" type="email" autocomplete="email" placeholder="name@company.ru" aria-describedby="f-err"></div>
         </div>
-        <p class="hint" id="f-err" data-err hidden role="alert" style="color:var(--danger);font-weight:500"></p>
+        <p class="err" id="f-err" data-err hidden role="alert"></p>
         <div class="field"><label for="f-note">Комментарий</label><textarea id="f-note" name="note" placeholder="Исполнение, судно, сроки или обозначения деталей, которых нет в каталоге"></textarea></div>
         <details><summary>Текст письма</summary><pre class="rfq-preview" data-preview></pre></details>
         <div class="btns"><a class="btn" data-mail href={`mailto:${COMPANY.email}`}>Открыть письмо с запросом</a><button type="button" class="btn ghost" data-copy>Скопировать текст</button></div>
         <p class="small" data-status aria-live="polite"></p>
-        <p class="hint">Письмо уйдёт на {COMPANY.email}. Данные формы остаются только в вашем браузере.</p>
+        <p class="hint">Адрес для заявок: {COMPANY.email}</p>
       </form>
     </div>
   </div>

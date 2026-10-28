@@ -22,10 +22,10 @@ site/docs/rr300-re.pdf ─────────────┘
 | Part photos (199 parts) | same file, `photos[]` → `reconstruction/raw/tilda-img/`, `reconstruction/raw/external/revers-reduktor.ru-img-full/` | Watermarks kept as in the source. Tiny Tilda previews (< 4 KB) are dropped when a larger photo of the same part exists. |
 | Part descriptions | `parts.json` `description` (old store text) | Boilerplate lines («Применение», «Используется при…») and unconfirmed claims removed (regex `CLAIMS` in `scripts/prepare.py`); «оригинальная запчасть» shortened to «запчасть». Meaning otherwise unchanged. |
 | Part type filter | first word of the catalog name, grouped in `scripts/prepare.py` (`TYPES`) | Derived from the real name only. |
-| 4 models: specs, applicability, description | `reconstruction/normalized/models.json` | Specs show every source value side by side. Description lines from the old site home text (Exa index), claim lines removed. |
+| 4 models: specs, applicability, description | `reconstruction/normalized/models.json` | The site shows one value per characteristic (`client_specs()` in `scripts/prepare.py`): RR-300 from the manual where it is more precise, power and ratios from the catalog variant table; dimensions dropped (same number for all four models). Headline values: `KEY_SPECS`. Every choice is listed in `../results/11_v3_pamyatka.html`. |
 | RR-300 variants table (10 исполнений) | `models.json` `variants`, source «каталог РР-300, табл. 2» | |
-| Spec conflicts box | `reconstruction/manifests/conflicts.csv` (type `model_spec`) | 16-finger power (150 vs 300 hp), reverse ratios, identical dimensions on all models. |
-| 26 RR-300 assemblies, drawings, spec scans | `reconstruction/normalized/assemblies.json`, scans in `src_extract/rr300_catalog/` | 7 tables verified row by row against the scan (with quantities); 19 OCR only (no quantities, rows flagged «проверить по скану»). |
+| Spec conflicts | `reconstruction/manifests/conflicts.csv` (type `model_spec`) | Not shown on the site; listed in the memo. |
+| 26 RR-300 assemblies, drawings, spec scans | `reconstruction/normalized/assemblies.json` (7 tables checked earlier) + `data-src/specs_transcribed.txt` (19 tables typed by eye from the scans on 2026-10-27: 152 rows with quantities per variant, mass, material, footnotes) | Part-to-node links are rebuilt from these tables only. The variant table of the catalog agrees with the transcribed gears (fig. 11, 13, 16). |
 | 89 catalog scan pages | `src_extract/rr300_catalog/` | Owner's scan of «Каталог деталей и сборочных единиц РР-300». |
 | Manual PDF (24 pages) | `site/docs/rr300-re.pdf` | Byte-identical to `~/Downloads/Reductor/Руководство РР300 А4.pdf` (checked with `cmp`). |
 | Hero, workshop, flange photos; РКО certificate | `site/img/site/*.jpg` | Owner photos from `~/Downloads/Reductor` (copied there in the V1 session). The old site's «Turbotext_AI_Image» pictures are AI-generated and are not used. |
@@ -56,6 +56,11 @@ site/docs/rr300-re.pdf ─────────────┘
 - Claims from the old site with no supporting document: «официальный представитель производителя», «гарантия 12 месяцев», «сертифицированное оборудование», «оригинальные запчасти», «бесплатная консультация». V1 still shows «гарантия 12 месяцев»; V3 does not.
 - Phones of revers-reduktor.ru (+7 903 990-11-49, +7 960 966-55-77): different from the operator's contact set.
 - Per-part dimensions or materials: not in any source. The part page says so.
+
+## Not on the site
+
+- 9 OCR artefact designations (footnote digits glued on, e.g. `353-201`) are dropped: `src/data/dropped-parts.json`.
+- The sources page, verification badges and archive remarks of the first V3 were removed on Dmitry's request; the same facts are in this file and in the memo.
 
 ## Open questions for the owner
 

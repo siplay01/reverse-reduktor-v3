@@ -1,20 +1,24 @@
 ---
 import Base from "../../../../layouts/Base.astro";
-import { assemblies } from "../../../../lib/data";
+import Icon from "../../../../components/Icon.astro";
+import { assemblies, scans } from "../../../../lib/data";
 import { url } from "../../../../lib/site";
-const verified = assemblies.filter((a) => a.verified).length;
 ---
-<Base title="Узлы реверс-редуктора РР-300 по заводскому каталогу" section="katalog/"
+<Base title="Узлы реверс-редуктора РР-300 по заводскому каталогу" section="katalog/rr-300/uzly/"
   crumbs={[["katalog/", "Каталог"], ["katalog/rr-300/", "РР-300"], ["katalog/rr-300/uzly/", "Узлы"]]}
-  description="26 сборочных узлов реверс-редуктора РР-300 (СБ525-01-13) по каталогу деталей и сборочных единиц: чертежи, позиции и обозначения деталей.">
-  <h1>Узлы РР-300 по заводскому каталогу</h1>
-  <p class="lead">Каталог деталей и сборочных единиц РР-300 <span class="sku">СБ525-01-13</span>: {assemblies.length} рисунков. Номера позиций на чертеже совпадают с колонкой «Поз.» в таблице узла.</p>
-  <p class="note">Таблицы {verified} рисунков сверены со сканом построчно, включая количество по исполнениям. Остальные {assemblies.length - verified} получены распознаванием текста: обозначения проверяйте по скану спецификации, количество в них не показано.</p>
-  <ul class="asm-list">
+  description="26 сборочных узлов реверс-редуктора РР-300 (СБ525-01-13) по каталогу деталей и сборочных единиц: чертежи, позиции, обозначения и количество по исполнениям.">
+  <div class="sec-head" style="align-items:end">
+    <div>
+      <h1>Узлы РР-300</h1>
+      <p class="lead" style="margin:0">Каталог деталей и сборочных единиц <span class="sku">СБ525-01-13</span>. Номера позиций на чертеже совпадают с колонкой «Поз.» в спецификации.</p>
+    </div>
+    <a class="btn ghost" href={url("dokumentaciya/katalog-rr-300/")}><Icon name="book" size={18} />Каталог целиком, {scans.length} стр.</a>
+  </div>
+  <ul class="nodes">
     {assemblies.map((a) => (
-      <li><a href={url(`katalog/rr-300/uzly/${a.slug}/`)}>
-        <img src={url(a.drawing.t.src)} width="88" height="88" alt="" loading="lazy" />
-        <span><span class="n">Рис. {a.figure} · {a.verified ? "сверено" : "не сверено"}</span><b>{a.title}</b></span>
+      <li><a class="node" href={url(`katalog/rr-300/uzly/${a.slug}/`)}>
+        <span class="im"><img src={url(a.drawing.t.src)} width={a.drawing.t.w} height={a.drawing.t.h} alt="" loading="lazy" /></span>
+        <span class="t"><span class="n">Рис. {a.figure}</span><b>{a.title}</b></span>
       </a></li>
     ))}
   </ul>

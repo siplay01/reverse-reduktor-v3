@@ -13,6 +13,5 @@ const list = partsOf(m.id);
   description={`Запчасти к ${m.kind.replace(/ий$/, "ому")} реверс-редуктору ${m.name} (${m.designation}): ${list.length} позиций с заводскими обозначениями и фото. Запрос стоимости и наличия.`}>
   <h1>Запчасти {m.name} <span class="sku muted">{m.designation}</span></h1>
   <p class="lead">{m.kind[0].toUpperCase() + m.kind.slice(1)} реверс-редуктор. В каталоге {list.length} поз. <a href={url(`oborudovanie/${m.slug}/`)}>Характеристики {m.name}</a>{m.id === "rr300" && <>, <a href={url("katalog/rr-300/uzly/")}>{assemblies.length} узлов по заводскому каталогу</a></>}.</p>
-  {m.id === "rr238" && <p class="note">По РР-238 в найденных источниках только {list.length} позиции. РР-238 и РР-300 описаны в одном руководстве; если нужной детали нет, отправьте запрос по обозначению.</p>}
   <Catalog list={list} showModels={false} />
 </Base>

@@ -1,10 +1,9 @@
 ---
 import type { Photo } from "../lib/data";
 import { url } from "../lib/site";
-interface Props { photos: Photo[]; alt: string }
-const { photos, alt } = Astro.props;
+interface Props { photos: Photo[]; alt: string; code?: string }
+const { photos, alt, code = "" } = Astro.props;
 const first = photos[0];
-const sources = [...new Set(photos.map((p) => p.source))];
 ---
 <div class="gallery" data-gallery>
   <div class="main">
@@ -12,7 +11,7 @@ const sources = [...new Set(photos.map((p) => p.source))];
       <a href={url(first.f.src)} data-zoom aria-label="Открыть фото в полном размере">
         <img src={url(first.f.src)} width={first.f.w} height={first.f.h} alt={alt} fetchpriority="high" data-main />
       </a>
-    ) : <span class="noph">Фотографии этой детали в найденных архивах нет</span>}
+    ) : <span class="plate" role="img" aria-label={alt}><span>{code}</span></span>}
   </div>
   {photos.length > 1 && (
     <div class="thumbs" role="group" aria-label="Фотографии">
@@ -23,5 +22,4 @@ const sources = [...new Set(photos.map((p) => p.source))];
       ))}
     </div>
   )}
-  {first && <p class="src">Фото: {sources.join(", ")}. Водяные знаки сохранены как в источнике.</p>}
 </div>

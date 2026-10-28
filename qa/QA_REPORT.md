@@ -1,5 +1,21 @@
 # QA report, V3 (2026-10-27)
 
+## Second pass: client version «Корпус» (2026-10-27, late)
+
+| Check | Result |
+| --- | --- |
+| `astro check` | 35 files, 0 errors, 0 warnings |
+| `qa/links.mjs` | 345 pages, 17 349 internal links and assets, 0 problems |
+| `qa/contrast.mjs` | 32 token pairs (light + dark), 0 failures |
+| Playwright: Chromium, WebKit, iPhone 13 WebKit, Edge profile | 46 passed, 6 skipped by design, 0 failed; new test: no internal notes on 15 client pages |
+| Lighthouse mobile (home, catalog, node 13, model RR-300, part) | Perf 93 / 98 / 99 / 93 / 99, A11y 100, Best practices 100 everywhere; SEO 63-66 only because of the demo `noindex` |
+| Lab LCP (simulated slow 4G) | home 3.1 s, model page 3.2 s, others 2.0-2.3 s |
+
+Fixed in this pass after looking at screenshots: nav wrapping at 1440 px (8 items), request button pushed off-screen, portrait photo stretching a model row, empty cells in the services grid, documents card title running into its image, duplicate gear photo in the parts strip, screen-reader label in the last table column widening the page on phones (`.tbl-wrap` now `position: relative`), requisites table without styles, buttons too wide at 320 px.
+
+The first-pass results below describe the earlier design.
+
+
 All results below come from the production build (`npm run build`, served by `astro preview`). Reproduce with `npm test` and the Lighthouse loop in this file's last section.
 
 ## Automated checks

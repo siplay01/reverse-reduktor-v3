@@ -1,0 +1,13 @@
+---
+// Tabler outline icons, inlined at build time. Add a name to the glob to make it available.
+const icons = import.meta.glob(
+  "/node_modules/@tabler/icons/icons/outline/{menu-2,x,phone,mail,map-pin,search,download,arrow-right,file-text,file-type-pdf,clipboard-list,chevron-left,chevron-right,minus,plus,trash,copy,send,zoom-in,tool,truck,certificate,gavel,book,photo,settings}.svg",
+  { query: "?raw", import: "default", eager: true },
+) as Record<string, string>;
+interface Props { name: string; size?: number; class?: string }
+const { name, size = 20, class: cls } = Astro.props;
+const raw = icons[`/node_modules/@tabler/icons/icons/outline/${name}.svg`];
+if (!raw) throw new Error(`icon ${name} not in Icon.astro glob`);
+const svg = raw.replace(/<svg[^>]*>/, `<svg xmlns="http://www.w3.org/2000/svg" width="${size}" height="${size}" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"${cls ? ` class="${cls}"` : ""}>`);
+---
+<Fragment set:html={svg} />

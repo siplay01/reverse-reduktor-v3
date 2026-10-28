@@ -21,8 +21,6 @@
    "1": "Для реверс-редуктора, соединяемого с кожухом маховика двигателя болтами.",
    "2": "Для реверс-редуктора, соединяемого с двигателем через шпильки, установленные на кожухе маховика."
   },
-  "verified": true,
-  "verifiedNote": "2026-10-27, визуальная сверка со сканом",
   "catalogPages": [
    18,
    19
@@ -71,8 +69,8 @@
      null
     ],
     "mass": "430,0",
+    "material": null,
     "note": null,
-    "check": false,
     "part": "sb525-01-13"
    },
    {
@@ -92,8 +90,8 @@
      null
     ],
     "mass": "0,005",
+    "material": "Ст",
     "note": "1",
-    "check": false,
     "part": "353-20"
    },
    {
@@ -113,8 +111,8 @@
      null
     ],
     "mass": "0,0063",
+    "material": "Ст",
     "note": "2",
-    "check": false,
     "part": "553-70"
    },
    {
@@ -134,8 +132,8 @@
      null
     ],
     "mass": "0,0034",
+    "material": "Ст",
     "note": "2",
-    "check": false,
     "part": "553-02-1"
    },
    {
@@ -155,8 +153,8 @@
      null
     ],
     "mass": "0,02",
+    "material": "Ст",
     "note": "2",
-    "check": false,
     "part": "351-09"
    },
    {
@@ -176,8 +174,8 @@
      null
     ],
     "mass": "0,0573",
+    "material": "Ст",
     "note": "1",
-    "check": false,
     "part": "556-03-1"
    },
    {
@@ -197,8 +195,8 @@
      null
     ],
     "mass": "0,0065",
+    "material": "Ст",
     "note": null,
-    "check": false,
     "part": "356-16a"
    },
    {
@@ -218,8 +216,8 @@
      null
     ],
     "mass": "0,0008",
+    "material": "Ст",
     "note": null,
-    "check": false,
     "part": "353-23"
    },
    {
@@ -239,8 +237,8 @@
      null
     ],
     "mass": "0,35",
+    "material": "Ст",
     "note": null,
-    "check": false,
     "part": "525-16-113"
    },
    {
@@ -260,8 +258,8 @@
      null
     ],
     "mass": "0,13",
+    "material": "Ст",
     "note": null,
-    "check": false,
     "part": "u36-16-15-2"
    },
    {
@@ -281,8 +279,8 @@
      null
     ],
     "mass": "0,0745",
+    "material": "Ст",
     "note": null,
-    "check": false,
     "part": "556-11-1"
    },
    {
@@ -302,8 +300,8 @@
      null
     ],
     "mass": "0,0095",
+    "material": "Ст",
     "note": null,
-    "check": false,
     "part": null
    },
    {
@@ -323,8 +321,8 @@
      null
     ],
     "mass": "30,03",
+    "material": "Ст",
     "note": null,
-    "check": false,
     "part": "525-16-111"
    },
    {
@@ -344,8 +342,8 @@
      null
     ],
     "mass": "0,095",
+    "material": "Рез",
     "note": null,
-    "check": false,
     "part": "u36-16-14-2"
    }
   ]
@@ -368,9 +366,10 @@
    "-005",
    "-015"
   ],
-  "footnotes": {},
-  "verified": false,
-  "verifiedNote": null,
+  "footnotes": {
+   "1": "Для реверс-редуктора, соединяемого с кожухом маховика двигателя болтами.",
+   "2": "Для реверс-редуктора, соединяемого с двигателем через шпильки, установленные на кожухе маховика."
+  },
   "catalogPages": null,
   "drawing": {
    "t": {
@@ -400,103 +399,297 @@
   },
   "rows": [
    {
-    "pos": 2,
-    "designation": "353-201",
-    "name": "Шайба стопорная 12",
-    "qty": null,
-    "mass": null,
+    "pos": 1,
+    "designation": "СБ525-01-13",
+    "name": "Реверс-редуктор",
+    "qty": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     1,
+     1,
+     1,
+     1
+    ],
+    "mass": "430,0",
+    "material": null,
     "note": null,
-    "check": false,
-    "part": "353-201"
+    "part": "sb525-01-13"
+   },
+   {
+    "pos": 2,
+    "designation": "353-20",
+    "name": "Шайба стопорная 12",
+    "qty": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     10,
+     10,
+     10,
+     10
+    ],
+    "mass": "0,005",
+    "material": "Ст",
+    "note": "1",
+    "part": "353-20"
    },
    {
     "pos": 3,
-    "designation": "553-702",
+    "designation": "553-70",
     "name": "Шайба 12",
-    "qty": null,
-    "mass": null,
-    "note": null,
-    "check": false,
-    "part": "553-702"
+    "qty": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     10,
+     10,
+     10,
+     10
+    ],
+    "mass": "0,0063",
+    "material": "Ст",
+    "note": "2",
+    "part": "553-70"
    },
    {
     "pos": 4,
-    "designation": "553-02-1łł 351-092",
-    "name": "Шайба 12Н65Г05 ГОСТ6402-70 Гайка М12х1,5",
-    "qty": null,
-    "mass": null,
-    "note": null,
-    "check": true,
-    "part": null
+    "designation": "553-02-1",
+    "name": "Шайба 12Н65Г05 ГОСТ 6402-70",
+    "qty": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     10,
+     10,
+     10,
+     10
+    ],
+    "mass": "0,0034",
+    "material": "Ст",
+    "note": "2",
+    "part": "553-02-1"
+   },
+   {
+    "pos": 5,
+    "designation": "351-09",
+    "name": "Гайка М12х1,5",
+    "qty": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     10,
+     10,
+     10,
+     10
+    ],
+    "mass": "0,02",
+    "material": "Ст",
+    "note": "2",
+    "part": "351-09"
+   },
+   {
+    "pos": 6,
+    "designation": "556-03-1",
+    "name": "Болт М12х45",
+    "qty": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     10,
+     10,
+     10,
+     10
+    ],
+    "mass": "0,0573",
+    "material": "Ст",
+    "note": "1",
+    "part": "556-03-1"
    },
    {
     "pos": 7,
-    "designation": "356-16A",
-    "name": "Болт Мбх14",
-    "qty": null,
-    "mass": null,
+    "designation": "356-16А",
+    "name": "Болт М6х14",
+    "qty": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     3,
+     3,
+     3,
+     3
+    ],
+    "mass": "0,0065",
+    "material": "Ст",
     "note": null,
-    "check": false,
     "part": "356-16a"
    },
    {
     "pos": 8,
-    "designation": "353-23 525-16-113",
-    "name": "Шайба 6Т65Г05 ГОСТ6402-70 Крышка",
-    "qty": null,
-    "mass": null,
+    "designation": "353-23",
+    "name": "Шайба 6Т65Г05 ГОСТ 6402-70",
+    "qty": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     3,
+     3,
+     3,
+     3
+    ],
+    "mass": "0,0008",
+    "material": "Ст",
     "note": null,
-    "check": true,
-    "part": null
+    "part": "353-23"
+   },
+   {
+    "pos": 9,
+    "designation": "525-16-113",
+    "name": "Крышка",
+    "qty": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     1,
+     1,
+     1,
+     1
+    ],
+    "mass": "0,35",
+    "material": "Ст",
+    "note": null,
+    "part": "525-16-113"
    },
    {
     "pos": 10,
     "designation": "525-16-402",
     "name": "Кольцо стопорное",
-    "qty": null,
-    "mass": null,
+    "qty": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     1,
+     1,
+     1,
+     1
+    ],
+    "mass": "0,0994",
+    "material": "Ст",
     "note": null,
-    "check": false,
     "part": "525-16-402"
    },
    {
     "pos": 11,
     "designation": "556-11-1",
-    "name": "Болт М14×40",
-    "qty": null,
-    "mass": null,
+    "name": "Болт М14х40",
+    "qty": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     12,
+     12,
+     12,
+     12
+    ],
+    "mass": "0,0745",
+    "material": "Ст",
     "note": null,
-    "check": false,
     "part": "556-11-1"
    },
    {
     "pos": 12,
     "designation": "БЧ",
-    "name": "Шайба 14ОТ65Г019 ГОСТ6402-70",
-    "qty": null,
-    "mass": null,
+    "name": "Шайба 14ОТ65Г019 ГОСТ 6402-70",
+    "qty": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     12,
+     12,
+     12,
+     12
+    ],
+    "mass": "0,0095",
+    "material": "Ст",
     "note": null,
-    "check": false,
     "part": null
    },
    {
     "pos": 13,
     "designation": "525-16-401",
     "name": "Полумуфта ведущая",
-    "qty": null,
-    "mass": null,
+    "qty": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     1,
+     1,
+     1,
+     1
+    ],
+    "mass": "16,29",
+    "material": "Ст",
     "note": null,
-    "check": false,
     "part": "525-16-401"
    },
    {
     "pos": 14,
     "designation": "У36-16-14-2",
     "name": "Вкладыш",
-    "qty": null,
-    "mass": null,
+    "qty": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     16,
+     16,
+     16,
+     16
+    ],
+    "mass": "0,095",
+    "material": "Рез",
     "note": null,
-    "check": false,
     "part": "u36-16-14-2"
    }
   ]
@@ -522,8 +715,6 @@
   "footnotes": {
    "1": "Допускается изготовление фланца из серого чугуна."
   },
-  "verified": true,
-  "verifiedNote": "2026-10-27, визуальная сверка со сканом",
   "catalogPages": [
    22,
    23
@@ -572,8 +763,8 @@
      7
     ],
     "mass": "0,035",
+    "material": "Ст",
     "note": null,
-    "check": false,
     "part": "330-341"
    },
    {
@@ -593,8 +784,8 @@
      7
     ],
     "mass": "0,0114",
+    "material": "Ст",
     "note": null,
-    "check": false,
     "part": "353-29"
    },
    {
@@ -614,8 +805,8 @@
      7
     ],
     "mass": "0,0055",
+    "material": "Ст",
     "note": null,
-    "check": false,
     "part": "353-49"
    },
    {
@@ -635,8 +826,8 @@
      1
     ],
     "mass": "10,8",
+    "material": "Ал",
     "note": "1",
-    "check": false,
     "part": "525-16-112"
    },
    {
@@ -656,8 +847,8 @@
      1
     ],
     "mass": "78,8",
+    "material": null,
     "note": null,
-    "check": false,
     "part": "sb525-400"
    },
    {
@@ -677,8 +868,8 @@
      1
     ],
     "mass": "0,0261",
+    "material": "Прн",
     "note": null,
-    "check": false,
     "part": "525-453"
    },
    {
@@ -698,8 +889,8 @@
      1
     ],
     "mass": "8,145",
+    "material": null,
     "note": null,
-    "check": false,
     "part": "sb525-413"
    },
    {
@@ -719,8 +910,8 @@
      14
     ],
     "mass": "0,0015",
+    "material": "Ст",
     "note": null,
-    "check": false,
     "part": "353-05-1"
    },
    {
@@ -740,8 +931,8 @@
      14
     ],
     "mass": "0,0002",
+    "material": "Ст",
     "note": null,
-    "check": false,
     "part": "353-24"
    },
    {
@@ -761,8 +952,8 @@
      14
     ],
     "mass": "0,0055",
+    "material": "Ст",
     "note": null,
-    "check": false,
     "part": "351-02"
    },
    {
@@ -782,8 +973,8 @@
      1
     ],
     "mass": "0,1",
+    "material": null,
     "note": null,
-    "check": false,
     "part": "sb525-06a-02"
    },
    {
@@ -803,8 +994,8 @@
      2
     ],
     "mass": "0,006",
+    "material": "Ст",
     "note": null,
-    "check": false,
     "part": "305-45-1"
    },
    {
@@ -824,8 +1015,8 @@
      2
     ],
     "mass": "0,0083",
+    "material": "Ст",
     "note": null,
-    "check": false,
     "part": "20-01-186"
    },
    {
@@ -845,8 +1036,8 @@
      1
     ],
     "mass": "0,65",
+    "material": "Ст",
     "note": null,
-    "check": false,
     "part": "525-467"
    },
    {
@@ -866,8 +1057,8 @@
      2
     ],
     "mass": "0,01",
+    "material": "Ст",
     "note": null,
-    "check": false,
     "part": "525-468"
    },
    {
@@ -887,8 +1078,8 @@
      2
     ],
     "mass": "0,004",
+    "material": "Ст",
     "note": null,
-    "check": false,
     "part": "354-27"
    }
   ]
@@ -902,9 +1093,9 @@
   "variants": [
    "-"
   ],
-  "footnotes": {},
-  "verified": false,
-  "verifiedNote": null,
+  "footnotes": {
+   "1": "Допускается изготовление крышки из серого чугуна."
+  },
   "catalogPages": null,
   "drawing": {
    "t": {
@@ -934,23 +1125,51 @@
   },
   "rows": [
    {
-    "pos": 2,
-    "designation": "354-22-08 525-451",
-    "name": "Проволока стопорная, L=300 мм Крышка",
-    "qty": null,
-    "mass": null,
+    "pos": 1,
+    "designation": "525-517",
+    "name": "Винт",
+    "qty": [
+     6
+    ],
+    "mass": "0,012",
+    "material": "Ст",
     "note": null,
-    "check": true,
+    "part": "525-517"
+   },
+   {
+    "pos": 2,
+    "designation": "354-22-08",
+    "name": "Проволока стопорная, L=300 мм",
+    "qty": [
+     1
+    ],
+    "mass": "0,0165",
+    "material": "Ст",
+    "note": null,
+    "part": "354-22-08"
+   },
+   {
+    "pos": 3,
+    "designation": "525-451",
+    "name": "Крышка",
+    "qty": [
+     1
+    ],
+    "mass": "8,1",
+    "material": "Ал",
+    "note": "1",
     "part": null
    },
    {
     "pos": 4,
     "designation": "527-82",
     "name": "Пробка",
-    "qty": null,
-    "mass": null,
+    "qty": [
+     1
+    ],
+    "mass": "0,1",
+    "material": "Ст",
     "note": null,
-    "check": false,
     "part": "527-82"
    }
   ]
@@ -977,8 +1196,6 @@
    "1": "Полумуфта ведомая 525-16-110 обрабатывается, применяется и поставляется совместно с полумуфтой ведущей 525-16-111 (см. рис. 1).",
    "2": "Полумуфта ведомая 525-16-400 обрабатывается, применяется и поставляется совместно с полумуфтой ведущей 525-16-401 (см. рис. 2)."
   },
-  "verified": true,
-  "verifiedNote": "2026-10-27, визуальная сверка со сканом",
   "catalogPages": [
    26,
    27
@@ -1027,8 +1244,8 @@
      1
     ],
     "mass": "0,235",
+    "material": "Ст",
     "note": null,
-    "check": false,
     "part": "525-542"
    },
    {
@@ -1048,8 +1265,8 @@
      1
     ],
     "mass": "0,052",
+    "material": "Ст",
     "note": null,
-    "check": false,
     "part": "525-547"
    },
    {
@@ -1069,8 +1286,8 @@
      1
     ],
     "mass": "0,0200",
+    "material": "Ст",
     "note": null,
-    "check": false,
     "part": "525-546"
    },
    {
@@ -1090,8 +1307,8 @@
      null
     ],
     "mass": "15,8",
+    "material": "Ст",
     "note": "1",
-    "check": false,
     "part": "525-16-110"
    },
    {
@@ -1111,8 +1328,8 @@
      1
     ],
     "mass": "0,0013",
+    "material": "Рез",
     "note": null,
-    "check": false,
     "part": "20-08-248"
    },
    {
@@ -1132,8 +1349,8 @@
      6
     ],
     "mass": "0,014",
+    "material": "Ст",
     "note": null,
-    "check": false,
     "part": "556-07"
    },
    {
@@ -1153,8 +1370,8 @@
      6
     ],
     "mass": "0,0002",
+    "material": "Ст",
     "note": null,
-    "check": false,
     "part": "353-24"
    },
    {
@@ -1174,8 +1391,8 @@
      6
     ],
     "mass": "0,0015",
+    "material": "Ст",
     "note": null,
-    "check": false,
     "part": "353-05-1"
    },
    {
@@ -1195,8 +1412,8 @@
      1
     ],
     "mass": "0,43",
+    "material": "Ал",
     "note": null,
-    "check": false,
     "part": "525-454"
    },
    {
@@ -1216,8 +1433,8 @@
      1
     ],
     "mass": "0,0045",
+    "material": "Прн",
     "note": null,
-    "check": false,
     "part": "525-455"
    },
    {
@@ -1237,8 +1454,8 @@
      1
     ],
     "mass": "0,0829",
+    "material": null,
     "note": null,
-    "check": false,
     "part": null
    },
    {
@@ -1258,8 +1475,8 @@
      1
     ],
     "mass": "2,11",
+    "material": null,
     "note": null,
-    "check": false,
     "part": null
    },
    {
@@ -1279,8 +1496,8 @@
      1
     ],
     "mass": "5,9",
+    "material": "Ст",
     "note": null,
-    "check": false,
     "part": "525-456"
    },
    {
@@ -1300,8 +1517,8 @@
      1
     ],
     "mass": "0,0085",
+    "material": "Прн",
     "note": null,
-    "check": false,
     "part": "525-457"
    },
    {
@@ -1321,8 +1538,8 @@
      1
     ],
     "mass": "0,0012",
+    "material": "Рез",
     "note": null,
-    "check": false,
     "part": "20-63-22-1"
    },
    {
@@ -1342,8 +1559,8 @@
      6
     ],
     "mass": "0,0034",
+    "material": "Ст",
     "note": null,
-    "check": false,
     "part": "553-02-1"
    },
    {
@@ -1363,8 +1580,8 @@
      6
     ],
     "mass": "0,02",
+    "material": "Ст",
     "note": null,
-    "check": false,
     "part": "351-09"
    },
    {
@@ -1384,8 +1601,8 @@
      1
     ],
     "mass": "11,74",
+    "material": "Ст",
     "note": "2",
-    "check": false,
     "part": "525-16-400"
    }
   ]
@@ -1394,7 +1611,7 @@
   "id": "rr300-fig06",
   "figure": 6,
   "slug": "ris-06",
-  "title": "Вал ведущий",
+  "title": "Вал ведущий. Крепление ведомой полумуфты соединительной муфты на реверс-редукторе до 2000 года выпуска",
   "designation": "СБ525-01-13",
   "variants": [
    "-",
@@ -1408,9 +1625,9 @@
    "-005",
    "-015"
   ],
-  "footnotes": {},
-  "verified": false,
-  "verifiedNote": null,
+  "footnotes": {
+   "1": "Вместо ведомой полумуфты поз. 3 или 4 с конструкцией ступицы под стопорную шайбу поз. 2 следует заказывать взаимозаменяемую в комплекте с деталями поз. 2 и 3 (см. рис. 5) ведомую полумуфту поз. 4 или 18 (см. рис. 5)."
+  },
   "catalogPages": null,
   "drawing": {
    "t": {
@@ -1440,23 +1657,87 @@
   },
   "rows": [
    {
-    "pos": 2,
-    "designation": "525-543 525-16-110",
-    "name": "Шайба стопорная",
-    "qty": null,
-    "mass": null,
+    "pos": 1,
+    "designation": "525-542",
+    "name": "Гайка М52",
+    "qty": [
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1
+    ],
+    "mass": "0,235",
+    "material": "Ст",
     "note": null,
-    "check": true,
-    "part": null
+    "part": "525-542"
+   },
+   {
+    "pos": 2,
+    "designation": "525-543",
+    "name": "Шайба стопорная",
+    "qty": [
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1
+    ],
+    "mass": "0,025",
+    "material": "Ст",
+    "note": null,
+    "part": "525-543"
+   },
+   {
+    "pos": 3,
+    "designation": "525-16-110",
+    "name": "Полумуфта ведомая",
+    "qty": [
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     null,
+     null,
+     null,
+     null
+    ],
+    "mass": "15,5",
+    "material": "Ст",
+    "note": "1",
+    "part": "525-16-110"
    },
    {
     "pos": 4,
     "designation": "525-16-400",
     "name": "Полумуфта ведомая",
-    "qty": null,
-    "mass": null,
-    "note": null,
-    "check": false,
+    "qty": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     1,
+     1,
+     1,
+     1
+    ],
+    "mass": "11,44",
+    "material": "Ст",
+    "note": "1",
     "part": "525-16-400"
    }
   ]
@@ -1479,9 +1760,12 @@
    "-005",
    "-015"
   ],
-  "footnotes": {},
-  "verified": false,
-  "verifiedNote": null,
+  "footnotes": {
+   "1": "Кольцо поз. 3 следует заказывать на реверс-редуктор после 1997 года выпуска.",
+   "2": "Кольцо поз. 4 следует заказывать вместо кольца поз. 3 на реверс-редуктор до 1998 года выпуска.",
+   "3": "Детали поз. 7 и 8 следует заказывать в комплекте на реверс-редуктор после 1997 года выпуска.",
+   "4": "Детали поз. 9 и 10 следует заказывать в комплекте вместо деталей поз. 7 и 8 на реверс-редуктор до 1998 года выпуска."
+  },
   "catalogPages": null,
   "drawing": {
    "t": {
@@ -1511,73 +1795,255 @@
   },
   "rows": [
    {
-    "pos": 2,
-    "designation": "C5525-404 40H-08-67",
-    "name": "Ступица Кольцо",
-    "qty": null,
-    "mass": null,
+    "pos": 1,
+    "designation": "СБ525-410",
+    "name": "Вал ведущий",
+    "qty": [
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1
+    ],
+    "mass": "14,876",
+    "material": null,
     "note": null,
-    "check": true,
+    "part": "sb525-410"
+   },
+   {
+    "pos": 2,
+    "designation": "СБ525-404",
+    "name": "Ступица",
+    "qty": [
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1
+    ],
+    "mass": "38,4",
+    "material": null,
+    "note": null,
     "part": null
+   },
+   {
+    "pos": 3,
+    "designation": "40Н-08-67",
+    "name": "Кольцо",
+    "qty": [
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1
+    ],
+    "mass": "0,0006",
+    "material": "Рез",
+    "note": "1",
+    "part": "40n-08-67"
    },
    {
     "pos": 4,
-    "designation": "584-28-80-",
+    "designation": "584-28-80",
     "name": "Кольцо",
-    "qty": null,
-    "mass": null,
-    "note": null,
-    "check": false,
-    "part": "584-28-80"
+    "qty": [
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1
+    ],
+    "mass": "0,002",
+    "material": "Рез",
+    "note": "2",
+    "part": null
    },
    {
     "pos": 5,
-    "designation": "525-545 БЧ",
+    "designation": "525-545",
     "name": "Втулка распорная",
-    "qty": null,
-    "mass": null,
+    "qty": [
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1
+    ],
+    "mass": "2,1",
+    "material": "Ст",
     "note": null,
-    "check": false,
-    "part": "525-545bch"
+    "part": "525-545"
+   },
+   {
+    "pos": 6,
+    "designation": "БЧ",
+    "name": "Подшипник 310А ГОСТ 8338-75",
+    "qty": [
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1
+    ],
+    "mass": "1,08",
+    "material": null,
+    "note": null,
+    "part": null
    },
    {
     "pos": 7,
-    "designation": "525-5483",
+    "designation": "525-548",
     "name": "Шайба стопорная",
-    "qty": null,
-    "mass": null,
-    "note": null,
-    "check": false,
-    "part": "525-5483"
+    "qty": [
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1
+    ],
+    "mass": "0,02",
+    "material": "Ст",
+    "note": "3",
+    "part": "525-548"
    },
    {
     "pos": 8,
-    "designation": "525-5493 308-22-1źŘšł",
-    "name": "Шайба стопорная Кольцо установочное",
-    "qty": null,
-    "mass": null,
-    "note": null,
-    "check": true,
-    "part": null
+    "designation": "525-549",
+    "name": "Шайба стопорная",
+    "qty": [
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1
+    ],
+    "mass": "0,0435",
+    "material": "Ст",
+    "note": "3",
+    "part": "525-549"
+   },
+   {
+    "pos": 9,
+    "designation": "308-22-1",
+    "name": "Кольцо установочное",
+    "qty": [
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1
+    ],
+    "mass": "0,0484",
+    "material": "Ст",
+    "note": "4",
+    "part": "308-22-1"
    },
    {
     "pos": 10,
-    "designation": "525-32+",
-    "name": "Шайба предохранительная Гайка круглая шлицевая",
-    "qty": null,
-    "mass": null,
+    "designation": "525-32",
+    "name": "Шайба предохранительная",
+    "qty": [
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1
+    ],
+    "mass": "0,015",
+    "material": "Ст",
+    "note": "4",
+    "part": "525-32"
+   },
+   {
+    "pos": 11,
+    "designation": "525-33-2А",
+    "name": "Гайка круглая шлицевая",
+    "qty": [
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1
+    ],
+    "mass": "0,168",
+    "material": "Ст",
     "note": null,
-    "check": true,
-    "part": null
+    "part": "525-33-2a"
    },
    {
     "pos": 12,
     "designation": "20-09-71",
     "name": "Кольцо уплотнительное",
-    "qty": null,
-    "mass": null,
+    "qty": [
+     2,
+     2,
+     2,
+     2,
+     2,
+     2,
+     2,
+     2,
+     2,
+     2
+    ],
+    "mass": "0,0079",
+    "material": "Чг",
     "note": null,
-    "check": false,
     "part": "20-09-71"
    }
   ]
@@ -1592,8 +2058,6 @@
    "-"
   ],
   "footnotes": {},
-  "verified": false,
-  "verifiedNote": null,
   "catalogPages": null,
   "drawing": {
    "t": {
@@ -1624,63 +2088,111 @@
   "rows": [
    {
     "pos": 1,
-    "designation": "",
+    "designation": "525-507",
     "name": "Полукольцо",
-    "qty": null,
-    "mass": null,
+    "qty": [
+     4
+    ],
+    "mass": "0,053",
+    "material": "Ст",
     "note": null,
-    "check": true,
-    "part": null
+    "part": "525-507"
    },
    {
     "pos": 2,
-    "designation": "",
-    "name": "Замок 30 Пружина",
-    "qty": null,
-    "mass": null,
+    "designation": "525-508",
+    "name": "Замок",
+    "qty": [
+     2
+    ],
+    "mass": "0,55",
+    "material": "Ст",
     "note": null,
-    "check": true,
+    "part": "525-508"
+   },
+   {
+    "pos": 3,
+    "designation": "587-72-5",
+    "name": "Пружина",
+    "qty": [
+     30
+    ],
+    "mass": "0,015",
+    "material": "Ст",
+    "note": null,
     "part": null
    },
    {
     "pos": 4,
-    "designation": "",
+    "designation": "525-504",
     "name": "Диск нажимной",
-    "qty": null,
-    "mass": null,
+    "qty": [
+     2
+    ],
+    "mass": "7,1",
+    "material": "Ст",
     "note": null,
-    "check": true,
-    "part": null
+    "part": "525-504"
    },
    {
     "pos": 5,
-    "designation": "525-506 525-505",
-    "name": "Кольцо уплотнительное Кольцо уплотнительное",
-    "qty": null,
-    "mass": null,
+    "designation": "525-506",
+    "name": "Кольцо уплотнительное",
+    "qty": [
+     2
+    ],
+    "mass": "0,268",
+    "material": "Ст",
     "note": null,
-    "check": true,
-    "part": null
+    "part": "525-506"
+   },
+   {
+    "pos": 6,
+    "designation": "525-505",
+    "name": "Кольцо уплотнительное",
+    "qty": [
+     2
+    ],
+    "mass": "0,078",
+    "material": "Ст",
+    "note": null,
+    "part": "525-505"
    },
    {
     "pos": 7,
-    "designation": "525-518-źîęš",
-    "name": "Плунжер Пружина",
-    "qty": null,
-    "mass": null,
+    "designation": "525-503",
+    "name": "Плунжер",
+    "qty": [
+     2
+    ],
+    "mass": "0,01",
+    "material": "Ст",
     "note": null,
-    "check": true,
-    "part": null
+    "part": "525-503"
+   },
+   {
+    "pos": 8,
+    "designation": "525-518-2",
+    "name": "Пружина",
+    "qty": [
+     2
+    ],
+    "mass": "0,0003",
+    "material": "Ст",
+    "note": null,
+    "part": "525-518-2"
    },
    {
     "pos": 9,
-    "designation": "СБ525-40šŚ",
+    "designation": "СБ525-405",
     "name": "Ступица",
-    "qty": null,
-    "mass": null,
+    "qty": [
+     1
+    ],
+    "mass": "23,499",
+    "material": null,
     "note": null,
-    "check": true,
-    "part": null
+    "part": "sb525-405"
    }
   ]
  },
@@ -1703,8 +2215,6 @@
    "-015"
   ],
   "footnotes": {},
-  "verified": false,
-  "verifiedNote": null,
   "catalogPages": null,
   "drawing": {
    "t": {
@@ -1734,24 +2244,109 @@
   },
   "rows": [
    {
-    "pos": 2,
-    "designation": "525-457 СБ525-37-100",
-    "name": "Прокладка Корпус гидрораспределителя",
-    "qty": null,
-    "mass": null,
+    "pos": 1,
+    "designation": "525-459",
+    "name": "Стакан",
+    "qty": [
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1
+    ],
+    "mass": "4,0",
+    "material": "Ст",
     "note": null,
-    "check": true,
-    "part": null
+    "part": "525-459"
+   },
+   {
+    "pos": 2,
+    "designation": "525-457",
+    "name": "Прокладка",
+    "qty": [
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1
+    ],
+    "mass": "0,0085",
+    "material": "Прн",
+    "note": null,
+    "part": "525-457"
+   },
+   {
+    "pos": 3,
+    "designation": "СБ525-37-100",
+    "name": "Корпус гидрораспределителя",
+    "qty": [
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1
+    ],
+    "mass": "7,9",
+    "material": null,
+    "note": null,
+    "part": "sb525-37-100"
    },
    {
     "pos": 4,
     "designation": "553-02-1",
-    "name": "Шайба 12Н65Г06 ГОСТ6402-70",
-    "qty": null,
-    "mass": null,
+    "name": "Шайба 12Н65Г06 ГОСТ 6402-70",
+    "qty": [
+     6,
+     6,
+     6,
+     6,
+     6,
+     6,
+     6,
+     6,
+     6,
+     6
+    ],
+    "mass": "0,0034",
+    "material": "Ст",
     "note": null,
-    "check": false,
     "part": "553-02-1"
+   },
+   {
+    "pos": 5,
+    "designation": "351-09",
+    "name": "Гайка М12х1,5",
+    "qty": [
+     6,
+     6,
+     6,
+     6,
+     6,
+     6,
+     6,
+     6,
+     6,
+     6
+    ],
+    "mass": "0,02",
+    "material": "Ст",
+    "note": null,
+    "part": "351-09"
    }
   ]
  },
@@ -1765,8 +2360,6 @@
    "-"
   ],
   "footnotes": {},
-  "verified": true,
-  "verifiedNote": "2026-10-27, визуальная сверка со сканом",
   "catalogPages": [
    36,
    37
@@ -1806,8 +2399,8 @@
      1
     ],
     "mass": "0,021",
+    "material": "Ст",
     "note": null,
-    "check": false,
     "part": "356-78"
    },
    {
@@ -1818,8 +2411,8 @@
      3
     ],
     "mass": "0,0002",
+    "material": "Ст",
     "note": null,
-    "check": false,
     "part": "353-24"
    },
    {
@@ -1830,8 +2423,8 @@
      1
     ],
     "mass": "0,0153",
+    "material": "Ст",
     "note": null,
-    "check": false,
     "part": "525-37-121"
    },
    {
@@ -1842,8 +2435,8 @@
      1
     ],
     "mass": "0,764",
+    "material": null,
     "note": null,
-    "check": false,
     "part": "sb525-37-103"
    },
    {
@@ -1854,8 +2447,8 @@
      1
     ],
     "mass": "0,0033",
+    "material": "Ст",
     "note": null,
-    "check": false,
     "part": "346-20"
    },
    {
@@ -1866,8 +2459,8 @@
      1
     ],
     "mass": "0,0037",
+    "material": "Ст",
     "note": null,
-    "check": false,
     "part": "525-37-114"
    },
    {
@@ -1878,8 +2471,8 @@
      2
     ],
     "mass": "0,0055",
+    "material": "Ст",
     "note": null,
-    "check": false,
     "part": "351-02"
    },
    {
@@ -1890,8 +2483,8 @@
      1
     ],
     "mass": "0,0007",
+    "material": "Рез",
     "note": null,
-    "check": false,
     "part": "506-100"
    },
    {
@@ -1902,8 +2495,8 @@
      1
     ],
     "mass": "0,22",
+    "material": "Ст",
     "note": null,
-    "check": false,
     "part": "525-37-112"
    },
    {
@@ -1914,8 +2507,8 @@
      1
     ],
     "mass": "0,001",
+    "material": "Прн",
     "note": null,
-    "check": false,
     "part": "525-37-113"
    },
    {
@@ -1926,8 +2519,8 @@
      1
     ],
     "mass": "0,07",
+    "material": null,
     "note": null,
-    "check": false,
     "part": null
    },
    {
@@ -1938,8 +2531,8 @@
      1
     ],
     "mass": "0,335",
+    "material": "Ст",
     "note": null,
-    "check": false,
     "part": "525-37-111"
    },
    {
@@ -1950,8 +2543,8 @@
      1
     ],
     "mass": "6,463",
+    "material": null,
     "note": null,
-    "check": false,
     "part": "sb525-37-102"
    },
    {
@@ -1962,8 +2555,8 @@
      1
     ],
     "mass": "0,0014",
+    "material": null,
     "note": null,
-    "check": false,
     "part": "355-08"
    },
    {
@@ -1974,8 +2567,8 @@
      1
     ],
     "mass": "0,05",
+    "material": "Ст",
     "note": null,
-    "check": false,
     "part": "513-134"
    },
    {
@@ -1986,8 +2579,8 @@
      1
     ],
     "mass": "0,0006",
+    "material": null,
     "note": null,
-    "check": false,
     "part": "355-06"
    },
    {
@@ -1998,8 +2591,8 @@
      1
     ],
     "mass": "0,055",
+    "material": "Ст",
     "note": null,
-    "check": false,
     "part": "520n-46"
    },
    {
@@ -2010,8 +2603,8 @@
      1
     ],
     "mass": "0,0143",
+    "material": "Ст",
     "note": null,
-    "check": false,
     "part": "354-22-07"
    },
    {
@@ -2022,8 +2615,8 @@
      1
     ],
     "mass": "0,001",
+    "material": "Ст",
     "note": null,
-    "check": false,
     "part": "315-64"
    }
   ]
@@ -2042,12 +2635,14 @@
    "-040",
    "-041",
    "-004",
+   "-014",
    "-005",
    "-015"
   ],
-  "footnotes": {},
-  "verified": false,
-  "verifiedNote": null,
+  "footnotes": {
+   "1": "Шестерня для реверс-редуктора с передаточным отношением на задний ход 1:2,18.",
+   "2": "Шестерня для реверс-редуктора с передаточным отношением на задний ход 1:2,61."
+  },
   "catalogPages": null,
   "drawing": {
    "t": {
@@ -2079,91 +2674,253 @@
    {
     "pos": 1,
     "designation": "БЧ",
-    "name": "Подшипник 3518 ГОСТ5721-75",
-    "qty": null,
-    "mass": null,
+    "name": "Подшипник 3518 ГОСТ 5721-75",
+    "qty": [
+     2,
+     2,
+     2,
+     2,
+     2,
+     2,
+     2,
+     2,
+     2,
+     2
+    ],
+    "mass": "3,5",
+    "material": null,
     "note": null,
-    "check": false,
     "part": null
    },
    {
     "pos": 2,
-    "designation": "525-532' 525-532-012",
+    "designation": "525-532",
     "name": "Шестерня",
-    "qty": null,
-    "mass": null,
-    "note": null,
-    "check": true,
-    "part": null
+    "qty": [
+     1,
+     1,
+     1,
+     1,
+     null,
+     null,
+     1,
+     1,
+     1,
+     1
+    ],
+    "mass": "8,3",
+    "material": "Ст",
+    "note": "1",
+    "part": "525-532"
+   },
+   {
+    "pos": 3,
+    "designation": "525-532-01",
+    "name": "Шестерня",
+    "qty": [
+     null,
+     null,
+     null,
+     null,
+     1,
+     1,
+     null,
+     null,
+     null,
+     null
+    ],
+    "mass": "5,475",
+    "material": "Ст",
+    "note": "2",
+    "part": "525-532-01"
    },
    {
     "pos": 4,
-    "designation": "525-512 1225-52-3",
-    "name": "Ступица ведомая Шайба замковая",
-    "qty": null,
-    "mass": null,
+    "designation": "525-512",
+    "name": "Ступица ведомая",
+    "qty": [
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1
+    ],
+    "mass": "5,5",
+    "material": "Ст",
     "note": null,
-    "check": true,
-    "part": null
+    "part": "525-512"
+   },
+   {
+    "pos": 5,
+    "designation": "1225-52-3",
+    "name": "Шайба замковая",
+    "qty": [
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1
+    ],
+    "mass": "0,064",
+    "material": "Ст",
+    "note": null,
+    "part": "1225-52-3"
    },
    {
     "pos": 6,
     "designation": "525-544",
-    "name": "Гайка M80",
-    "qty": null,
-    "mass": null,
+    "name": "Гайка М80",
+    "qty": [
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1
+    ],
+    "mass": "0,39",
+    "material": "Ст",
     "note": null,
-    "check": false,
     "part": "525-544"
    },
    {
     "pos": 7,
     "designation": "525-515",
     "name": "Болт М10х65",
-    "qty": null,
-    "mass": null,
+    "qty": [
+     16,
+     16,
+     16,
+     16,
+     16,
+     16,
+     16,
+     16,
+     16,
+     16
+    ],
+    "mass": "0,05",
+    "material": "Ст",
     "note": null,
-    "check": false,
     "part": "525-515"
    },
    {
     "pos": 8,
-    "designation": "353-15 СБ525-407Śź",
-    "name": "Шайба стопорная 11 Диск упорный с шестерней",
-    "qty": null,
-    "mass": null,
+    "designation": "353-15",
+    "name": "Шайба стопорная 11",
+    "qty": [
+     16,
+     16,
+     16,
+     16,
+     16,
+     16,
+     16,
+     16,
+     16,
+     16
+    ],
+    "mass": "0,0022",
+    "material": "Ст",
     "note": null,
-    "check": true,
-    "part": null
+    "part": "353-15"
+   },
+   {
+    "pos": 9,
+    "designation": "СБ525-407",
+    "name": "Диск упорный с шестерней",
+    "qty": [
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1
+    ],
+    "mass": "9,589",
+    "material": null,
+    "note": null,
+    "part": "sb525-407"
    },
    {
     "pos": 10,
     "designation": "СБ525-406",
     "name": "Диск трения ведомый",
-    "qty": null,
-    "mass": null,
+    "qty": [
+     4,
+     4,
+     4,
+     4,
+     4,
+     4,
+     4,
+     4,
+     4,
+     4
+    ],
+    "mass": "1,0",
+    "material": null,
     "note": null,
-    "check": false,
     "part": "sb525-406"
    },
    {
     "pos": 11,
     "designation": "525-514",
     "name": "Диск трения ведущий",
-    "qty": null,
-    "mass": null,
+    "qty": [
+     3,
+     3,
+     3,
+     3,
+     3,
+     3,
+     3,
+     3,
+     3,
+     3
+    ],
+    "mass": "0,634",
+    "material": "Ст",
     "note": null,
-    "check": false,
     "part": "525-514"
    },
    {
     "pos": 12,
     "designation": "525-509",
     "name": "Барабан ведущий",
-    "qty": null,
-    "mass": null,
+    "qty": [
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1
+    ],
+    "mass": "5,0",
+    "material": "Ст",
     "note": null,
-    "check": false,
     "part": "525-509"
    }
   ]
@@ -2178,8 +2935,6 @@
    "-"
   ],
   "footnotes": {},
-  "verified": false,
-  "verifiedNote": null,
   "catalogPages": null,
   "drawing": {
    "t": {
@@ -2209,14 +2964,52 @@
   },
   "rows": [
    {
+    "pos": 1,
+    "designation": "525-12-110",
+    "name": "Шестерня",
+    "qty": [
+     1
+    ],
+    "mass": "1,3",
+    "material": "Ст",
+    "note": null,
+    "part": "525-12-110"
+   },
+   {
     "pos": 2,
     "designation": "525-510",
     "name": "Диск упорный",
-    "qty": null,
-    "mass": null,
+    "qty": [
+     1
+    ],
+    "mass": "8,2",
+    "material": "Ст",
     "note": null,
-    "check": false,
     "part": "525-510"
+   },
+   {
+    "pos": 3,
+    "designation": "353-24",
+    "name": "Шайба 8Т65Г06 ГОСТ 6402-70",
+    "qty": [
+     6
+    ],
+    "mass": "0,0002",
+    "material": "Ст",
+    "note": null,
+    "part": "353-24"
+   },
+   {
+    "pos": 4,
+    "designation": "556-07",
+    "name": "Болт М8х22",
+    "qty": [
+     6
+    ],
+    "mass": "0,014",
+    "material": "Ст",
+    "note": null,
+    "part": "556-07"
    }
   ]
  },
@@ -2238,9 +3031,10 @@
    "-005",
    "-015"
   ],
-  "footnotes": {},
-  "verified": false,
-  "verifiedNote": null,
+  "footnotes": {
+   "1": "Шестерня для реверс-редуктора с передаточным отношением на передний ход 1:2,04.",
+   "2": "Шестерня для реверс-редуктора с передаточным отношением на передний ход 1:2,95."
+  },
   "catalogPages": null,
   "drawing": {
    "t": {
@@ -2270,74 +3064,256 @@
   },
   "rows": [
    {
-    "pos": 2,
-    "designation": "СБ525-406 525-514",
-    "name": "Диск трения ведомый",
-    "qty": null,
-    "mass": null,
+    "pos": 1,
+    "designation": "525-509",
+    "name": "Барабан ведущий",
+    "qty": [
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1
+    ],
+    "mass": "5,0",
+    "material": "Ст",
     "note": null,
-    "check": true,
-    "part": null
+    "part": "525-509"
+   },
+   {
+    "pos": 2,
+    "designation": "СБ525-406",
+    "name": "Диск трения ведомый",
+    "qty": [
+     4,
+     4,
+     4,
+     4,
+     4,
+     4,
+     4,
+     4,
+     4,
+     4
+    ],
+    "mass": "1,0",
+    "material": null,
+    "note": null,
+    "part": "sb525-406"
+   },
+   {
+    "pos": 3,
+    "designation": "525-514",
+    "name": "Диск трения ведущий",
+    "qty": [
+     3,
+     3,
+     3,
+     3,
+     3,
+     3,
+     3,
+     3,
+     3,
+     3
+    ],
+    "mass": "0,634",
+    "material": "Ст",
+    "note": null,
+    "part": "525-514"
    },
    {
     "pos": 4,
     "designation": "525-511",
     "name": "Диск упорный",
-    "qty": null,
-    "mass": null,
+    "qty": [
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1
+    ],
+    "mass": "6,8",
+    "material": "Ст",
     "note": null,
-    "check": false,
     "part": "525-511"
    },
    {
     "pos": 5,
-    "designation": "353-15 525-515",
+    "designation": "353-15",
     "name": "Шайба стопорная 11",
-    "qty": null,
-    "mass": null,
+    "qty": [
+     16,
+     16,
+     16,
+     16,
+     16,
+     16,
+     16,
+     16,
+     16,
+     16
+    ],
+    "mass": "0,0022",
+    "material": "Ст",
     "note": null,
-    "check": true,
-    "part": null
+    "part": "353-15"
+   },
+   {
+    "pos": 6,
+    "designation": "525-515",
+    "name": "Болт М10х65",
+    "qty": [
+     16,
+     16,
+     16,
+     16,
+     16,
+     16,
+     16,
+     16,
+     16,
+     16
+    ],
+    "mass": "0,05",
+    "material": "Ст",
+    "note": null,
+    "part": "525-515"
    },
    {
     "pos": 7,
     "designation": "525-544",
-    "name": "1'айка М80",
-    "qty": null,
-    "mass": null,
+    "name": "Гайка М80",
+    "qty": [
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1
+    ],
+    "mass": "0,39",
+    "material": "Ст",
     "note": null,
-    "check": false,
     "part": "525-544"
    },
    {
     "pos": 8,
-    "designation": "1225-52-3 525-512",
-    "name": "Шайба замковая Ступица ведомая",
-    "qty": null,
-    "mass": null,
+    "designation": "1225-52-3",
+    "name": "Шайба замковая",
+    "qty": [
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1
+    ],
+    "mass": "0,064",
+    "material": "Ст",
     "note": null,
-    "check": true,
-    "part": null
+    "part": "1225-52-3"
+   },
+   {
+    "pos": 9,
+    "designation": "525-512",
+    "name": "Ступица ведомая",
+    "qty": [
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1
+    ],
+    "mass": "5,5",
+    "material": "Ст",
+    "note": null,
+    "part": "525-512"
    },
    {
     "pos": 10,
-    "designation": "БЧ • 525-5301",
-    "name": "Подшипник 3518 ГОСТ5721-75",
-    "qty": null,
-    "mass": null,
+    "designation": "БЧ",
+    "name": "Подшипник 3518 ГОСТ 5721-75",
+    "qty": [
+     2,
+     2,
+     2,
+     2,
+     2,
+     2,
+     2,
+     2,
+     2,
+     2
+    ],
+    "mass": "3,5",
+    "material": null,
     "note": null,
-    "check": true,
     "part": null
    },
    {
-    "pos": 12,
-    "designation": "",
+    "pos": 11,
+    "designation": "525-530",
     "name": "Шестерня",
-    "qty": null,
-    "mass": null,
-    "note": null,
-    "check": true,
-    "part": null
+    "qty": [
+     1,
+     null,
+     1,
+     null,
+     null,
+     null,
+     1,
+     null,
+     1,
+     null
+    ],
+    "mass": "11,7",
+    "material": "Ст",
+    "note": "1",
+    "part": "525-530"
+   },
+   {
+    "pos": 12,
+    "designation": "525-530-01",
+    "name": "Шестерня",
+    "qty": [
+     null,
+     1,
+     null,
+     1,
+     1,
+     1,
+     null,
+     1,
+     null,
+     1
+    ],
+    "mass": "7,0",
+    "material": "Ст",
+    "note": "2",
+    "part": "525-530-01"
    }
   ]
  },
@@ -2362,8 +3338,6 @@
   "footnotes": {
    "1": "Для обеспечения осевого разбега ведомого вала в пределах 0,1...0,3 мм следует заказывать регулировочную шайбу определённого размера в пределах 1,4...8,0 мм с шагом 0,2 мм. При невозможности определения конкретной толщины следует заказывать шайбу толщиной 8,0 мм для последующего изготовления из неё шайбы требуемой толщины."
   },
-  "verified": true,
-  "verifiedNote": "2026-10-27, визуальная сверка со сканом",
   "catalogPages": [
    44,
    45
@@ -2412,8 +3386,8 @@
      8
     ],
     "mass": "0,02",
+    "material": "Ст",
     "note": null,
-    "check": false,
     "part": "351-09"
    },
    {
@@ -2433,8 +3407,8 @@
      8
     ],
     "mass": "0,0034",
+    "material": "Ст",
     "note": null,
-    "check": false,
     "part": "553-02-1"
    },
    {
@@ -2454,8 +3428,8 @@
      1
     ],
     "mass": "0,914",
+    "material": "Ст",
     "note": null,
-    "check": false,
     "part": "525-460"
    },
    {
@@ -2475,8 +3449,8 @@
      1
     ],
     "mass": "1,477",
+    "material": "Ст",
     "note": null,
-    "check": false,
     "part": "525-461"
    },
    {
@@ -2496,8 +3470,8 @@
      2
     ],
     "mass": "0,027",
+    "material": "Прн",
     "note": null,
-    "check": false,
     "part": "525-118"
    },
    {
@@ -2517,8 +3491,8 @@
      1
     ],
     "mass": "0,935",
+    "material": "Ст",
     "note": null,
-    "check": false,
     "part": "525-561"
    },
    {
@@ -2538,8 +3512,8 @@
      1
     ],
     "mass": "0,26",
+    "material": "Ст",
     "note": null,
-    "check": false,
     "part": "525-562"
    },
    {
@@ -2559,8 +3533,8 @@
      1
     ],
     "mass": "0,053",
+    "material": "Ст",
     "note": null,
-    "check": false,
     "part": "525-568"
    },
    {
@@ -2580,8 +3554,8 @@
      1
     ],
     "mass": "13,2",
+    "material": null,
     "note": null,
-    "check": false,
     "part": null
    },
    {
@@ -2601,8 +3575,8 @@
      1
     ],
     "mass": "8,12",
+    "material": "Ст",
     "note": null,
-    "check": false,
     "part": "525-130-2-01"
    },
    {
@@ -2622,8 +3596,8 @@
      1
     ],
     "mass": "0,215",
+    "material": "Ст",
     "note": "1",
-    "check": false,
     "part": "525-563"
    },
    {
@@ -2643,8 +3617,8 @@
      1
     ],
     "mass": "2,06",
+    "material": "Ст",
     "note": null,
-    "check": false,
     "part": "525-564"
    }
   ]
@@ -2668,8 +3642,6 @@
    "-015"
   ],
   "footnotes": {},
-  "verified": false,
-  "verifiedNote": null,
   "catalogPages": null,
   "drawing": {
    "t": {
@@ -2699,64 +3671,256 @@
   },
   "rows": [
    {
-    "pos": 2,
-    "designation": "525-118 525-130-2-01",
-    "name": "Прокладка Стакан подшипника задний",
-    "qty": null,
-    "mass": null,
+    "pos": 1,
+    "designation": "525-566",
+    "name": "Кольцо",
+    "qty": [
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1
+    ],
+    "mass": "0,0105",
+    "material": "Рез",
     "note": null,
-    "check": true,
-    "part": null
+    "part": "525-566"
+   },
+   {
+    "pos": 2,
+    "designation": "525-118",
+    "name": "Прокладка",
+    "qty": [
+     2,
+     2,
+     2,
+     2,
+     2,
+     2,
+     2,
+     2,
+     2,
+     2
+    ],
+    "mass": "0,027",
+    "material": "Прн",
+    "note": null,
+    "part": "525-118"
+   },
+   {
+    "pos": 3,
+    "designation": "525-130-2-01",
+    "name": "Стакан подшипника задний",
+    "qty": [
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1
+    ],
+    "mass": "8,12",
+    "material": "Ст",
+    "note": null,
+    "part": "525-130-2-01"
    },
    {
     "pos": 4,
     "designation": "БЧ",
-    "name": "Подшипник 7620 ГОСТ27365-87",
-    "qty": null,
-    "mass": null,
+    "name": "Подшипник 7620 ГОСТ 27365-87",
+    "qty": [
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1
+    ],
+    "mass": "13,2",
+    "material": null,
     "note": null,
-    "check": false,
     "part": null
    },
    {
     "pos": 5,
     "designation": "БЧ",
-    "name": "Манжета 1.1-115х145-4 TOСТ8752-79",
-    "qty": null,
-    "mass": null,
+    "name": "Манжета 1.1-115х145-4 ГОСТ 8752-79",
+    "qty": [
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1
+    ],
+    "mass": "0,1016",
+    "material": null,
     "note": null,
-    "check": false,
     "part": null
    },
    {
     "pos": 6,
     "designation": "525-462",
     "name": "Крышка",
-    "qty": null,
-    "mass": null,
+    "qty": [
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1
+    ],
+    "mass": "1,41",
+    "material": "Ал",
     "note": null,
-    "check": false,
     "part": "525-462"
    },
    {
     "pos": 7,
     "designation": "353-08-1",
-    "name": "Шайба чистая 12 Шайба 12Н65Г06 ГОСТ6402-70",
-    "qty": null,
-    "mass": null,
+    "name": "Шайба чистая 12",
+    "qty": [
+     8,
+     8,
+     8,
+     8,
+     8,
+     8,
+     8,
+     8,
+     8,
+     8
+    ],
+    "mass": "0,0035",
+    "material": "Ст",
     "note": null,
-    "check": false,
     "part": "353-08-1"
+   },
+   {
+    "pos": 8,
+    "designation": "553-02-1",
+    "name": "Шайба 12Н65Г06 ГОСТ 6402-70",
+    "qty": [
+     8,
+     8,
+     8,
+     8,
+     8,
+     8,
+     8,
+     8,
+     8,
+     8
+    ],
+    "mass": "0,0034",
+    "material": "Ст",
+    "note": null,
+    "part": "553-02-1"
+   },
+   {
+    "pos": 9,
+    "designation": "351-09",
+    "name": "Гайка М12х1,5",
+    "qty": [
+     8,
+     8,
+     8,
+     8,
+     8,
+     8,
+     8,
+     8,
+     8,
+     8
+    ],
+    "mass": "0,02",
+    "material": "Ст",
+    "note": null,
+    "part": "351-09"
    },
    {
     "pos": 10,
     "designation": "525-567",
     "name": "Фланец",
-    "qty": null,
-    "mass": null,
+    "qty": [
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1
+    ],
+    "mass": "10,0",
+    "material": "Ст",
     "note": null,
-    "check": false,
     "part": "525-567"
+   },
+   {
+    "pos": 11,
+    "designation": "526-25",
+    "name": "Замок",
+    "qty": [
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1
+    ],
+    "mass": "0,085",
+    "material": "Ст",
+    "note": null,
+    "part": "526-25"
+   },
+   {
+    "pos": 12,
+    "designation": "525-112-3А",
+    "name": "Гайка круглая шлицевая",
+    "qty": [
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1
+    ],
+    "mass": "0,52",
+    "material": "Ст",
+    "note": null,
+    "part": "525-112-3a"
    }
   ]
  },
@@ -2778,9 +3942,12 @@
    "-005",
    "-015"
   ],
-  "footnotes": {},
-  "verified": false,
-  "verifiedNote": null,
+  "footnotes": {
+   "1": "Шестерня ведомая заднего хода для реверс-редуктора с передаточным отношением на задний ход 1:2,18.",
+   "2": "Шестерня ведомая переднего хода для реверс-редуктора с передаточным отношением на передний ход 1:2,04.",
+   "3": "Шестерня ведомая переднего хода для реверс-редуктора с передаточным отношением на передний ход 1:2,95.",
+   "4": "Шестерня ведомая заднего хода для реверс-редуктора с передаточным отношением на задний ход 1:2,61."
+  },
   "catalogPages": null,
   "drawing": {
    "t": {
@@ -2810,54 +3977,214 @@
   },
   "rows": [
    {
+    "pos": 1,
+    "designation": "525-534",
+    "name": "Шестерня",
+    "qty": [
+     1,
+     1,
+     1,
+     1,
+     null,
+     null,
+     1,
+     1,
+     1,
+     1
+    ],
+    "mass": "16,0",
+    "material": "Ст",
+    "note": "1",
+    "part": "525-534"
+   },
+   {
     "pos": 2,
-    "designation": "БЧ 525-12-113",
-    "name": "Подшипник 1000918К ГОСТ8338-75 Кольцо стопорное",
-    "qty": null,
-    "mass": null,
+    "designation": "БЧ",
+    "name": "Подшипник 1000918К ГОСТ 8338-75",
+    "qty": [
+     2,
+     2,
+     2,
+     2,
+     2,
+     2,
+     2,
+     2,
+     2,
+     2
+    ],
+    "mass": "0,7",
+    "material": null,
     "note": null,
-    "check": false,
-    "part": "bch525-12-113"
+    "part": null
+   },
+   {
+    "pos": 3,
+    "designation": "525-12-113",
+    "name": "Кольцо стопорное",
+    "qty": [
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1
+    ],
+    "mass": "0,055",
+    "material": "Ст",
+    "note": null,
+    "part": "525-12-113"
    },
    {
     "pos": 4,
-    "designation": "525-12-111 525-12-112",
-    "name": "Шестерня Кольцо установочное",
-    "qty": null,
-    "mass": null,
+    "designation": "525-12-111",
+    "name": "Шестерня",
+    "qty": [
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1
+    ],
+    "mass": "2,4",
+    "material": "Ст",
     "note": null,
-    "check": true,
+    "part": "525-12-111"
+   },
+   {
+    "pos": 5,
+    "designation": "525-12-112",
+    "name": "Кольцо установочное",
+    "qty": [
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1
+    ],
+    "mass": "0,04",
+    "material": "Ст",
+    "note": null,
     "part": null
+   },
+   {
+    "pos": 6,
+    "designation": "525-565",
+    "name": "Втулка распорная",
+    "qty": [
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1
+    ],
+    "mass": "5,0",
+    "material": "Ст",
+    "note": null,
+    "part": "525-565"
    },
    {
     "pos": 7,
-    "designation": "525-5317 525-560",
-    "name": "Шестерня Вал ведомый",
-    "qty": null,
-    "mass": null,
+    "designation": "525-531",
+    "name": "Шестерня",
+    "qty": [
+     1,
+     null,
+     1,
+     null,
+     null,
+     null,
+     1,
+     null,
+     1,
+     null
+    ],
+    "mass": "16,6",
+    "material": "Ст",
+    "note": "2",
+    "part": "525-531"
+   },
+   {
+    "pos": 8,
+    "designation": "525-560",
+    "name": "Вал ведомый",
+    "qty": [
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1
+    ],
+    "mass": "27,5",
+    "material": "Ст",
     "note": null,
-    "check": true,
-    "part": null
+    "part": "525-560"
    },
    {
     "pos": 9,
-    "designation": "525-531-013",
+    "designation": "525-531-01",
     "name": "Шестерня",
-    "qty": null,
-    "mass": null,
-    "note": null,
-    "check": false,
-    "part": "525-531-013"
+    "qty": [
+     null,
+     1,
+     null,
+     1,
+     1,
+     1,
+     null,
+     1,
+     null,
+     1
+    ],
+    "mass": "16,9",
+    "material": "Ст",
+    "note": "3",
+    "part": "525-531-01"
    },
    {
     "pos": 10,
-    "designation": "525-534-01+",
+    "designation": "525-534-01",
     "name": "Шестерня",
-    "qty": null,
-    "mass": null,
-    "note": null,
-    "check": true,
-    "part": null
+    "qty": [
+     null,
+     null,
+     null,
+     null,
+     1,
+     1,
+     null,
+     null,
+     null,
+     null
+    ],
+    "mass": "12,4",
+    "material": "Ст",
+    "note": "4",
+    "part": "525-534-01"
    }
   ]
  },
@@ -2879,9 +4206,10 @@
    "-005",
    "-015"
   ],
-  "footnotes": {},
-  "verified": false,
-  "verifiedNote": null,
+  "footnotes": {
+   "1": "Шестерня для реверс-редуктора с передаточным отношением на задний ход 1:2,18.",
+   "2": "Шестерня для реверс-редуктора с передаточным отношением на задний ход 1:2,61."
+  },
   "catalogPages": null,
   "drawing": {
    "t": {
@@ -2911,64 +4239,235 @@
   },
   "rows": [
    {
-    "pos": 2,
-    "designation": "556-14 525-551",
-    "name": "Болт М10x30 Іайба",
-    "qty": null,
-    "mass": null,
+    "pos": 1,
+    "designation": "354-22-05",
+    "name": "Проволока стопорная, L=150 мм",
+    "qty": [
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1
+    ],
+    "mass": "0,0083",
+    "material": "Ст",
     "note": null,
-    "check": true,
+    "part": "354-22-05"
+   },
+   {
+    "pos": 2,
+    "designation": "556-14",
+    "name": "Болт М10х30",
+    "qty": [
+     2,
+     2,
+     2,
+     2,
+     2,
+     2,
+     2,
+     2,
+     2,
+     2
+    ],
+    "mass": "0,0307",
+    "material": "Ст",
+    "note": null,
     "part": null
+   },
+   {
+    "pos": 3,
+    "designation": "525-551",
+    "name": "Шайба",
+    "qty": [
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1
+    ],
+    "mass": "0,085",
+    "material": "Ст",
+    "note": null,
+    "part": "525-551"
    },
    {
     "pos": 4,
-    "designation": "525-552 БЧ",
-    "name": "Кольцо упорное Подшипник 3611 ГОСТ5721-75",
-    "qty": null,
-    "mass": null,
+    "designation": "525-552",
+    "name": "Кольцо упорное",
+    "qty": [
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1
+    ],
+    "mass": "0,105",
+    "material": "Ст",
     "note": null,
-    "check": false,
-    "part": "525-552bch"
+    "part": "525-552"
+   },
+   {
+    "pos": 5,
+    "designation": "БЧ",
+    "name": "Подшипник 3611 ГОСТ 5721-75",
+    "qty": [
+     2,
+     2,
+     2,
+     2,
+     2,
+     2,
+     2,
+     2,
+     2,
+     2
+    ],
+    "mass": "2,8",
+    "material": null,
+    "note": null,
+    "part": null
+   },
+   {
+    "pos": 6,
+    "designation": "525-554",
+    "name": "Кольцо стопорное",
+    "qty": [
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1
+    ],
+    "mass": "0,05",
+    "material": "Ст",
+    "note": null,
+    "part": "525-554"
    },
    {
     "pos": 7,
-    "designation": "525-5331 525-553",
-    "name": "Шестерня Кольцо установочное",
-    "qty": null,
-    "mass": null,
+    "designation": "525-533",
+    "name": "Шестерня",
+    "qty": [
+     1,
+     1,
+     1,
+     1,
+     null,
+     null,
+     1,
+     1,
+     1,
+     1
+    ],
+    "mass": "4,1",
+    "material": "Ст",
+    "note": "1",
+    "part": "525-533"
+   },
+   {
+    "pos": 8,
+    "designation": "525-553",
+    "name": "Кольцо установочное",
+    "qty": [
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1
+    ],
+    "mass": "0,04",
+    "material": "Ст",
     "note": null,
-    "check": true,
-    "part": null
+    "part": "525-553"
    },
    {
     "pos": 9,
-    "designation": "308-9îęšŚę",
+    "designation": "308-99",
     "name": "Кольцо",
-    "qty": null,
-    "mass": null,
+    "qty": [
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1
+    ],
+    "mass": "0,0034",
+    "material": "Рез",
     "note": null,
-    "check": true,
-    "part": null
+    "part": "308-99"
    },
    {
     "pos": 10,
     "designation": "525-550",
     "name": "Ось",
-    "qty": null,
-    "mass": null,
+    "qty": [
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1
+    ],
+    "mass": "2,14",
+    "material": "Ст",
     "note": null,
-    "check": false,
     "part": "525-550"
    },
    {
     "pos": 11,
-    "designation": "525-533-012",
+    "designation": "525-533-01",
     "name": "Шестерня",
-    "qty": null,
-    "mass": null,
-    "note": null,
-    "check": false,
-    "part": "525-533-012"
+    "qty": [
+     null,
+     null,
+     null,
+     null,
+     1,
+     1,
+     null,
+     null,
+     null,
+     null
+    ],
+    "mass": "7,9",
+    "material": "Ст",
+    "note": "2",
+    "part": "525-533-01"
    }
   ]
  },
@@ -2987,11 +4486,10 @@
    "-041",
    "-004",
    "-014",
+   "-005",
    "-015"
   ],
   "footnotes": {},
-  "verified": false,
-  "verifiedNote": null,
   "catalogPages": null,
   "drawing": {
    "t": {
@@ -3021,24 +4519,109 @@
   },
   "rows": [
    {
-    "pos": 2,
-    "designation": "353-05-1",
-    "name": "Шайба 8T65Г06 ГОСТ6402-70 Шайба чистая 8",
-    "qty": null,
-    "mass": null,
+    "pos": 1,
+    "designation": "351-02",
+    "name": "Гайка М8",
+    "qty": [
+     8,
+     8,
+     null,
+     null,
+     8,
+     null,
+     8,
+     8,
+     null,
+     null
+    ],
+    "mass": "0,0055",
+    "material": "Ст",
     "note": null,
-    "check": false,
+    "part": "351-02"
+   },
+   {
+    "pos": 2,
+    "designation": "353-24",
+    "name": "Шайба 8Т65Г06 ГОСТ 6402-70",
+    "qty": [
+     8,
+     8,
+     null,
+     null,
+     8,
+     null,
+     8,
+     8,
+     null,
+     null
+    ],
+    "mass": "0,0002",
+    "material": "Ст",
+    "note": null,
+    "part": "353-24"
+   },
+   {
+    "pos": 3,
+    "designation": "353-05-1",
+    "name": "Шайба чистая 8",
+    "qty": [
+     8,
+     8,
+     null,
+     null,
+     8,
+     null,
+     8,
+     8,
+     null,
+     null
+    ],
+    "mass": "0,0015",
+    "material": "Ст",
+    "note": null,
     "part": "353-05-1"
    },
    {
     "pos": 4,
     "designation": "СБ525-415-1",
     "name": "Крышка",
-    "qty": null,
-    "mass": null,
+    "qty": [
+     1,
+     1,
+     null,
+     null,
+     1,
+     null,
+     1,
+     1,
+     null,
+     null
+    ],
+    "mass": "1,6",
+    "material": null,
     "note": null,
-    "check": false,
     "part": "sb525-415-1"
+   },
+   {
+    "pos": 5,
+    "designation": "СБ525-12-104",
+    "name": "Насос масляный",
+    "qty": [
+     1,
+     1,
+     null,
+     null,
+     1,
+     null,
+     1,
+     1,
+     null,
+     null
+    ],
+    "mass": "4,1",
+    "material": null,
+    "note": null,
+    "part": "sb525-12-104"
    }
   ]
  },
@@ -3061,8 +4644,6 @@
    "-015"
   ],
   "footnotes": {},
-  "verified": false,
-  "verifiedNote": null,
   "catalogPages": null,
   "drawing": {
    "t": {
@@ -3092,33 +4673,108 @@
   },
   "rows": [
    {
-    "pos": 2,
-    "designation": "353-24 353-05-1",
-    "name": "Шайба 8T65Г06 ГОСТ6402-70 Шайба чистая 8",
-    "qty": null,
-    "mass": null,
+    "pos": 1,
+    "designation": "351-02",
+    "name": "Гайка М8",
+    "qty": [
+     null,
+     null,
+     8,
+     8,
+     null,
+     8,
+     null,
+     null,
+     8,
+     8
+    ],
+    "mass": "0,0055",
+    "material": "Ст",
     "note": null,
-    "check": true,
-    "part": null
+    "part": "351-02"
+   },
+   {
+    "pos": 2,
+    "designation": "353-24",
+    "name": "Шайба 8Т65Г06 ГОСТ 6402-70",
+    "qty": [
+     null,
+     null,
+     8,
+     8,
+     null,
+     8,
+     null,
+     null,
+     8,
+     8
+    ],
+    "mass": "0,0002",
+    "material": "Ст",
+    "note": null,
+    "part": "353-24"
+   },
+   {
+    "pos": 3,
+    "designation": "353-05-1",
+    "name": "Шайба чистая 8",
+    "qty": [
+     null,
+     null,
+     8,
+     8,
+     null,
+     8,
+     null,
+     null,
+     8,
+     8
+    ],
+    "mass": "0,0015",
+    "material": "Ст",
+    "note": null,
+    "part": "353-05-1"
    },
    {
     "pos": 4,
     "designation": "СБ525-12-104-01",
     "name": "Насос масляный",
-    "qty": null,
-    "mass": null,
+    "qty": [
+     null,
+     null,
+     1,
+     1,
+     null,
+     1,
+     null,
+     null,
+     1,
+     1
+    ],
+    "mass": "4,1",
+    "material": null,
     "note": null,
-    "check": false,
     "part": "sb525-12-104-01"
    },
    {
     "pos": 5,
     "designation": "СБ525-415-1",
     "name": "Крышка",
-    "qty": null,
-    "mass": null,
+    "qty": [
+     null,
+     null,
+     1,
+     1,
+     null,
+     1,
+     null,
+     null,
+     1,
+     1
+    ],
+    "mass": "1,6",
+    "material": null,
     "note": null,
-    "check": false,
     "part": "sb525-415-1"
    }
   ]
@@ -3136,8 +4792,6 @@
   "footnotes": {
    "1": "Корпус и крышка масляного насоса обрабатываются, применяются и поставляются совместно в узле СБ525-12-105."
   },
-  "verified": true,
-  "verifiedNote": "2026-10-27, визуальная сверка со сканом",
   "catalogPages": [
    56,
    57
@@ -3178,8 +4832,8 @@
      1
     ],
     "mass": "0,022",
+    "material": "Ст",
     "note": null,
-    "check": false,
     "part": "351-22-1"
    },
    {
@@ -3191,8 +4845,8 @@
      1
     ],
     "mass": "0,016",
+    "material": "Ст",
     "note": null,
-    "check": false,
     "part": "302-50"
    },
    {
@@ -3204,8 +4858,8 @@
      1
     ],
     "mass": "0,494",
+    "material": "Ст",
     "note": null,
-    "check": false,
     "part": "525-12-114"
    },
    {
@@ -3217,8 +4871,8 @@
      1
     ],
     "mass": "0,422",
+    "material": "Ст",
     "note": null,
-    "check": false,
     "part": "525-12-117"
    },
    {
@@ -3230,8 +4884,8 @@
      1
     ],
     "mass": "0,001",
+    "material": "Ст",
     "note": null,
-    "check": false,
     "part": "315-64"
    },
    {
@@ -3243,8 +4897,8 @@
      1
     ],
     "mass": "0,265",
+    "material": "Ст",
     "note": null,
-    "check": false,
     "part": "525-12-118"
    },
    {
@@ -3256,8 +4910,8 @@
      1
     ],
     "mass": "0,0032",
+    "material": "Рез",
     "note": null,
-    "check": false,
     "part": "525-466"
    },
    {
@@ -3269,8 +4923,8 @@
      1
     ],
     "mass": "2,8",
+    "material": null,
     "note": "1",
-    "check": false,
     "part": "sb525-12-105"
    },
    {
@@ -3282,8 +4936,8 @@
      2
     ],
     "mass": "0,0019",
+    "material": "Ст",
     "note": null,
-    "check": false,
     "part": "353-16-1"
    },
    {
@@ -3295,8 +4949,8 @@
      2
     ],
     "mass": "0,0055",
+    "material": "Ст",
     "note": null,
-    "check": false,
     "part": "351-02"
    },
    {
@@ -3308,8 +4962,8 @@
      1
     ],
     "mass": "0,008",
+    "material": "Ст",
     "note": null,
-    "check": false,
     "part": "525-12-122-1"
    },
    {
@@ -3321,8 +4975,8 @@
      1
     ],
     "mass": "0,045",
+    "material": "Ст",
     "note": null,
-    "check": false,
     "part": "525-12-119-1"
    },
    {
@@ -3334,8 +4988,8 @@
      3
     ],
     "mass": "0,003",
+    "material": "Лат",
     "note": null,
-    "check": false,
     "part": "584-78-80"
    },
    {
@@ -3347,8 +5001,8 @@
      1
     ],
     "mass": "0,0037",
+    "material": "Ст",
     "note": null,
-    "check": false,
     "part": "354-18"
    }
   ]
@@ -3363,8 +5017,6 @@
    "-"
   ],
   "footnotes": {},
-  "verified": false,
-  "verifiedNote": null,
   "catalogPages": null,
   "drawing": {
    "t": {
@@ -3394,34 +5046,100 @@
   },
   "rows": [
    {
-    "pos": 2,
-    "designation": "537-87 413-94A",
-    "name": "Штуцер приемника аэротермометра Прокладка",
-    "qty": null,
-    "mass": null,
+    "pos": 1,
+    "designation": "3327-116",
+    "name": "Гайка",
+    "qty": [
+     2
+    ],
+    "mass": "0,035",
+    "material": "Ст",
     "note": null,
-    "check": true,
-    "part": null
+    "part": "3327-116"
+   },
+   {
+    "pos": 2,
+    "designation": "537-87",
+    "name": "Штуцер приемника аэротермометра",
+    "qty": [
+     2
+    ],
+    "mass": "0,11",
+    "material": "Ст",
+    "note": null,
+    "part": "537-87"
+   },
+   {
+    "pos": 3,
+    "designation": "413-94А",
+    "name": "Прокладка",
+    "qty": [
+     2
+    ],
+    "mass": "0,003",
+    "material": "М",
+    "note": null,
+    "part": "413-94a"
    },
    {
     "pos": 4,
-    "designation": "525-463-1 525-466",
-    "name": "Крышка Кольцо",
-    "qty": null,
-    "mass": null,
+    "designation": "525-463-1",
+    "name": "Крышка",
+    "qty": [
+     1
+    ],
+    "mass": "1,2",
+    "material": "Ал",
     "note": null,
-    "check": true,
-    "part": null
+    "part": "525-463-1"
+   },
+   {
+    "pos": 5,
+    "designation": "525-466",
+    "name": "Кольцо",
+    "qty": [
+     1
+    ],
+    "mass": "0,0032",
+    "material": "Рез",
+    "note": null,
+    "part": "525-466"
+   },
+   {
+    "pos": 6,
+    "designation": "354-22-07",
+    "name": "Проволока стопорная, L=260 мм",
+    "qty": [
+     1
+    ],
+    "mass": "0,0143",
+    "material": "Ст",
+    "note": null,
+    "part": "354-22-07"
    },
    {
     "pos": 7,
     "designation": "556-13",
-    "name": "Болт М8x12",
-    "qty": null,
-    "mass": null,
+    "name": "Болт М8х12",
+    "qty": [
+     2
+    ],
+    "mass": "0,0104",
+    "material": "Ст",
     "note": null,
-    "check": false,
     "part": "556-13"
+   },
+   {
+    "pos": 8,
+    "designation": "525-464",
+    "name": "Щиток",
+    "qty": [
+     1
+    ],
+    "mass": "0,22",
+    "material": "Ст",
+    "note": null,
+    "part": "525-464"
    }
   ]
  },
@@ -3444,8 +5162,6 @@
    "-015"
   ],
   "footnotes": {},
-  "verified": false,
-  "verifiedNote": null,
   "catalogPages": null,
   "drawing": {
    "t": {
@@ -3473,7 +5189,134 @@
    },
    "source": "каталог РР-300 (скан владельца)"
   },
-  "rows": []
+  "rows": [
+   {
+    "pos": 1,
+    "designation": "351-50",
+    "name": "Гайка М10",
+    "qty": [
+     8,
+     8,
+     8,
+     8,
+     8,
+     8,
+     8,
+     8,
+     8,
+     8
+    ],
+    "mass": "0,012",
+    "material": "Ст",
+    "note": null,
+    "part": null
+   },
+   {
+    "pos": 2,
+    "designation": "353-26",
+    "name": "Шайба 10Т65Г05 ГОСТ 6402-70",
+    "qty": [
+     8,
+     8,
+     8,
+     8,
+     8,
+     8,
+     8,
+     8,
+     8,
+     8
+    ],
+    "mass": "0,0003",
+    "material": "Ст",
+    "note": null,
+    "part": "353-26"
+   },
+   {
+    "pos": 3,
+    "designation": "353-07-1",
+    "name": "Шайба чистая 10",
+    "qty": [
+     8,
+     8,
+     8,
+     8,
+     8,
+     8,
+     8,
+     8,
+     8,
+     8
+    ],
+    "mass": "0,002",
+    "material": "Ст",
+    "note": null,
+    "part": "353-07-1"
+   },
+   {
+    "pos": 4,
+    "designation": "СБ525-75-102",
+    "name": "Крышка",
+    "qty": [
+     2,
+     2,
+     2,
+     2,
+     2,
+     2,
+     2,
+     2,
+     2,
+     2
+    ],
+    "mass": "2,123",
+    "material": null,
+    "note": null,
+    "part": "sb525-75-102"
+   },
+   {
+    "pos": 5,
+    "designation": "20-13-28",
+    "name": "Кольцо",
+    "qty": [
+     4,
+     4,
+     4,
+     4,
+     4,
+     4,
+     4,
+     4,
+     4,
+     4
+    ],
+    "mass": "0,004",
+    "material": "Рез",
+    "note": null,
+    "part": "20-13-28"
+   },
+   {
+    "pos": 6,
+    "designation": "525-75-108",
+    "name": "Корпус охладителя",
+    "qty": [
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1
+    ],
+    "mass": "8,6",
+    "material": "Лат",
+    "note": null,
+    "part": "525-75-108"
+   }
+  ]
  },
  {
   "id": "rr300-fig23",
@@ -3494,8 +5337,6 @@
    "-015"
   ],
   "footnotes": {},
-  "verified": false,
-  "verifiedNote": null,
   "catalogPages": null,
   "drawing": {
    "t": {
@@ -3525,24 +5366,130 @@
   },
   "rows": [
    {
-    "pos": 2,
-    "designation": "525-466 СБ525-13-100-1",
-    "name": "Кольцо",
-    "qty": null,
-    "mass": null,
+    "pos": 1,
+    "designation": "525-13-114",
+    "name": "Стакан",
+    "qty": [
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1
+    ],
+    "mass": "0,81",
+    "material": "Ал",
     "note": null,
-    "check": true,
-    "part": null
+    "part": "525-13-114"
+   },
+   {
+    "pos": 2,
+    "designation": "525-466",
+    "name": "Кольцо",
+    "qty": [
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1
+    ],
+    "mass": "0,0032",
+    "material": "Рез",
+    "note": null,
+    "part": "525-466"
+   },
+   {
+    "pos": 3,
+    "designation": "СБ525-13-100-1",
+    "name": "Фильтр масляный",
+    "qty": [
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1
+    ],
+    "mass": "1,964",
+    "material": null,
+    "note": null,
+    "part": "sb525-13-100-1"
    },
    {
     "pos": 4,
     "designation": "353-07-1",
     "name": "Шайба чистая 10",
-    "qty": null,
-    "mass": null,
+    "qty": [
+     4,
+     4,
+     4,
+     4,
+     4,
+     4,
+     4,
+     4,
+     4,
+     4
+    ],
+    "mass": "0,002",
+    "material": "Ст",
     "note": null,
-    "check": false,
     "part": "353-07-1"
+   },
+   {
+    "pos": 5,
+    "designation": "353-26",
+    "name": "Шайба 10Т65Г05 ГОСТ 6402-70",
+    "qty": [
+     4,
+     4,
+     4,
+     4,
+     4,
+     4,
+     4,
+     4,
+     4,
+     4
+    ],
+    "mass": "0,0003",
+    "material": "Ст",
+    "note": null,
+    "part": "353-26"
+   },
+   {
+    "pos": 6,
+    "designation": "351-50",
+    "name": "Гайка М10",
+    "qty": [
+     4,
+     4,
+     4,
+     4,
+     4,
+     4,
+     4,
+     4,
+     4,
+     4
+    ],
+    "mass": "0,012",
+    "material": "Ст",
+    "note": null,
+    "part": null
    }
   ]
  },
@@ -3556,8 +5503,6 @@
    "-"
   ],
   "footnotes": {},
-  "verified": true,
-  "verifiedNote": "2026-10-27, визуальная сверка со сканом",
   "catalogPages": [
    64,
    65
@@ -3597,8 +5542,8 @@
      1
     ],
     "mass": "0,0024",
+    "material": "Ст",
     "note": null,
-    "check": false,
     "part": "515-18"
    },
    {
@@ -3609,8 +5554,8 @@
      1
     ],
     "mass": "0,0114",
+    "material": "Ст",
     "note": null,
-    "check": false,
     "part": "525-13-113"
    },
    {
@@ -3621,8 +5566,8 @@
      1
     ],
     "mass": "0,042",
+    "material": "Бр",
     "note": null,
-    "check": false,
     "part": "584-66-80"
    },
    {
@@ -3633,8 +5578,8 @@
      1
     ],
     "mass": "0,617",
+    "material": null,
     "note": null,
-    "check": false,
     "part": "sb525-13-101-1"
    },
    {
@@ -3645,8 +5590,8 @@
      1
     ],
     "mass": "0,0032",
+    "material": "Рез",
     "note": null,
-    "check": false,
     "part": "525-466"
    },
    {
@@ -3657,8 +5602,8 @@
      1
     ],
     "mass": "0,912",
+    "material": "Ал",
     "note": null,
-    "check": false,
     "part": "525-13-110"
    },
    {
@@ -3669,8 +5614,8 @@
      1
     ],
     "mass": "0,0095",
+    "material": "Ал",
     "note": null,
-    "check": false,
     "part": "20-55-13b"
    },
    {
@@ -3681,8 +5626,8 @@
      1
     ],
     "mass": "0,42",
+    "material": "Ст",
     "note": null,
-    "check": false,
     "part": "525-13-111"
    }
   ]
@@ -3706,8 +5651,6 @@
    "-015"
   ],
   "footnotes": {},
-  "verified": false,
-  "verifiedNote": null,
   "catalogPages": null,
   "drawing": {
    "t": {
@@ -3737,44 +5680,172 @@
   },
   "rows": [
    {
-    "pos": 2,
-    "designation": "525-20-117 355-08",
-    "name": "Штуцер Кольцо 18x24 МН4152-62",
-    "qty": null,
-    "mass": null,
+    "pos": 1,
+    "designation": "329-21",
+    "name": "Гайка",
+    "qty": [
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1
+    ],
+    "mass": "0,03",
+    "material": "Ст",
     "note": null,
-    "check": true,
-    "part": null
+    "part": "329-21"
+   },
+   {
+    "pos": 2,
+    "designation": "525-20-117",
+    "name": "Штуцер",
+    "qty": [
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1
+    ],
+    "mass": "0,08",
+    "material": "Ст",
+    "note": null,
+    "part": "525-20-117"
+   },
+   {
+    "pos": 3,
+    "designation": "355-08",
+    "name": "Кольцо 18х24 МН 4152-62",
+    "qty": [
+     12,
+     12,
+     12,
+     12,
+     12,
+     12,
+     12,
+     12,
+     12,
+     12
+    ],
+    "mass": "0,0014",
+    "material": null,
+    "note": null,
+    "part": "355-08"
    },
    {
     "pos": 4,
-    "designation": "С5525-20-103 3327-112",
-    "name": "Труба Зажим",
-    "qty": null,
-    "mass": null,
+    "designation": "СБ525-20-103",
+    "name": "Труба",
+    "qty": [
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1
+    ],
+    "mass": "0,145",
+    "material": null,
     "note": null,
-    "check": true,
-    "part": null
+    "part": "sb525-20-103"
+   },
+   {
+    "pos": 5,
+    "designation": "3327-112",
+    "name": "Зажим",
+    "qty": [
+     5,
+     5,
+     5,
+     5,
+     5,
+     5,
+     5,
+     5,
+     5,
+     5
+    ],
+    "mass": "0,05",
+    "material": "Ст",
+    "note": null,
+    "part": "3327-112"
    },
    {
     "pos": 6,
     "designation": "СБ525-20-102",
     "name": "Труба",
-    "qty": null,
-    "mass": null,
+    "qty": [
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1
+    ],
+    "mass": "0,135",
+    "material": null,
     "note": null,
-    "check": false,
     "part": "sb525-20-102"
    },
    {
     "pos": 7,
     "designation": "354-22-07",
     "name": "Проволока стопорная, L=260 мм",
-    "qty": null,
-    "mass": null,
+    "qty": [
+     2,
+     2,
+     2,
+     2,
+     2,
+     2,
+     2,
+     2,
+     2,
+     2
+    ],
+    "mass": "0,0143",
+    "material": "Ст",
     "note": null,
-    "check": false,
     "part": "354-22-07"
+   },
+   {
+    "pos": 8,
+    "designation": "СБ525-20-101",
+    "name": "Труба",
+    "qty": [
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1
+    ],
+    "mass": "0,12",
+    "material": null,
+    "note": null,
+    "part": "sb525-20-101"
    }
   ]
  },
@@ -3797,8 +5868,6 @@
    "-015"
   ],
   "footnotes": {},
-  "verified": false,
-  "verifiedNote": null,
   "catalogPages": null,
   "drawing": {
    "t": {
@@ -3828,33 +5897,108 @@
   },
   "rows": [
    {
-    "pos": 2,
-    "designation": "СБ525-20-100 20-55-10Б",
-    "name": "Корпус клапана Кольцо уплотнительное",
-    "qty": null,
-    "mass": null,
+    "pos": 1,
+    "designation": "354-22-06",
+    "name": "Проволока стопорная, L=200 мм",
+    "qty": [
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1
+    ],
+    "mass": "0,011",
+    "material": "Ст",
     "note": null,
-    "check": true,
-    "part": null
+    "part": "354-22-06"
+   },
+   {
+    "pos": 2,
+    "designation": "СБ525-20-100",
+    "name": "Корпус клапана",
+    "qty": [
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1
+    ],
+    "mass": "0,125",
+    "material": null,
+    "note": null,
+    "part": "sb525-20-100"
+   },
+   {
+    "pos": 3,
+    "designation": "20-55-10Б",
+    "name": "Кольцо уплотнительное",
+    "qty": [
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1
+    ],
+    "mass": "0,01",
+    "material": "Ал",
+    "note": null,
+    "part": "20-55-10b"
    },
    {
     "pos": 4,
     "designation": "312-12-4",
     "name": "Пружина клапана редукционного",
-    "qty": null,
-    "mass": null,
+    "qty": [
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1
+    ],
+    "mass": "0,03",
+    "material": "Ст",
     "note": null,
-    "check": false,
     "part": "312-12-4"
    },
    {
     "pos": 5,
     "designation": "525-20-112",
     "name": "Плунжер",
-    "qty": null,
-    "mass": null,
+    "qty": [
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1
+    ],
+    "mass": "0,043",
+    "material": "Ст",
     "note": null,
-    "check": false,
     "part": "525-20-112"
    }
   ]
