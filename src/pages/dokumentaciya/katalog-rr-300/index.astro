@@ -1,0 +1,19 @@
+---
+import Base from "../../../layouts/Base.astro";
+import { scans } from "../../../lib/data";
+import { url } from "../../../lib/site";
+---
+<Base title="Каталог деталей и сборочных единиц РР-300: сканы" section="dokumentaciya/"
+  crumbs={[["dokumentaciya/", "Документация"], ["dokumentaciya/katalog-rr-300/", "Каталог РР-300"]]}
+  description={`Сканы каталога деталей и сборочных единиц реверс-редуктора РР-300 (СБ525-01-13): ${scans.length} страниц, рисунки узлов и спецификации.`}>
+  <h1>Каталог деталей и сборочных единиц РР-300</h1>
+  <p class="lead">{scans.length} страниц. Нажмите на страницу, чтобы открыть её в полном размере. Таблицы рисунков 1–26 разобраны на страницах <a href={url("katalog/rr-300/uzly/")}>узлов РР-300</a>.</p>
+  <ul class="scan-grid">
+    {scans.map((s) => (
+      <li><a href={url(s.f.src)} data-zoom>
+        <img src={url(s.t.src)} width={s.t.w} height={s.t.h} alt={`Каталог РР-300, страница ${s.n}: ${s.title}`} loading="lazy" />
+        <span>{s.n}. {s.title}</span>
+      </a></li>
+    ))}
+  </ul>
+</Base>

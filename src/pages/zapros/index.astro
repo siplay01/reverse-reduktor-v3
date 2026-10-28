@@ -1,0 +1,54 @@
+---
+import Base from "../../layouts/Base.astro";
+import { COMPANY, url } from "../../lib/site";
+---
+<Base title="Список запроса: запрос коммерческого предложения" section="zapros/" crumbs={[["zapros/", "Список запроса"]]}
+  description="Выбранные запчасти и реверс-редукторы: количество, контактные данные и готовое письмо с перечнем для запроса коммерческого предложения.">
+  <div data-rfq-page data-email={COMPANY.email}>
+    <h1 tabindex="-1">Список запроса</h1>
+    <p class="lead">Укажите количество и контакты: сайт подготовит письмо с перечнем позиций. Сайт ничего не отправляет сам, письмо уходит из вашей почтовой программы.</p>
+    <div class="rfq">
+      <div>
+        <div data-empty-list class="empty">
+          <p><b>Список пуст.</b></p>
+          <p>Добавьте детали кнопкой «В запрос» в <a href={url("katalog/")}>каталоге</a>, или опишите, что нужно, в поле «Комментарий»: письмо можно отправить и без списка.</p>
+          <p><a class="btn" href={url("katalog/")}>Перейти в каталог</a></p>
+        </div>
+        <div data-has-list hidden>
+          <ul class="rfq-rows" data-rows aria-label="Позиции запроса"></ul>
+          <div class="cat-bar"><p class="count" data-total></p><div class="btns"><a class="btn ghost sm" href={url("katalog/")}>Добавить ещё</a><button type="button" class="btn ghost sm" data-clear>Очистить список</button></div></div>
+        </div>
+        <template id="rfq-row">
+          <li class="rfq-row">
+            <span class="th"><span class="noph" aria-hidden="true">Нет фото</span></span>
+            <span class="rfq-info"><span class="sku" data-d></span><br><a data-link href="#"></a></span>
+            <span class="ctl">
+              <label class="sr" for="q-x">Количество</label>
+              <span class="qty"><button type="button" data-step="-1" aria-label="Уменьшить">−</button><input id="q-x" type="number" inputmode="numeric" min="1" max="9999" value="1"><button type="button" data-step="1" aria-label="Увеличить">+</button></span>
+              <span class="muted small">шт.</span>
+              <button type="button" class="btn ghost sm" data-del>Удалить</button>
+            </span>
+          </li>
+        </template>
+      </div>
+      <form class="rfq-form" novalidate onsubmit="return false" aria-labelledby="h-form">
+        <h2 id="h-form" class="h3">Контакты для ответа</h2>
+        <p class="hint">Нужно указать телефон или e-mail. Остальные поля по желанию.</p>
+        <div class="pair">
+          <div class="field"><label for="f-name">Имя</label><input id="f-name" name="name" type="text" autocomplete="name"></div>
+          <div class="field"><label for="f-org">Организация</label><input id="f-org" name="org" type="text" autocomplete="organization"></div>
+        </div>
+        <div class="pair">
+          <div class="field"><label for="f-tel">Телефон</label><input id="f-tel" name="tel" type="tel" autocomplete="tel" inputmode="tel" placeholder="+7 900 000-00-00" aria-describedby="f-err"></div>
+          <div class="field"><label for="f-email">E-mail</label><input id="f-email" name="email" type="email" autocomplete="email" placeholder="name@company.ru" aria-describedby="f-err"></div>
+        </div>
+        <p class="hint" id="f-err" data-err hidden role="alert" style="color:var(--danger);font-weight:500"></p>
+        <div class="field"><label for="f-note">Комментарий</label><textarea id="f-note" name="note" placeholder="Исполнение, судно, сроки или обозначения деталей, которых нет в каталоге"></textarea></div>
+        <details><summary>Текст письма</summary><pre class="rfq-preview" data-preview></pre></details>
+        <div class="btns"><a class="btn" data-mail href={`mailto:${COMPANY.email}`}>Открыть письмо с запросом</a><button type="button" class="btn ghost" data-copy>Скопировать текст</button></div>
+        <p class="small" data-status aria-live="polite"></p>
+        <p class="hint">Письмо уйдёт на {COMPANY.email}. Данные формы остаются только в вашем браузере.</p>
+      </form>
+    </div>
+  </div>
+</Base>

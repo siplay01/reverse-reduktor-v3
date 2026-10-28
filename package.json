@@ -1,0 +1,24 @@
+{
+  "name": "reverse-reduktor-v3",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "check": "astro check",
+    "prepare-data": "python3 -I scripts/prepare.py",
+    "test": "node qa/links.mjs && node qa/contrast.mjs && playwright test"
+  },
+  "dependencies": {
+    "@astrojs/sitemap": "^3.7.4",
+    "@fontsource/ibm-plex-mono": "^5.3.0",
+    "@fontsource/ibm-plex-sans": "^5.3.0",
+    "astro": "^5.18.2"
+  },
+  "devDependencies": {
+    "@astrojs/check": "^0.9.12",
+    "@playwright/test": "^1.64.1",
+    "typescript": "^5.9.3"
+  }
+}

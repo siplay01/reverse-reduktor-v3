@@ -1,0 +1,124 @@
+---
+import Base from "../layouts/Base.astro";
+import PartCard from "../components/PartCard.astro";
+import { parts, partsOf, modelsInOrder, assemblies, sitePhotos } from "../lib/data";
+import { COMPANY, url } from "../lib/site";
+
+const hero = sitePhotos["hero-rr300-pair"];
+const withPhoto = parts.filter((p) => p.photos.length).length;
+// Featured: parts that have a full-size photo, spread over the models.
+const pick = (m: string, n: number) => partsOf(m).filter((p) => p.photos.length && p.photos[0].f.w >= 1000).slice(0, n);
+const featured = [...pick("rr300", 4), ...pick("3d6", 3), ...pick("3d12", 3)];
+const org = {
+  "@context": "https://schema.org", "@type": "Organization", name: COMPANY.operator, telephone: COMPANY.phone, email: COMPANY.email,
+  taxID: COMPANY.inn, address: { "@type": "PostalAddress", addressLocality: "Барнаул", addressRegion: "Алтайский край", streetAddress: "пос. Южный, ул. Зоотехническая, 24ж", addressCountry: "RU" },
+};
+---
+<Base title="Судовые реверс-редукторы РР-300, РР-238, 3Д6, 3Д12 и запчасти к ним" wide
+  description="Каталог запчастей к судовым реверс-редукторам РР-300, РР-238, 3Д6, 3Д12: заводские обозначения, фото, узлы по каталогу. Ремонт, документация, запрос коммерческого предложения."
+  jsonld={[org]}>
+  <section class="hero">
+    <div class="wrap">
+      <div>
+        <h1>Судовые реверс-редукторы РР-300, РР-238, 3Д6, 3Д12 и запчасти к ним</h1>
+        <p class="lead">Продажа реверс-редукторов и запасных частей, ремонт реверс-редукторов, муфт сцепления и рулевых машин серии РГ. Деталь можно найти по заводскому обозначению или по рисунку узла из каталога.</p>
+        <form class="search big" role="search" action={url("katalog/")}>
+          <label class="sr" for="hq">Поиск детали по обозначению или названию</label>
+          <input id="hq" name="q" type="search" placeholder="Обозначение или название" autocomplete="off" spellcheck="false" enterkeyhint="search">
+          <button class="btn" type="submit">Найти</button>
+        </form>
+        <p class="hint small">Например: <a href={url("katalog/?q=СБ525-12-104")}><span class="sku">СБ525-12-104</span></a>, <a href={url("katalog/?q=шестерня")}>шестерня</a>, <a href={url("katalog/?q=ремкомплект")}>ремкомплект</a></p>
+        <div class="btns">
+          <a class="btn" href={url("katalog/")}>Каталог запчастей</a>
+          <a class="btn ghost on-band" href={url("zapros/")}>Запросить предложение</a>
+        </div>
+      </div>
+      <figure class="hero-fig">
+        <img src={url(hero.f.src)} width={hero.f.w} height={hero.f.h} alt="Два реверс-редуктора РР-300 после сборки в цехе" decoding="async" sizes="(min-width: 960px) 600px, 100vw"
+          srcset={`${url(hero.t.src)} ${hero.t.w}w, ${url(hero.f.src)} ${hero.f.w}w`}>
+        <figcaption>Реверс-редукторы РР-300 в цехе. Фото владельца.</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <div class="wrap">
+    <div class="facts">
+      <div><b>{parts.length}</b><span>заводских обозначений в каталоге</span></div>
+      <div><b>{withPhoto}</b><span>позиций с фотографией детали</span></div>
+      <div><b>{assemblies.length}</b><span>узлов РР-300 с чертежами из заводского каталога</span></div>
+      <div><b>{modelsInOrder.length}</b><span>модели реверс-редукторов</span></div>
+    </div>
+
+    <section class="sec" aria-labelledby="h-models">
+      <div class="sec-head"><h2 id="h-models">Запчасти по моделям</h2><a href={url("oborudovanie/")}>Характеристики реверс-редукторов</a></div>
+      <ul class="tiles">
+        {modelsInOrder.map((m) => {
+          const ph = m.photos[0];
+          return (
+            <li><a class="tile" href={url(`katalog/${m.slug}/`)}>
+              <span class="ph">{ph && <img src={url(ph.t.src)} width={ph.t.w} height={ph.t.h} alt="" loading="lazy" />}</span>
+              <span class="bd">
+                <span class="kind">{m.kind[0].toUpperCase() + m.kind.slice(1)} реверс-редуктор</span>
+                <h3>{m.name} <span class="sku muted small">{m.designation}</span></h3>
+                <span class="meta">В каталоге: {partsOf(m.id).length} поз.{m.id === "rr300" ? `, ${assemblies.length} узлов с чертежами` : ""}</span>
+                <span class="go">Открыть запчасти {m.name}</span>
+              </span>
+            </a></li>
+          );
+        })}
+      </ul>
+    </section>
+
+    <section class="sec" aria-labelledby="h-find">
+      <div class="sec-head"><h2 id="h-find">Как найти нужную деталь</h2></div>
+      <div class="info-cols">
+        <div class="info"><h3>Знаю обозначение</h3><p>Введите номер с детали или из каталога целиком или частично. Пробелы, дефисы и латинские буквы вместо русских не мешают поиску.</p><a class="more" href={url("katalog/")}>Поиск по каталогу</a></div>
+        <div class="info"><h3>Знаю узел РР-300</h3><p>Выберите рисунок узла из заводского каталога: чертёж, позиции и обозначения деталей, для сверенных таблиц также количество по исполнениям.</p><a class="more" href={url("katalog/rr-300/uzly/")}>26 узлов РР-300</a></div>
+        <div class="info"><h3>Не нашли деталь</h3><p>Пришлите обозначение, фото детали или описание задачи. Подбор и стоимость менеджер сообщит в ответ на запрос.</p><a class="more" href={url("zapros/")}>Запросить предложение</a></div>
+      </div>
+    </section>
+
+    <section class="sec" aria-labelledby="h-parts">
+      <div class="sec-head"><h2 id="h-parts">Запчасти из каталога</h2><a href={url("katalog/?photo=1")}>Все позиции с фото ({withPhoto})</a></div>
+      <div class="grid">{featured.map((p, i) => <PartCard p={p} order={i} />)}</div>
+    </section>
+  </div>
+
+  <div class="band-sec">
+    <div class="wrap">
+      <div class="info-cols">
+        <section class="info" aria-labelledby="h-about">
+          <h2 id="h-about">О предприятии</h2>
+          <p>{COMPANY.operator}, Барнаул: поставка судовых реверс-редукторов и запасных частей, ремонт реверс-редукторов, муфт сцепления и рулевых гидравлических машин. Свидетельство о признании Российского Классификационного Общества № 06483 на дефектацию и капитальный ремонт реверс-редукторов (по документу действовало до 11.06.2026).</p>
+          <a class="more" href={url("o-kompanii/")}>О компании и документах</a>
+        </section>
+        <section class="info" aria-labelledby="h-tender">
+          <h2 id="h-tender">Тендеры и госзакупки</h2>
+          <p>Предприятие работает по всей России и участвует в государственных контрактах и закупках. Реквизиты, документы и порядок направления приглашений к закупке собраны на одной странице.</p>
+          <a class="more" href={url("tendery/")}>Для заказчиков и закупщиков</a>
+        </section>
+        <section class="info" aria-labelledby="h-docs">
+          <h2 id="h-docs">Документация</h2>
+          <p>Руководство по эксплуатации РР-300 и РР-238 (PDF, 24 стр.) и заводской каталог деталей и сборочных единиц РР-300 (89 страниц сканов).</p>
+          <a class="more" href={url("dokumentaciya/")}>Открыть документацию</a>
+        </section>
+      </div>
+    </div>
+  </div>
+
+  <div class="wrap">
+    <section class="sec" aria-labelledby="h-contact" style="margin-bottom:64px">
+      <div class="split">
+        <div>
+          <h2 id="h-contact">Запрос стоимости и наличия</h2>
+          <p class="lead">Добавьте детали из каталога в список запроса, укажите количество и отправьте письмо с готовым перечнем. Или позвоните: менеджер уточнит исполнение и рассчитает стоимость.</p>
+          <div class="btns"><a class="btn" href={url("zapros/")}>Список запроса</a><a class="btn ghost" href={`tel:${COMPANY.tel}`}>{COMPANY.phone}</a></div>
+        </div>
+        <div class="contact-grid" style="grid-template-columns:1fr">
+          <a class="cc" href={`mailto:${COMPANY.email}`}><span>E-mail</span><b>{COMPANY.email}</b></a>
+          <a class="cc" href={url("kontakty/")}><span>Адрес и реквизиты</span><b>Барнаул, пос. Южный, ул. Зоотехническая, 24ж</b></a>
+        </div>
+      </div>
+    </section>
+  </div>
+</Base>

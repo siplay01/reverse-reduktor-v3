@@ -1,0 +1,67 @@
+{
+ "hero-rr300-pair": {
+  "t": {
+   "src": "img/site/79a88550a41c-900.webp",
+   "w": 900,
+   "h": 675
+  },
+  "f": {
+   "src": "img/site/79a88550a41c-1400.webp",
+   "w": 1400,
+   "h": 1050
+  },
+  "source": "фото владельца"
+ },
+ "rr300-flange": {
+  "t": {
+   "src": "img/site/6ae2894a4d94-900.webp",
+   "w": 900,
+   "h": 929
+  },
+  "f": {
+   "src": "img/site/6ae2894a4d94-1163.webp",
+   "w": 1163,
+   "h": 1200
+  },
+  "source": "фото владельца"
+ },
+ "rr300-side": {
+  "t": {
+   "src": "img/site/e1c3f277c222-675.webp",
+   "w": 675,
+   "h": 1200
+  },
+  "f": {
+   "src": "img/site/e1c3f277c222-675.webp",
+   "w": 675,
+   "h": 1200
+  },
+  "source": "фото владельца"
+ },
+ "parts": {
+  "t": {
+   "src": "img/site/dc8ee96e8cea-900.webp",
+   "w": 900,
+   "h": 482
+  },
+  "f": {
+   "src": "img/site/dc8ee96e8cea-1600.webp",
+   "w": 1600,
+   "h": 856
+  },
+  "source": "фото владельца"
+ },
+ "rko-06483": {
+  "t": {
+   "src": "img/site/486ccd8fe9c0-900.webp",
+   "w": 900,
+   "h": 1260
+  },
+  "f": {
+   "src": "img/site/486ccd8fe9c0-1143.webp",
+   "w": 1143,
+   "h": 1600
+  },
+  "source": "фото владельца"
+ }
+}

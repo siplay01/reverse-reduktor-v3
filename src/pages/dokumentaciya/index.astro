@@ -1,0 +1,33 @@
+---
+import { statSync } from "node:fs";
+import Base from "../../layouts/Base.astro";
+import { manual, scans, assemblies } from "../../lib/data";
+import { url, fmtSize } from "../../lib/site";
+const size = fmtSize(statSync(`public/${manual.href}`).size);
+---
+<Base title="Техническая документация: реверс-редукторы РР-300 и РР-238" section="dokumentaciya/" crumbs={[["dokumentaciya/", "Документация"]]}
+  description="Руководство по эксплуатации реверс-редукторов РР-300 и РР-238 (PDF) и каталог деталей и сборочных единиц РР-300: открыть или скачать.">
+  <h1>Документация</h1>
+  <p class="lead">Документы, найденные в материалах владельца. Версия и дата издания в файлах не указаны.</p>
+  <div class="docs">
+    <article class="doc">
+      <span class="ic" aria-hidden="true">PDF</span>
+      <div>
+        <h2 class="h3">{manual.title}</h2>
+        <p class="muted small">РР-300 <span class="sku">СБ525-01-13</span> и РР-238 <span class="sku">СБ238-25-01-13</span> · PDF, {manual.pages} стр., {size}</p>
+        <p>Устройство, монтаж, эксплуатация и техническое обслуживание, основные технические данные.</p>
+        <div class="btns"><a class="btn" href={url(manual.href)} target="_blank" rel="noopener">Открыть PDF</a><a class="btn ghost" href={url(manual.href)} download="Руководство РР-300 РР-238.pdf">Скачать</a></div>
+      </div>
+    </article>
+    <article class="doc">
+      <span class="ic" aria-hidden="true">JPG</span>
+      <div>
+        <h2 class="h3">Каталог деталей и сборочных единиц реверс-редуктора РР-300</h2>
+        <p class="muted small">РР-300 <span class="sku">СБ525-01-13</span> · сканы, {scans.length} стр.</p>
+        <p>{assemblies.length} рисунков узлов со спецификациями, номерной указатель деталей. Рисунки разобраны на страницах <a href={url("katalog/rr-300/uzly/")}>узлов РР-300</a>.</p>
+        <div class="btns"><a class="btn" href={url("dokumentaciya/katalog-rr-300/")}>Смотреть сканы</a></div>
+      </div>
+    </article>
+  </div>
+  <p class="src">Источник: файлы владельца («Руководство РР300 А4.pdf», сканы каталога РР-300 из архива владельца). Права на публикацию подлежат подтверждению владельцем до запуска рабочего сайта.</p>
+</Base>

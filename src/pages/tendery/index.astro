@@ -1,0 +1,45 @@
+---
+import Base from "../../layouts/Base.astro";
+import Requisites from "../../components/Requisites.astro";
+import { manual } from "../../lib/data";
+import { COMPANY, url } from "../../lib/site";
+const subject = encodeURIComponent("Приглашение к участию в закупке");
+---
+<Base title="Тендеры и государственные закупки" section="tendery/" crumbs={[["tendery/", "Тендеры"]]}
+  description={`Участие в государственных контрактах и закупках: реверс-редукторы РР-300, РР-238, 3Д6, 3Д12, запчасти, ремонт. Реквизиты ${COMPANY.operator}, документы, порядок направления приглашений.`}>
+  <h1>Тендеры и государственные закупки</h1>
+  <div class="split">
+    <div class="prose">
+      <p class="lead">Предприятие работает по всей России и участвует в государственных контрактах и закупках.</p>
+      <p class="src">Формулировка сохранена с исходного сайта revers-remont.ru (главная страница, архив Wayback Machine, апрель 2025).</p>
+
+      <h2>Предмет закупок</h2>
+      <ul>
+        <li>Поставка судовых реверс-редукторов <a href={url("oborudovanie/rr-300/")}>РР-300</a>, <a href={url("oborudovanie/rr-238/")}>РР-238</a>, <a href={url("oborudovanie/3d6/")}>3Д6</a>, <a href={url("oborudovanie/3d12/")}>3Д12</a>.</li>
+        <li>Поставка запасных частей по заводским обозначениям: <a href={url("katalog/")}>каталог</a>, <a href={url("katalog/rr-300/uzly/")}>узлы РР-300 по каталогу деталей</a>.</li>
+        <li><a href={url("remont/")}>Ремонт</a> реверс-редукторов, муфт сцепления, рулевых гидравлических машин серии РГ.</li>
+      </ul>
+
+      <h2>Как пригласить к участию</h2>
+      <ol class="steps">
+        <li><b>Приглашение</b><span>Направьте ссылку на закупку или техническое задание на <a href={`mailto:${COMPANY.email}?subject=${subject}`}>{COMPANY.email}</a>.</span></li>
+        <li><b>Спецификация</b><span>Перечень позиций удобно собрать в <a href={url("zapros/")}>списке запроса</a>: обозначения и количество попадут в письмо.</span></li>
+        <li><b>Ответ</b><span>Менеджер уточнит исполнение, сроки и подготовит коммерческое предложение.</span></li>
+      </ol>
+
+      <h2>История участия</h2>
+      <p>Перечень конкретных закупок, номеров контрактов и дат в сохранившихся материалах сайта отсутствует. Публичные сведения о контрактах организации можно проверить в Единой информационной системе в сфере закупок по ИНН <span class="sku">{COMPANY.inn}</span>.</p>
+      <p><a class="btn ghost" href={`https://zakupki.gov.ru/epz/contract/search/results.html?searchString=${COMPANY.inn}`} target="_blank" rel="noopener">Поиск по ИНН в ЕИС (zakupki.gov.ru)</a></p>
+    </div>
+    <div>
+      <h2 class="h3">Реквизиты участника</h2>
+      <Requisites />
+      <h2 class="h3" style="margin-top:24px">Документы</h2>
+      <ul>
+        <li><a href={url("o-kompanii/")}>Свидетельство о признании РКО № 06483</a> <span class="muted small">действовало до 11.06.2026; актуальный документ по запросу</span></li>
+        <li><a href={url(manual.href)}>{manual.title}</a> <span class="muted small">PDF</span></li>
+        <li><a href={url("dokumentaciya/katalog-rr-300/")}>Каталог деталей и сборочных единиц РР-300</a> <span class="muted small">сканы</span></li>
+      </ul>
+    </div>
+  </div>
+</Base>

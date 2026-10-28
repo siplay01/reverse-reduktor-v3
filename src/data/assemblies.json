@@ -1,0 +1,3862 @@
+[
+ {
+  "id": "rr300-fig01",
+  "figure": 1,
+  "slug": "ris-01",
+  "title": "Реверс-редуктор с двадцатипальцевой соединительной муфтой и комплект монтажных изделий",
+  "designation": "СБ525-01-13",
+  "variants": [
+   "-",
+   "-010",
+   "-001",
+   "-011",
+   "-040",
+   "-041",
+   "-004",
+   "-014",
+   "-005",
+   "-015"
+  ],
+  "footnotes": {
+   "1": "Для реверс-редуктора, соединяемого с кожухом маховика двигателя болтами.",
+   "2": "Для реверс-редуктора, соединяемого с двигателем через шпильки, установленные на кожухе маховика."
+  },
+  "verified": true,
+  "verifiedNote": "2026-10-27, визуальная сверка со сканом",
+  "catalogPages": [
+   18,
+   19
+  ],
+  "drawing": {
+   "t": {
+    "src": "img/scan/31c7610d14a4-900.webp",
+    "w": 900,
+    "h": 654
+   },
+   "f": {
+    "src": "img/scan/31c7610d14a4-2000.webp",
+    "w": 2000,
+    "h": 1454
+   },
+   "source": "каталог РР-300 (скан владельца)"
+  },
+  "spec": {
+   "t": {
+    "src": "img/scan/1acdf638cd2e-900.webp",
+    "w": 900,
+    "h": 654
+   },
+   "f": {
+    "src": "img/scan/1acdf638cd2e-2000.webp",
+    "w": 2000,
+    "h": 1454
+   },
+   "source": "каталог РР-300 (скан владельца)"
+  },
+  "rows": [
+   {
+    "pos": 1,
+    "designation": "СБ525-01-13",
+    "name": "Реверс-редуктор",
+    "qty": [
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     null,
+     null,
+     null,
+     null
+    ],
+    "mass": "430,0",
+    "note": null,
+    "check": false,
+    "part": "sb525-01-13"
+   },
+   {
+    "pos": 2,
+    "designation": "353-20",
+    "name": "Шайба стопорная 12",
+    "qty": [
+     10,
+     10,
+     10,
+     10,
+     10,
+     10,
+     null,
+     null,
+     null,
+     null
+    ],
+    "mass": "0,005",
+    "note": "1",
+    "check": false,
+    "part": "353-20"
+   },
+   {
+    "pos": 3,
+    "designation": "553-70",
+    "name": "Шайба 12",
+    "qty": [
+     10,
+     10,
+     10,
+     10,
+     10,
+     10,
+     null,
+     null,
+     null,
+     null
+    ],
+    "mass": "0,0063",
+    "note": "2",
+    "check": false,
+    "part": "553-70"
+   },
+   {
+    "pos": 4,
+    "designation": "553-02-1",
+    "name": "Шайба 12Н65Г05 ГОСТ6402-70",
+    "qty": [
+     10,
+     10,
+     10,
+     10,
+     10,
+     10,
+     null,
+     null,
+     null,
+     null
+    ],
+    "mass": "0,0034",
+    "note": "2",
+    "check": false,
+    "part": "553-02-1"
+   },
+   {
+    "pos": 5,
+    "designation": "351-09",
+    "name": "Гайка М12х1,5",
+    "qty": [
+     10,
+     10,
+     10,
+     10,
+     10,
+     10,
+     null,
+     null,
+     null,
+     null
+    ],
+    "mass": "0,02",
+    "note": "2",
+    "check": false,
+    "part": "351-09"
+   },
+   {
+    "pos": 6,
+    "designation": "556-03-1",
+    "name": "Болт М12х45",
+    "qty": [
+     10,
+     10,
+     10,
+     10,
+     10,
+     10,
+     null,
+     null,
+     null,
+     null
+    ],
+    "mass": "0,0573",
+    "note": "1",
+    "check": false,
+    "part": "556-03-1"
+   },
+   {
+    "pos": 7,
+    "designation": "356-16А",
+    "name": "Болт М6х14",
+    "qty": [
+     3,
+     3,
+     3,
+     3,
+     3,
+     3,
+     null,
+     null,
+     null,
+     null
+    ],
+    "mass": "0,0065",
+    "note": null,
+    "check": false,
+    "part": "356-16a"
+   },
+   {
+    "pos": 8,
+    "designation": "353-23",
+    "name": "Шайба 6Т65Г05 ГОСТ6402-70",
+    "qty": [
+     3,
+     3,
+     3,
+     3,
+     3,
+     3,
+     null,
+     null,
+     null,
+     null
+    ],
+    "mass": "0,0008",
+    "note": null,
+    "check": false,
+    "part": "353-23"
+   },
+   {
+    "pos": 9,
+    "designation": "525-16-113",
+    "name": "Крышка",
+    "qty": [
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     null,
+     null,
+     null,
+     null
+    ],
+    "mass": "0,35",
+    "note": null,
+    "check": false,
+    "part": "525-16-113"
+   },
+   {
+    "pos": 10,
+    "designation": "У36-16-15-2",
+    "name": "Кольцо стопорное",
+    "qty": [
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     null,
+     null,
+     null,
+     null
+    ],
+    "mass": "0,13",
+    "note": null,
+    "check": false,
+    "part": "u36-16-15-2"
+   },
+   {
+    "pos": 11,
+    "designation": "556-11-1",
+    "name": "Болт М14х40",
+    "qty": [
+     12,
+     12,
+     12,
+     12,
+     12,
+     12,
+     null,
+     null,
+     null,
+     null
+    ],
+    "mass": "0,0745",
+    "note": null,
+    "check": false,
+    "part": "556-11-1"
+   },
+   {
+    "pos": 12,
+    "designation": "БЧ",
+    "name": "Шайба 14ОТ65Г019 ГОСТ6402-70",
+    "qty": [
+     12,
+     12,
+     12,
+     12,
+     12,
+     12,
+     null,
+     null,
+     null,
+     null
+    ],
+    "mass": "0,0095",
+    "note": null,
+    "check": false,
+    "part": null
+   },
+   {
+    "pos": 13,
+    "designation": "525-16-111",
+    "name": "Полумуфта ведущая",
+    "qty": [
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     null,
+     null,
+     null,
+     null
+    ],
+    "mass": "30,03",
+    "note": null,
+    "check": false,
+    "part": "525-16-111"
+   },
+   {
+    "pos": 14,
+    "designation": "У36-16-14-2",
+    "name": "Вкладыш",
+    "qty": [
+     20,
+     20,
+     20,
+     20,
+     20,
+     20,
+     null,
+     null,
+     null,
+     null
+    ],
+    "mass": "0,095",
+    "note": null,
+    "check": false,
+    "part": "u36-16-14-2"
+   }
+  ]
+ },
+ {
+  "id": "rr300-fig02",
+  "figure": 2,
+  "slug": "ris-02",
+  "title": "Реверс-редуктор с шестнадцати пальцевой соединительной муфтой",
+  "designation": "СБ525-01-13",
+  "variants": [
+   "-",
+   "-010",
+   "-001",
+   "-011",
+   "-040",
+   "-041",
+   "-004",
+   "-014",
+   "-005",
+   "-015"
+  ],
+  "footnotes": {},
+  "verified": false,
+  "verifiedNote": null,
+  "catalogPages": null,
+  "drawing": {
+   "t": {
+    "src": "img/scan/152cf31f83ed-900.webp",
+    "w": 900,
+    "h": 654
+   },
+   "f": {
+    "src": "img/scan/152cf31f83ed-2000.webp",
+    "w": 2000,
+    "h": 1454
+   },
+   "source": "каталог РР-300 (скан владельца)"
+  },
+  "spec": {
+   "t": {
+    "src": "img/scan/923189229410-900.webp",
+    "w": 900,
+    "h": 654
+   },
+   "f": {
+    "src": "img/scan/923189229410-2000.webp",
+    "w": 2000,
+    "h": 1454
+   },
+   "source": "каталог РР-300 (скан владельца)"
+  },
+  "rows": [
+   {
+    "pos": 2,
+    "designation": "353-201",
+    "name": "Шайба стопорная 12",
+    "qty": null,
+    "mass": null,
+    "note": null,
+    "check": false,
+    "part": "353-201"
+   },
+   {
+    "pos": 3,
+    "designation": "553-702",
+    "name": "Шайба 12",
+    "qty": null,
+    "mass": null,
+    "note": null,
+    "check": false,
+    "part": "553-702"
+   },
+   {
+    "pos": 4,
+    "designation": "553-02-1łł 351-092",
+    "name": "Шайба 12Н65Г05 ГОСТ6402-70 Гайка М12х1,5",
+    "qty": null,
+    "mass": null,
+    "note": null,
+    "check": true,
+    "part": null
+   },
+   {
+    "pos": 7,
+    "designation": "356-16A",
+    "name": "Болт Мбх14",
+    "qty": null,
+    "mass": null,
+    "note": null,
+    "check": false,
+    "part": "356-16a"
+   },
+   {
+    "pos": 8,
+    "designation": "353-23 525-16-113",
+    "name": "Шайба 6Т65Г05 ГОСТ6402-70 Крышка",
+    "qty": null,
+    "mass": null,
+    "note": null,
+    "check": true,
+    "part": null
+   },
+   {
+    "pos": 10,
+    "designation": "525-16-402",
+    "name": "Кольцо стопорное",
+    "qty": null,
+    "mass": null,
+    "note": null,
+    "check": false,
+    "part": "525-16-402"
+   },
+   {
+    "pos": 11,
+    "designation": "556-11-1",
+    "name": "Болт М14×40",
+    "qty": null,
+    "mass": null,
+    "note": null,
+    "check": false,
+    "part": "556-11-1"
+   },
+   {
+    "pos": 12,
+    "designation": "БЧ",
+    "name": "Шайба 14ОТ65Г019 ГОСТ6402-70",
+    "qty": null,
+    "mass": null,
+    "note": null,
+    "check": false,
+    "part": null
+   },
+   {
+    "pos": 13,
+    "designation": "525-16-401",
+    "name": "Полумуфта ведущая",
+    "qty": null,
+    "mass": null,
+    "note": null,
+    "check": false,
+    "part": "525-16-401"
+   },
+   {
+    "pos": 14,
+    "designation": "У36-16-14-2",
+    "name": "Вкладыш",
+    "qty": null,
+    "mass": null,
+    "note": null,
+    "check": false,
+    "part": "u36-16-14-2"
+   }
+  ]
+ },
+ {
+  "id": "rr300-fig03",
+  "figure": 3,
+  "slug": "ris-03",
+  "title": "Корпус реверс-редуктора",
+  "designation": "СБ525-01-13",
+  "variants": [
+   "-",
+   "-010",
+   "-001",
+   "-011",
+   "-040",
+   "-041",
+   "-004",
+   "-014",
+   "-005",
+   "-015"
+  ],
+  "footnotes": {
+   "1": "Допускается изготовление фланца из серого чугуна."
+  },
+  "verified": true,
+  "verifiedNote": "2026-10-27, визуальная сверка со сканом",
+  "catalogPages": [
+   22,
+   23
+  ],
+  "drawing": {
+   "t": {
+    "src": "img/scan/fa88874c2aa7-900.webp",
+    "w": 900,
+    "h": 654
+   },
+   "f": {
+    "src": "img/scan/fa88874c2aa7-2000.webp",
+    "w": 2000,
+    "h": 1454
+   },
+   "source": "каталог РР-300 (скан владельца)"
+  },
+  "spec": {
+   "t": {
+    "src": "img/scan/296b3f3d40f2-900.webp",
+    "w": 900,
+    "h": 654
+   },
+   "f": {
+    "src": "img/scan/296b3f3d40f2-2000.webp",
+    "w": 2000,
+    "h": 1454
+   },
+   "source": "каталог РР-300 (скан владельца)"
+  },
+  "rows": [
+   {
+    "pos": 1,
+    "designation": "330-341",
+    "name": "Гайка М18х1,5",
+    "qty": [
+     7,
+     7,
+     7,
+     7,
+     7,
+     7,
+     7,
+     7,
+     7,
+     7
+    ],
+    "mass": "0,035",
+    "note": null,
+    "check": false,
+    "part": "330-341"
+   },
+   {
+    "pos": 2,
+    "designation": "353-29",
+    "name": "Шайба 18Н65Г05 ГОСТ6402-70",
+    "qty": [
+     7,
+     7,
+     7,
+     7,
+     7,
+     7,
+     7,
+     7,
+     7,
+     7
+    ],
+    "mass": "0,0114",
+    "note": null,
+    "check": false,
+    "part": "353-29"
+   },
+   {
+    "pos": 3,
+    "designation": "353-49",
+    "name": "Шайба чистая 18",
+    "qty": [
+     7,
+     7,
+     7,
+     7,
+     7,
+     7,
+     7,
+     7,
+     7,
+     7
+    ],
+    "mass": "0,0055",
+    "note": null,
+    "check": false,
+    "part": "353-49"
+   },
+   {
+    "pos": 4,
+    "designation": "525-16-112",
+    "name": "Фланец",
+    "qty": [
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1
+    ],
+    "mass": "10,8",
+    "note": "1",
+    "check": false,
+    "part": "525-16-112"
+   },
+   {
+    "pos": 5,
+    "designation": "СБ525-400",
+    "name": "Корпус реверс-редуктора",
+    "qty": [
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1
+    ],
+    "mass": "78,8",
+    "note": null,
+    "check": false,
+    "part": "sb525-400"
+   },
+   {
+    "pos": 6,
+    "designation": "525-453",
+    "name": "Прокладка",
+    "qty": [
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1
+    ],
+    "mass": "0,0261",
+    "note": null,
+    "check": false,
+    "part": "525-453"
+   },
+   {
+    "pos": 7,
+    "designation": "СБ525-413",
+    "name": "Крышка",
+    "qty": [
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1
+    ],
+    "mass": "8,145",
+    "note": null,
+    "check": false,
+    "part": "sb525-413"
+   },
+   {
+    "pos": 8,
+    "designation": "353-05-1",
+    "name": "Шайба чистая 8",
+    "qty": [
+     14,
+     14,
+     14,
+     14,
+     14,
+     14,
+     14,
+     14,
+     14,
+     14
+    ],
+    "mass": "0,0015",
+    "note": null,
+    "check": false,
+    "part": "353-05-1"
+   },
+   {
+    "pos": 9,
+    "designation": "353-24",
+    "name": "Шайба 8Т65Г06 ГОСТ6402-70",
+    "qty": [
+     14,
+     14,
+     14,
+     14,
+     14,
+     14,
+     14,
+     14,
+     14,
+     14
+    ],
+    "mass": "0,0002",
+    "note": null,
+    "check": false,
+    "part": "353-24"
+   },
+   {
+    "pos": 10,
+    "designation": "351-02",
+    "name": "Гайка М8",
+    "qty": [
+     14,
+     14,
+     14,
+     14,
+     14,
+     14,
+     14,
+     14,
+     14,
+     14
+    ],
+    "mass": "0,0055",
+    "note": null,
+    "check": false,
+    "part": "351-02"
+   },
+   {
+    "pos": 11,
+    "designation": "СБ525-06А-02",
+    "name": "Маслоуказатель",
+    "qty": [
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1
+    ],
+    "mass": "0,1",
+    "note": null,
+    "check": false,
+    "part": "sb525-06a-02"
+   },
+   {
+    "pos": 12,
+    "designation": "305-45-1",
+    "name": "Гайка",
+    "qty": [
+     2,
+     2,
+     2,
+     2,
+     2,
+     2,
+     2,
+     2,
+     2,
+     2
+    ],
+    "mass": "0,006",
+    "note": null,
+    "check": false,
+    "part": "305-45-1"
+   },
+   {
+    "pos": 13,
+    "designation": "20-01-186",
+    "name": "Шайба",
+    "qty": [
+     2,
+     2,
+     2,
+     2,
+     2,
+     2,
+     2,
+     2,
+     2,
+     2
+    ],
+    "mass": "0,0083",
+    "note": null,
+    "check": false,
+    "part": "20-01-186"
+   },
+   {
+    "pos": 14,
+    "designation": "525-467",
+    "name": "Щиток",
+    "qty": [
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1
+    ],
+    "mass": "0,65",
+    "note": null,
+    "check": false,
+    "part": "525-467"
+   },
+   {
+    "pos": 15,
+    "designation": "525-468",
+    "name": "Втулка",
+    "qty": [
+     2,
+     2,
+     2,
+     2,
+     2,
+     2,
+     2,
+     2,
+     2,
+     2
+    ],
+    "mass": "0,01",
+    "note": null,
+    "check": false,
+    "part": "525-468"
+   },
+   {
+    "pos": 16,
+    "designation": "354-27",
+    "name": "Шплинт 2х16 ГОСТ379-79",
+    "qty": [
+     2,
+     2,
+     2,
+     2,
+     2,
+     2,
+     2,
+     2,
+     2,
+     2
+    ],
+    "mass": "0,004",
+    "note": null,
+    "check": false,
+    "part": "354-27"
+   }
+  ]
+ },
+ {
+  "id": "rr300-fig04",
+  "figure": 4,
+  "slug": "ris-04",
+  "title": "Крышка реверс-редуктора",
+  "designation": "СБ525-413",
+  "variants": [
+   "-"
+  ],
+  "footnotes": {},
+  "verified": false,
+  "verifiedNote": null,
+  "catalogPages": null,
+  "drawing": {
+   "t": {
+    "src": "img/scan/9ea9da2aba2b-900.webp",
+    "w": 900,
+    "h": 654
+   },
+   "f": {
+    "src": "img/scan/9ea9da2aba2b-2000.webp",
+    "w": 2000,
+    "h": 1454
+   },
+   "source": "каталог РР-300 (скан владельца)"
+  },
+  "spec": {
+   "t": {
+    "src": "img/scan/ab2b32e60751-900.webp",
+    "w": 900,
+    "h": 654
+   },
+   "f": {
+    "src": "img/scan/ab2b32e60751-2000.webp",
+    "w": 2000,
+    "h": 1454
+   },
+   "source": "каталог РР-300 (скан владельца)"
+  },
+  "rows": [
+   {
+    "pos": 2,
+    "designation": "354-22-08 525-451",
+    "name": "Проволока стопорная, L=300 мм Крышка",
+    "qty": null,
+    "mass": null,
+    "note": null,
+    "check": true,
+    "part": null
+   },
+   {
+    "pos": 4,
+    "designation": "527-82",
+    "name": "Пробка",
+    "qty": null,
+    "mass": null,
+    "note": null,
+    "check": false,
+    "part": "527-82"
+   }
+  ]
+ },
+ {
+  "id": "rr300-fig05",
+  "figure": 5,
+  "slug": "ris-05",
+  "title": "Вал ведущий. Ведомая полумуфта соединительной муфты и стакан передний",
+  "designation": "СБ525-01-13",
+  "variants": [
+   "-",
+   "-010",
+   "-001",
+   "-011",
+   "-040",
+   "-041",
+   "-004",
+   "-014",
+   "-005",
+   "-015"
+  ],
+  "footnotes": {
+   "1": "Полумуфта ведомая 525-16-110 обрабатывается, применяется и поставляется совместно с полумуфтой ведущей 525-16-111 (см. рис. 1).",
+   "2": "Полумуфта ведомая 525-16-400 обрабатывается, применяется и поставляется совместно с полумуфтой ведущей 525-16-401 (см. рис. 2)."
+  },
+  "verified": true,
+  "verifiedNote": "2026-10-27, визуальная сверка со сканом",
+  "catalogPages": [
+   26,
+   27
+  ],
+  "drawing": {
+   "t": {
+    "src": "img/scan/84eb81f7c55f-900.webp",
+    "w": 900,
+    "h": 654
+   },
+   "f": {
+    "src": "img/scan/84eb81f7c55f-2000.webp",
+    "w": 2000,
+    "h": 1454
+   },
+   "source": "каталог РР-300 (скан владельца)"
+  },
+  "spec": {
+   "t": {
+    "src": "img/scan/21689bc327d5-900.webp",
+    "w": 900,
+    "h": 654
+   },
+   "f": {
+    "src": "img/scan/21689bc327d5-2000.webp",
+    "w": 2000,
+    "h": 1454
+   },
+   "source": "каталог РР-300 (скан владельца)"
+  },
+  "rows": [
+   {
+    "pos": 1,
+    "designation": "525-542",
+    "name": "Гайка М52",
+    "qty": [
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1
+    ],
+    "mass": "0,235",
+    "note": null,
+    "check": false,
+    "part": "525-542"
+   },
+   {
+    "pos": 2,
+    "designation": "525-547",
+    "name": "Замок",
+    "qty": [
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1
+    ],
+    "mass": "0,052",
+    "note": null,
+    "check": false,
+    "part": "525-547"
+   },
+   {
+    "pos": 3,
+    "designation": "525-546",
+    "name": "Кольцо",
+    "qty": [
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1
+    ],
+    "mass": "0,0200",
+    "note": null,
+    "check": false,
+    "part": "525-546"
+   },
+   {
+    "pos": 4,
+    "designation": "525-16-110",
+    "name": "Полумуфта ведомая",
+    "qty": [
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     null,
+     null,
+     null,
+     null
+    ],
+    "mass": "15,8",
+    "note": "1",
+    "check": false,
+    "part": "525-16-110"
+   },
+   {
+    "pos": 5,
+    "designation": "20-08-248",
+    "name": "Кольцо",
+    "qty": [
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1
+    ],
+    "mass": "0,0013",
+    "note": null,
+    "check": false,
+    "part": "20-08-248"
+   },
+   {
+    "pos": 6,
+    "designation": "556-07",
+    "name": "Болт М8х22",
+    "qty": [
+     6,
+     6,
+     6,
+     6,
+     6,
+     6,
+     6,
+     6,
+     6,
+     6
+    ],
+    "mass": "0,014",
+    "note": null,
+    "check": false,
+    "part": "556-07"
+   },
+   {
+    "pos": 7,
+    "designation": "353-24",
+    "name": "Шайба 8Т65Г06 ГОСТ6402-70",
+    "qty": [
+     6,
+     6,
+     6,
+     6,
+     6,
+     6,
+     6,
+     6,
+     6,
+     6
+    ],
+    "mass": "0,0002",
+    "note": null,
+    "check": false,
+    "part": "353-24"
+   },
+   {
+    "pos": 8,
+    "designation": "353-05-1",
+    "name": "Шайба чистая 8",
+    "qty": [
+     6,
+     6,
+     6,
+     6,
+     6,
+     6,
+     6,
+     6,
+     6,
+     6
+    ],
+    "mass": "0,0015",
+    "note": null,
+    "check": false,
+    "part": "353-05-1"
+   },
+   {
+    "pos": 9,
+    "designation": "525-454",
+    "name": "Крышка",
+    "qty": [
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1
+    ],
+    "mass": "0,43",
+    "note": null,
+    "check": false,
+    "part": "525-454"
+   },
+   {
+    "pos": 10,
+    "designation": "525-455",
+    "name": "Прокладка",
+    "qty": [
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1
+    ],
+    "mass": "0,0045",
+    "note": null,
+    "check": false,
+    "part": "525-455"
+   },
+   {
+    "pos": 11,
+    "designation": "БЧ",
+    "name": "Манжета 1.1-90х120-4 ГОСТ8752-70",
+    "qty": [
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1
+    ],
+    "mass": "0,0829",
+    "note": null,
+    "check": false,
+    "part": null
+   },
+   {
+    "pos": 12,
+    "designation": "БЧ",
+    "name": "Подшипник 313АК ГОСТ8338-75",
+    "qty": [
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1
+    ],
+    "mass": "2,11",
+    "note": null,
+    "check": false,
+    "part": null
+   },
+   {
+    "pos": 13,
+    "designation": "525-456",
+    "name": "Стакан",
+    "qty": [
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1
+    ],
+    "mass": "5,9",
+    "note": null,
+    "check": false,
+    "part": "525-456"
+   },
+   {
+    "pos": 14,
+    "designation": "525-457",
+    "name": "Прокладка",
+    "qty": [
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1
+    ],
+    "mass": "0,0085",
+    "note": null,
+    "check": false,
+    "part": "525-457"
+   },
+   {
+    "pos": 15,
+    "designation": "20-63-22-1",
+    "name": "Кольцо",
+    "qty": [
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1
+    ],
+    "mass": "0,0012",
+    "note": null,
+    "check": false,
+    "part": "20-63-22-1"
+   },
+   {
+    "pos": 16,
+    "designation": "553-02-1",
+    "name": "Шайба 12Н65Г06 ГОСТ6402-70",
+    "qty": [
+     6,
+     6,
+     6,
+     6,
+     6,
+     6,
+     6,
+     6,
+     6,
+     6
+    ],
+    "mass": "0,0034",
+    "note": null,
+    "check": false,
+    "part": "553-02-1"
+   },
+   {
+    "pos": 17,
+    "designation": "351-09",
+    "name": "Гайка М12х1,5",
+    "qty": [
+     6,
+     6,
+     6,
+     6,
+     6,
+     6,
+     6,
+     6,
+     6,
+     6
+    ],
+    "mass": "0,02",
+    "note": null,
+    "check": false,
+    "part": "351-09"
+   },
+   {
+    "pos": 18,
+    "designation": "525-16-400",
+    "name": "Полумуфта ведомая",
+    "qty": [
+     null,
+     null,
+     null,
+     null,
+     null,
+     null,
+     1,
+     1,
+     1,
+     1
+    ],
+    "mass": "11,74",
+    "note": "2",
+    "check": false,
+    "part": "525-16-400"
+   }
+  ]
+ },
+ {
+  "id": "rr300-fig06",
+  "figure": 6,
+  "slug": "ris-06",
+  "title": "Вал ведущий",
+  "designation": "СБ525-01-13",
+  "variants": [
+   "-",
+   "-010",
+   "-001",
+   "-011",
+   "-040",
+   "-041",
+   "-004",
+   "-014",
+   "-005",
+   "-015"
+  ],
+  "footnotes": {},
+  "verified": false,
+  "verifiedNote": null,
+  "catalogPages": null,
+  "drawing": {
+   "t": {
+    "src": "img/scan/344d417acdc5-900.webp",
+    "w": 900,
+    "h": 654
+   },
+   "f": {
+    "src": "img/scan/344d417acdc5-2000.webp",
+    "w": 2000,
+    "h": 1454
+   },
+   "source": "каталог РР-300 (скан владельца)"
+  },
+  "spec": {
+   "t": {
+    "src": "img/scan/d170ae80ff74-900.webp",
+    "w": 900,
+    "h": 654
+   },
+   "f": {
+    "src": "img/scan/d170ae80ff74-2000.webp",
+    "w": 2000,
+    "h": 1454
+   },
+   "source": "каталог РР-300 (скан владельца)"
+  },
+  "rows": [
+   {
+    "pos": 2,
+    "designation": "525-543 525-16-110",
+    "name": "Шайба стопорная",
+    "qty": null,
+    "mass": null,
+    "note": null,
+    "check": true,
+    "part": null
+   },
+   {
+    "pos": 4,
+    "designation": "525-16-400",
+    "name": "Полумуфта ведомая",
+    "qty": null,
+    "mass": null,
+    "note": null,
+    "check": false,
+    "part": "525-16-400"
+   }
+  ]
+ },
+ {
+  "id": "rr300-fig07",
+  "figure": 7,
+  "slug": "ris-07",
+  "title": "Вал ведущий и ступица реверсивной муфты",
+  "designation": "СБ525-01-13",
+  "variants": [
+   "-",
+   "-010",
+   "-001",
+   "-011",
+   "-040",
+   "-041",
+   "-004",
+   "-014",
+   "-005",
+   "-015"
+  ],
+  "footnotes": {},
+  "verified": false,
+  "verifiedNote": null,
+  "catalogPages": null,
+  "drawing": {
+   "t": {
+    "src": "img/scan/a0c22ce8dd89-900.webp",
+    "w": 900,
+    "h": 654
+   },
+   "f": {
+    "src": "img/scan/a0c22ce8dd89-2000.webp",
+    "w": 2000,
+    "h": 1454
+   },
+   "source": "каталог РР-300 (скан владельца)"
+  },
+  "spec": {
+   "t": {
+    "src": "img/scan/697fc87e12ec-900.webp",
+    "w": 900,
+    "h": 654
+   },
+   "f": {
+    "src": "img/scan/697fc87e12ec-2000.webp",
+    "w": 2000,
+    "h": 1454
+   },
+   "source": "каталог РР-300 (скан владельца)"
+  },
+  "rows": [
+   {
+    "pos": 2,
+    "designation": "C5525-404 40H-08-67",
+    "name": "Ступица Кольцо",
+    "qty": null,
+    "mass": null,
+    "note": null,
+    "check": true,
+    "part": null
+   },
+   {
+    "pos": 4,
+    "designation": "584-28-80-",
+    "name": "Кольцо",
+    "qty": null,
+    "mass": null,
+    "note": null,
+    "check": false,
+    "part": "584-28-80"
+   },
+   {
+    "pos": 5,
+    "designation": "525-545 БЧ",
+    "name": "Втулка распорная",
+    "qty": null,
+    "mass": null,
+    "note": null,
+    "check": false,
+    "part": "525-545bch"
+   },
+   {
+    "pos": 7,
+    "designation": "525-5483",
+    "name": "Шайба стопорная",
+    "qty": null,
+    "mass": null,
+    "note": null,
+    "check": false,
+    "part": "525-5483"
+   },
+   {
+    "pos": 8,
+    "designation": "525-5493 308-22-1źŘšł",
+    "name": "Шайба стопорная Кольцо установочное",
+    "qty": null,
+    "mass": null,
+    "note": null,
+    "check": true,
+    "part": null
+   },
+   {
+    "pos": 10,
+    "designation": "525-32+",
+    "name": "Шайба предохранительная Гайка круглая шлицевая",
+    "qty": null,
+    "mass": null,
+    "note": null,
+    "check": true,
+    "part": null
+   },
+   {
+    "pos": 12,
+    "designation": "20-09-71",
+    "name": "Кольцо уплотнительное",
+    "qty": null,
+    "mass": null,
+    "note": null,
+    "check": false,
+    "part": "20-09-71"
+   }
+  ]
+ },
+ {
+  "id": "rr300-fig08",
+  "figure": 8,
+  "slug": "ris-08",
+  "title": "Ступица реверсивной муфты",
+  "designation": "СБ525-404",
+  "variants": [
+   "-"
+  ],
+  "footnotes": {},
+  "verified": false,
+  "verifiedNote": null,
+  "catalogPages": null,
+  "drawing": {
+   "t": {
+    "src": "img/scan/9319c1f81d3b-900.webp",
+    "w": 900,
+    "h": 654
+   },
+   "f": {
+    "src": "img/scan/9319c1f81d3b-2000.webp",
+    "w": 2000,
+    "h": 1454
+   },
+   "source": "каталог РР-300 (скан владельца)"
+  },
+  "spec": {
+   "t": {
+    "src": "img/scan/a242b8d130b5-900.webp",
+    "w": 900,
+    "h": 654
+   },
+   "f": {
+    "src": "img/scan/a242b8d130b5-2000.webp",
+    "w": 2000,
+    "h": 1454
+   },
+   "source": "каталог РР-300 (скан владельца)"
+  },
+  "rows": [
+   {
+    "pos": 1,
+    "designation": "",
+    "name": "Полукольцо",
+    "qty": null,
+    "mass": null,
+    "note": null,
+    "check": true,
+    "part": null
+   },
+   {
+    "pos": 2,
+    "designation": "",
+    "name": "Замок 30 Пружина",
+    "qty": null,
+    "mass": null,
+    "note": null,
+    "check": true,
+    "part": null
+   },
+   {
+    "pos": 4,
+    "designation": "",
+    "name": "Диск нажимной",
+    "qty": null,
+    "mass": null,
+    "note": null,
+    "check": true,
+    "part": null
+   },
+   {
+    "pos": 5,
+    "designation": "525-506 525-505",
+    "name": "Кольцо уплотнительное Кольцо уплотнительное",
+    "qty": null,
+    "mass": null,
+    "note": null,
+    "check": true,
+    "part": null
+   },
+   {
+    "pos": 7,
+    "designation": "525-518-źîęš",
+    "name": "Плунжер Пружина",
+    "qty": null,
+    "mass": null,
+    "note": null,
+    "check": true,
+    "part": null
+   },
+   {
+    "pos": 9,
+    "designation": "СБ525-40šŚ",
+    "name": "Ступица",
+    "qty": null,
+    "mass": null,
+    "note": null,
+    "check": true,
+    "part": null
+   }
+  ]
+ },
+ {
+  "id": "rr300-fig09",
+  "figure": 9,
+  "slug": "ris-09",
+  "title": "Вал ведущий. Стакан задний и гидрораспределитель",
+  "designation": "СБ525-01-13",
+  "variants": [
+   "-",
+   "-010",
+   "-001",
+   "-011",
+   "-040",
+   "-041",
+   "-004",
+   "-014",
+   "-005",
+   "-015"
+  ],
+  "footnotes": {},
+  "verified": false,
+  "verifiedNote": null,
+  "catalogPages": null,
+  "drawing": {
+   "t": {
+    "src": "img/scan/745bbc18b48b-900.webp",
+    "w": 900,
+    "h": 654
+   },
+   "f": {
+    "src": "img/scan/745bbc18b48b-2000.webp",
+    "w": 2000,
+    "h": 1454
+   },
+   "source": "каталог РР-300 (скан владельца)"
+  },
+  "spec": {
+   "t": {
+    "src": "img/scan/a1bf6897f58f-900.webp",
+    "w": 900,
+    "h": 654
+   },
+   "f": {
+    "src": "img/scan/a1bf6897f58f-2000.webp",
+    "w": 2000,
+    "h": 1454
+   },
+   "source": "каталог РР-300 (скан владельца)"
+  },
+  "rows": [
+   {
+    "pos": 2,
+    "designation": "525-457 СБ525-37-100",
+    "name": "Прокладка Корпус гидрораспределителя",
+    "qty": null,
+    "mass": null,
+    "note": null,
+    "check": true,
+    "part": null
+   },
+   {
+    "pos": 4,
+    "designation": "553-02-1",
+    "name": "Шайба 12Н65Г06 ГОСТ6402-70",
+    "qty": null,
+    "mass": null,
+    "note": null,
+    "check": false,
+    "part": "553-02-1"
+   }
+  ]
+ },
+ {
+  "id": "rr300-fig10",
+  "figure": 10,
+  "slug": "ris-10",
+  "title": "Гидрораспределитель",
+  "designation": "СБ525-37-100",
+  "variants": [
+   "-"
+  ],
+  "footnotes": {},
+  "verified": true,
+  "verifiedNote": "2026-10-27, визуальная сверка со сканом",
+  "catalogPages": [
+   36,
+   37
+  ],
+  "drawing": {
+   "t": {
+    "src": "img/scan/4efc2cae941f-900.webp",
+    "w": 900,
+    "h": 654
+   },
+   "f": {
+    "src": "img/scan/4efc2cae941f-2000.webp",
+    "w": 2000,
+    "h": 1454
+   },
+   "source": "каталог РР-300 (скан владельца)"
+  },
+  "spec": {
+   "t": {
+    "src": "img/scan/7c3ccdcd3588-900.webp",
+    "w": 900,
+    "h": 654
+   },
+   "f": {
+    "src": "img/scan/7c3ccdcd3588-2000.webp",
+    "w": 2000,
+    "h": 1454
+   },
+   "source": "каталог РР-300 (скан владельца)"
+  },
+  "rows": [
+   {
+    "pos": 1,
+    "designation": "356-78",
+    "name": "Болт М8х40",
+    "qty": [
+     1
+    ],
+    "mass": "0,021",
+    "note": null,
+    "check": false,
+    "part": "356-78"
+   },
+   {
+    "pos": 2,
+    "designation": "353-24",
+    "name": "Шайба 8Т65Г06 ГОСТ6402-70",
+    "qty": [
+     3
+    ],
+    "mass": "0,0002",
+    "note": null,
+    "check": false,
+    "part": "353-24"
+   },
+   {
+    "pos": 3,
+    "designation": "525-37-121",
+    "name": "Шайба",
+    "qty": [
+     1
+    ],
+    "mass": "0,0153",
+    "note": null,
+    "check": false,
+    "part": "525-37-121"
+   },
+   {
+    "pos": 4,
+    "designation": "СБ525-37-103",
+    "name": "Шкив",
+    "qty": [
+     1
+    ],
+    "mass": "0,764",
+    "note": null,
+    "check": false,
+    "part": "sb525-37-103"
+   },
+   {
+    "pos": 5,
+    "designation": "346-20",
+    "name": "Пружина клапана перепускного",
+    "qty": [
+     1
+    ],
+    "mass": "0,0033",
+    "note": null,
+    "check": false,
+    "part": "346-20"
+   },
+   {
+    "pos": 6,
+    "designation": "525-37-114",
+    "name": "Фиксатор",
+    "qty": [
+     1
+    ],
+    "mass": "0,0037",
+    "note": null,
+    "check": false,
+    "part": "525-37-114"
+   },
+   {
+    "pos": 7,
+    "designation": "351-02",
+    "name": "Гайка М8",
+    "qty": [
+     2
+    ],
+    "mass": "0,0055",
+    "note": null,
+    "check": false,
+    "part": "351-02"
+   },
+   {
+    "pos": 8,
+    "designation": "506-100",
+    "name": "Кольцо",
+    "qty": [
+     1
+    ],
+    "mass": "0,0007",
+    "note": null,
+    "check": false,
+    "part": "506-100"
+   },
+   {
+    "pos": 9,
+    "designation": "525-37-112",
+    "name": "Крышка",
+    "qty": [
+     1
+    ],
+    "mass": "0,22",
+    "note": null,
+    "check": false,
+    "part": "525-37-112"
+   },
+   {
+    "pos": 10,
+    "designation": "525-37-113",
+    "name": "Прокладка",
+    "qty": [
+     1
+    ],
+    "mass": "0,001",
+    "note": null,
+    "check": false,
+    "part": "525-37-113"
+   },
+   {
+    "pos": 11,
+    "designation": "БЧ",
+    "name": "Подшипник 104К ГОСТ8338-75",
+    "qty": [
+     1
+    ],
+    "mass": "0,07",
+    "note": null,
+    "check": false,
+    "part": null
+   },
+   {
+    "pos": 12,
+    "designation": "525-37-111",
+    "name": "Золотник",
+    "qty": [
+     1
+    ],
+    "mass": "0,335",
+    "note": null,
+    "check": false,
+    "part": "525-37-111"
+   },
+   {
+    "pos": 13,
+    "designation": "СБ525-37-102",
+    "name": "Корпус гидрораспределителя",
+    "qty": [
+     1
+    ],
+    "mass": "6,463",
+    "note": null,
+    "check": false,
+    "part": "sb525-37-102"
+   },
+   {
+    "pos": 14,
+    "designation": "355-08",
+    "name": "Кольцо 18х24 МН4152-62",
+    "qty": [
+     1
+    ],
+    "mass": "0,0014",
+    "note": null,
+    "check": false,
+    "part": "355-08"
+   },
+   {
+    "pos": 15,
+    "designation": "513-134",
+    "name": "Штуцер",
+    "qty": [
+     1
+    ],
+    "mass": "0,05",
+    "note": null,
+    "check": false,
+    "part": "513-134"
+   },
+   {
+    "pos": 16,
+    "designation": "355-06",
+    "name": "Кольцо 12х16 МН4152-62",
+    "qty": [
+     1
+    ],
+    "mass": "0,0006",
+    "note": null,
+    "check": false,
+    "part": "355-06"
+   },
+   {
+    "pos": 17,
+    "designation": "520Н-46",
+    "name": "Гайка",
+    "qty": [
+     1
+    ],
+    "mass": "0,055",
+    "note": null,
+    "check": false,
+    "part": "520n-46"
+   },
+   {
+    "pos": 18,
+    "designation": "354-22-07",
+    "name": "Проволока стопорная, L=260 мм",
+    "qty": [
+     1
+    ],
+    "mass": "0,0143",
+    "note": null,
+    "check": false,
+    "part": "354-22-07"
+   },
+   {
+    "pos": 19,
+    "designation": "315-64",
+    "name": "Шпонка сегментная",
+    "qty": [
+     1
+    ],
+    "mass": "0,001",
+    "note": null,
+    "check": false,
+    "part": "315-64"
+   }
+  ]
+ },
+ {
+  "id": "rr300-fig11",
+  "figure": 11,
+  "slug": "ris-11",
+  "title": "Ведущая шестерня и детали муфты сцепления заднего хода",
+  "designation": "СБ525-01-13",
+  "variants": [
+   "-",
+   "-010",
+   "-001",
+   "-011",
+   "-040",
+   "-041",
+   "-004",
+   "-005",
+   "-015"
+  ],
+  "footnotes": {},
+  "verified": false,
+  "verifiedNote": null,
+  "catalogPages": null,
+  "drawing": {
+   "t": {
+    "src": "img/scan/8647b1911cee-900.webp",
+    "w": 900,
+    "h": 654
+   },
+   "f": {
+    "src": "img/scan/8647b1911cee-2000.webp",
+    "w": 2000,
+    "h": 1454
+   },
+   "source": "каталог РР-300 (скан владельца)"
+  },
+  "spec": {
+   "t": {
+    "src": "img/scan/2333b2d0c718-900.webp",
+    "w": 900,
+    "h": 654
+   },
+   "f": {
+    "src": "img/scan/2333b2d0c718-2000.webp",
+    "w": 2000,
+    "h": 1454
+   },
+   "source": "каталог РР-300 (скан владельца)"
+  },
+  "rows": [
+   {
+    "pos": 1,
+    "designation": "БЧ",
+    "name": "Подшипник 3518 ГОСТ5721-75",
+    "qty": null,
+    "mass": null,
+    "note": null,
+    "check": false,
+    "part": null
+   },
+   {
+    "pos": 2,
+    "designation": "525-532' 525-532-012",
+    "name": "Шестерня",
+    "qty": null,
+    "mass": null,
+    "note": null,
+    "check": true,
+    "part": null
+   },
+   {
+    "pos": 4,
+    "designation": "525-512 1225-52-3",
+    "name": "Ступица ведомая Шайба замковая",
+    "qty": null,
+    "mass": null,
+    "note": null,
+    "check": true,
+    "part": null
+   },
+   {
+    "pos": 6,
+    "designation": "525-544",
+    "name": "Гайка M80",
+    "qty": null,
+    "mass": null,
+    "note": null,
+    "check": false,
+    "part": "525-544"
+   },
+   {
+    "pos": 7,
+    "designation": "525-515",
+    "name": "Болт М10х65",
+    "qty": null,
+    "mass": null,
+    "note": null,
+    "check": false,
+    "part": "525-515"
+   },
+   {
+    "pos": 8,
+    "designation": "353-15 СБ525-407Śź",
+    "name": "Шайба стопорная 11 Диск упорный с шестерней",
+    "qty": null,
+    "mass": null,
+    "note": null,
+    "check": true,
+    "part": null
+   },
+   {
+    "pos": 10,
+    "designation": "СБ525-406",
+    "name": "Диск трения ведомый",
+    "qty": null,
+    "mass": null,
+    "note": null,
+    "check": false,
+    "part": "sb525-406"
+   },
+   {
+    "pos": 11,
+    "designation": "525-514",
+    "name": "Диск трения ведущий",
+    "qty": null,
+    "mass": null,
+    "note": null,
+    "check": false,
+    "part": "525-514"
+   },
+   {
+    "pos": 12,
+    "designation": "525-509",
+    "name": "Барабан ведущий",
+    "qty": null,
+    "mass": null,
+    "note": null,
+    "check": false,
+    "part": "525-509"
+   }
+  ]
+ },
+ {
+  "id": "rr300-fig12",
+  "figure": 12,
+  "slug": "ris-12",
+  "title": "Упорный диск с ведущей шестерней привода масляного насоса",
+  "designation": "СБ525-407",
+  "variants": [
+   "-"
+  ],
+  "footnotes": {},
+  "verified": false,
+  "verifiedNote": null,
+  "catalogPages": null,
+  "drawing": {
+   "t": {
+    "src": "img/scan/6ca7fd098c79-900.webp",
+    "w": 900,
+    "h": 654
+   },
+   "f": {
+    "src": "img/scan/6ca7fd098c79-2000.webp",
+    "w": 2000,
+    "h": 1454
+   },
+   "source": "каталог РР-300 (скан владельца)"
+  },
+  "spec": {
+   "t": {
+    "src": "img/scan/8ce8e455fa0f-900.webp",
+    "w": 900,
+    "h": 654
+   },
+   "f": {
+    "src": "img/scan/8ce8e455fa0f-2000.webp",
+    "w": 2000,
+    "h": 1454
+   },
+   "source": "каталог РР-300 (скан владельца)"
+  },
+  "rows": [
+   {
+    "pos": 2,
+    "designation": "525-510",
+    "name": "Диск упорный",
+    "qty": null,
+    "mass": null,
+    "note": null,
+    "check": false,
+    "part": "525-510"
+   }
+  ]
+ },
+ {
+  "id": "rr300-fig13",
+  "figure": 13,
+  "slug": "ris-13",
+  "title": "Ведущая шестерня и детали муфты сцепления переднего хода",
+  "designation": "СБ525-01-13",
+  "variants": [
+   "-",
+   "-010",
+   "-001",
+   "-011",
+   "-040",
+   "-041",
+   "-004",
+   "-014",
+   "-005",
+   "-015"
+  ],
+  "footnotes": {},
+  "verified": false,
+  "verifiedNote": null,
+  "catalogPages": null,
+  "drawing": {
+   "t": {
+    "src": "img/scan/611fd3ede752-900.webp",
+    "w": 900,
+    "h": 654
+   },
+   "f": {
+    "src": "img/scan/611fd3ede752-2000.webp",
+    "w": 2000,
+    "h": 1454
+   },
+   "source": "каталог РР-300 (скан владельца)"
+  },
+  "spec": {
+   "t": {
+    "src": "img/scan/b759a895f781-900.webp",
+    "w": 900,
+    "h": 654
+   },
+   "f": {
+    "src": "img/scan/b759a895f781-2000.webp",
+    "w": 2000,
+    "h": 1454
+   },
+   "source": "каталог РР-300 (скан владельца)"
+  },
+  "rows": [
+   {
+    "pos": 2,
+    "designation": "СБ525-406 525-514",
+    "name": "Диск трения ведомый",
+    "qty": null,
+    "mass": null,
+    "note": null,
+    "check": true,
+    "part": null
+   },
+   {
+    "pos": 4,
+    "designation": "525-511",
+    "name": "Диск упорный",
+    "qty": null,
+    "mass": null,
+    "note": null,
+    "check": false,
+    "part": "525-511"
+   },
+   {
+    "pos": 5,
+    "designation": "353-15 525-515",
+    "name": "Шайба стопорная 11",
+    "qty": null,
+    "mass": null,
+    "note": null,
+    "check": true,
+    "part": null
+   },
+   {
+    "pos": 7,
+    "designation": "525-544",
+    "name": "1'айка М80",
+    "qty": null,
+    "mass": null,
+    "note": null,
+    "check": false,
+    "part": "525-544"
+   },
+   {
+    "pos": 8,
+    "designation": "1225-52-3 525-512",
+    "name": "Шайба замковая Ступица ведомая",
+    "qty": null,
+    "mass": null,
+    "note": null,
+    "check": true,
+    "part": null
+   },
+   {
+    "pos": 10,
+    "designation": "БЧ • 525-5301",
+    "name": "Подшипник 3518 ГОСТ5721-75",
+    "qty": null,
+    "mass": null,
+    "note": null,
+    "check": true,
+    "part": null
+   },
+   {
+    "pos": 12,
+    "designation": "",
+    "name": "Шестерня",
+    "qty": null,
+    "mass": null,
+    "note": null,
+    "check": true,
+    "part": null
+   }
+  ]
+ },
+ {
+  "id": "rr300-fig14",
+  "figure": 14,
+  "slug": "ris-14",
+  "title": "Вал ведомый. Стакан передний",
+  "designation": "СБ525-01-13",
+  "variants": [
+   "-",
+   "-010",
+   "-001",
+   "-011",
+   "-040",
+   "-041",
+   "-004",
+   "-014",
+   "-005",
+   "-015"
+  ],
+  "footnotes": {
+   "1": "Для обеспечения осевого разбега ведомого вала в пределах 0,1...0,3 мм следует заказывать регулировочную шайбу определённого размера в пределах 1,4...8,0 мм с шагом 0,2 мм. При невозможности определения конкретной толщины следует заказывать шайбу толщиной 8,0 мм для последующего изготовления из неё шайбы требуемой толщины."
+  },
+  "verified": true,
+  "verifiedNote": "2026-10-27, визуальная сверка со сканом",
+  "catalogPages": [
+   44,
+   45
+  ],
+  "drawing": {
+   "t": {
+    "src": "img/scan/3c3b7f3f0361-900.webp",
+    "w": 900,
+    "h": 654
+   },
+   "f": {
+    "src": "img/scan/3c3b7f3f0361-2000.webp",
+    "w": 2000,
+    "h": 1454
+   },
+   "source": "каталог РР-300 (скан владельца)"
+  },
+  "spec": {
+   "t": {
+    "src": "img/scan/af149c2a655a-900.webp",
+    "w": 900,
+    "h": 654
+   },
+   "f": {
+    "src": "img/scan/af149c2a655a-2000.webp",
+    "w": 2000,
+    "h": 1454
+   },
+   "source": "каталог РР-300 (скан владельца)"
+  },
+  "rows": [
+   {
+    "pos": 1,
+    "designation": "351-09",
+    "name": "Гайка М12х1,5",
+    "qty": [
+     8,
+     8,
+     8,
+     8,
+     8,
+     8,
+     8,
+     8,
+     8,
+     8
+    ],
+    "mass": "0,02",
+    "note": null,
+    "check": false,
+    "part": "351-09"
+   },
+   {
+    "pos": 2,
+    "designation": "553-02-1",
+    "name": "Шайба 12Н65Г06 ГОСТ6402-70",
+    "qty": [
+     8,
+     8,
+     8,
+     8,
+     8,
+     8,
+     8,
+     8,
+     8,
+     8
+    ],
+    "mass": "0,0034",
+    "note": null,
+    "check": false,
+    "part": "553-02-1"
+   },
+   {
+    "pos": 3,
+    "designation": "525-460",
+    "name": "Фланец",
+    "qty": [
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1
+    ],
+    "mass": "0,914",
+    "note": null,
+    "check": false,
+    "part": "525-460"
+   },
+   {
+    "pos": 4,
+    "designation": "525-461",
+    "name": "Крышка",
+    "qty": [
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1
+    ],
+    "mass": "1,477",
+    "note": null,
+    "check": false,
+    "part": "525-461"
+   },
+   {
+    "pos": 5,
+    "designation": "525-118",
+    "name": "Прокладка",
+    "qty": [
+     2,
+     2,
+     2,
+     2,
+     2,
+     2,
+     2,
+     2,
+     2,
+     2
+    ],
+    "mass": "0,027",
+    "note": null,
+    "check": false,
+    "part": "525-118"
+   },
+   {
+    "pos": 6,
+    "designation": "525-561",
+    "name": "Гайка М76",
+    "qty": [
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1
+    ],
+    "mass": "0,935",
+    "note": null,
+    "check": false,
+    "part": "525-561"
+   },
+   {
+    "pos": 7,
+    "designation": "525-562",
+    "name": "Шайба стопорная",
+    "qty": [
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1
+    ],
+    "mass": "0,26",
+    "note": null,
+    "check": false,
+    "part": "525-562"
+   },
+   {
+    "pos": 8,
+    "designation": "525-568",
+    "name": "Шайба стопорная",
+    "qty": [
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1
+    ],
+    "mass": "0,053",
+    "note": null,
+    "check": false,
+    "part": "525-568"
+   },
+   {
+    "pos": 9,
+    "designation": "БЧ",
+    "name": "Подшипник 7620 ГОСТ27365-87",
+    "qty": [
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1
+    ],
+    "mass": "13,2",
+    "note": null,
+    "check": false,
+    "part": null
+   },
+   {
+    "pos": 10,
+    "designation": "525-130-2-01",
+    "name": "Стакан подшипника задний",
+    "qty": [
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1
+    ],
+    "mass": "8,12",
+    "note": null,
+    "check": false,
+    "part": "525-130-2-01"
+   },
+   {
+    "pos": 11,
+    "designation": "525-563",
+    "name": "Шайба регулировочная",
+    "qty": [
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1
+    ],
+    "mass": "0,215",
+    "note": "1",
+    "check": false,
+    "part": "525-563"
+   },
+   {
+    "pos": 12,
+    "designation": "525-564",
+    "name": "Втулка",
+    "qty": [
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1
+    ],
+    "mass": "2,06",
+    "note": null,
+    "check": false,
+    "part": "525-564"
+   }
+  ]
+ },
+ {
+  "id": "rr300-fig15",
+  "figure": 15,
+  "slug": "ris-15",
+  "title": "Вал ведомый. Стакан задний и фланец выходной",
+  "designation": "СБ525-01-13",
+  "variants": [
+   "-",
+   "-010",
+   "-001",
+   "-011",
+   "-040",
+   "-041",
+   "-004",
+   "-014",
+   "-005",
+   "-015"
+  ],
+  "footnotes": {},
+  "verified": false,
+  "verifiedNote": null,
+  "catalogPages": null,
+  "drawing": {
+   "t": {
+    "src": "img/scan/41d158a7e097-900.webp",
+    "w": 900,
+    "h": 654
+   },
+   "f": {
+    "src": "img/scan/41d158a7e097-2000.webp",
+    "w": 2000,
+    "h": 1454
+   },
+   "source": "каталог РР-300 (скан владельца)"
+  },
+  "spec": {
+   "t": {
+    "src": "img/scan/1a950f0d9186-900.webp",
+    "w": 900,
+    "h": 654
+   },
+   "f": {
+    "src": "img/scan/1a950f0d9186-2000.webp",
+    "w": 2000,
+    "h": 1454
+   },
+   "source": "каталог РР-300 (скан владельца)"
+  },
+  "rows": [
+   {
+    "pos": 2,
+    "designation": "525-118 525-130-2-01",
+    "name": "Прокладка Стакан подшипника задний",
+    "qty": null,
+    "mass": null,
+    "note": null,
+    "check": true,
+    "part": null
+   },
+   {
+    "pos": 4,
+    "designation": "БЧ",
+    "name": "Подшипник 7620 ГОСТ27365-87",
+    "qty": null,
+    "mass": null,
+    "note": null,
+    "check": false,
+    "part": null
+   },
+   {
+    "pos": 5,
+    "designation": "БЧ",
+    "name": "Манжета 1.1-115х145-4 TOСТ8752-79",
+    "qty": null,
+    "mass": null,
+    "note": null,
+    "check": false,
+    "part": null
+   },
+   {
+    "pos": 6,
+    "designation": "525-462",
+    "name": "Крышка",
+    "qty": null,
+    "mass": null,
+    "note": null,
+    "check": false,
+    "part": "525-462"
+   },
+   {
+    "pos": 7,
+    "designation": "353-08-1",
+    "name": "Шайба чистая 12 Шайба 12Н65Г06 ГОСТ6402-70",
+    "qty": null,
+    "mass": null,
+    "note": null,
+    "check": false,
+    "part": "353-08-1"
+   },
+   {
+    "pos": 10,
+    "designation": "525-567",
+    "name": "Фланец",
+    "qty": null,
+    "mass": null,
+    "note": null,
+    "check": false,
+    "part": "525-567"
+   }
+  ]
+ },
+ {
+  "id": "rr300-fig16",
+  "figure": 16,
+  "slug": "ris-16",
+  "title": "Вал ведомый",
+  "designation": "СБ525-01-13",
+  "variants": [
+   "-",
+   "-010",
+   "-001",
+   "-011",
+   "-040",
+   "-041",
+   "-004",
+   "-014",
+   "-005",
+   "-015"
+  ],
+  "footnotes": {},
+  "verified": false,
+  "verifiedNote": null,
+  "catalogPages": null,
+  "drawing": {
+   "t": {
+    "src": "img/scan/246efb0d73d9-900.webp",
+    "w": 900,
+    "h": 654
+   },
+   "f": {
+    "src": "img/scan/246efb0d73d9-2000.webp",
+    "w": 2000,
+    "h": 1454
+   },
+   "source": "каталог РР-300 (скан владельца)"
+  },
+  "spec": {
+   "t": {
+    "src": "img/scan/4ed4f974d7af-900.webp",
+    "w": 900,
+    "h": 654
+   },
+   "f": {
+    "src": "img/scan/4ed4f974d7af-2000.webp",
+    "w": 2000,
+    "h": 1454
+   },
+   "source": "каталог РР-300 (скан владельца)"
+  },
+  "rows": [
+   {
+    "pos": 2,
+    "designation": "БЧ 525-12-113",
+    "name": "Подшипник 1000918К ГОСТ8338-75 Кольцо стопорное",
+    "qty": null,
+    "mass": null,
+    "note": null,
+    "check": false,
+    "part": "bch525-12-113"
+   },
+   {
+    "pos": 4,
+    "designation": "525-12-111 525-12-112",
+    "name": "Шестерня Кольцо установочное",
+    "qty": null,
+    "mass": null,
+    "note": null,
+    "check": true,
+    "part": null
+   },
+   {
+    "pos": 7,
+    "designation": "525-5317 525-560",
+    "name": "Шестерня Вал ведомый",
+    "qty": null,
+    "mass": null,
+    "note": null,
+    "check": true,
+    "part": null
+   },
+   {
+    "pos": 9,
+    "designation": "525-531-013",
+    "name": "Шестерня",
+    "qty": null,
+    "mass": null,
+    "note": null,
+    "check": false,
+    "part": "525-531-013"
+   },
+   {
+    "pos": 10,
+    "designation": "525-534-01+",
+    "name": "Шестерня",
+    "qty": null,
+    "mass": null,
+    "note": null,
+    "check": true,
+    "part": null
+   }
+  ]
+ },
+ {
+  "id": "rr300-fig17",
+  "figure": 17,
+  "slug": "ris-17",
+  "title": "Шестерня промежуточная заднего хода",
+  "designation": "СБ525-01-13",
+  "variants": [
+   "-",
+   "-010",
+   "-001",
+   "-011",
+   "-040",
+   "-041",
+   "-004",
+   "-014",
+   "-005",
+   "-015"
+  ],
+  "footnotes": {},
+  "verified": false,
+  "verifiedNote": null,
+  "catalogPages": null,
+  "drawing": {
+   "t": {
+    "src": "img/scan/208c8d83e0de-900.webp",
+    "w": 900,
+    "h": 654
+   },
+   "f": {
+    "src": "img/scan/208c8d83e0de-2000.webp",
+    "w": 2000,
+    "h": 1454
+   },
+   "source": "каталог РР-300 (скан владельца)"
+  },
+  "spec": {
+   "t": {
+    "src": "img/scan/2959160eaaec-900.webp",
+    "w": 900,
+    "h": 654
+   },
+   "f": {
+    "src": "img/scan/2959160eaaec-2000.webp",
+    "w": 2000,
+    "h": 1454
+   },
+   "source": "каталог РР-300 (скан владельца)"
+  },
+  "rows": [
+   {
+    "pos": 2,
+    "designation": "556-14 525-551",
+    "name": "Болт М10x30 Іайба",
+    "qty": null,
+    "mass": null,
+    "note": null,
+    "check": true,
+    "part": null
+   },
+   {
+    "pos": 4,
+    "designation": "525-552 БЧ",
+    "name": "Кольцо упорное Подшипник 3611 ГОСТ5721-75",
+    "qty": null,
+    "mass": null,
+    "note": null,
+    "check": false,
+    "part": "525-552bch"
+   },
+   {
+    "pos": 7,
+    "designation": "525-5331 525-553",
+    "name": "Шестерня Кольцо установочное",
+    "qty": null,
+    "mass": null,
+    "note": null,
+    "check": true,
+    "part": null
+   },
+   {
+    "pos": 9,
+    "designation": "308-9îęšŚę",
+    "name": "Кольцо",
+    "qty": null,
+    "mass": null,
+    "note": null,
+    "check": true,
+    "part": null
+   },
+   {
+    "pos": 10,
+    "designation": "525-550",
+    "name": "Ось",
+    "qty": null,
+    "mass": null,
+    "note": null,
+    "check": false,
+    "part": "525-550"
+   },
+   {
+    "pos": 11,
+    "designation": "525-533-012",
+    "name": "Шестерня",
+    "qty": null,
+    "mass": null,
+    "note": null,
+    "check": false,
+    "part": "525-533-012"
+   }
+  ]
+ },
+ {
+  "id": "rr300-fig18",
+  "figure": 18,
+  "slug": "ris-18",
+  "title": "Установка масляного насоса реверс-редуктора правого вращения",
+  "designation": "СБ525-01-13",
+  "variants": [
+   "-",
+   "-010",
+   "-001",
+   "-011",
+   "-040",
+   "-041",
+   "-004",
+   "-014",
+   "-015"
+  ],
+  "footnotes": {},
+  "verified": false,
+  "verifiedNote": null,
+  "catalogPages": null,
+  "drawing": {
+   "t": {
+    "src": "img/scan/fc4165a93adb-900.webp",
+    "w": 900,
+    "h": 654
+   },
+   "f": {
+    "src": "img/scan/fc4165a93adb-2000.webp",
+    "w": 2000,
+    "h": 1454
+   },
+   "source": "каталог РР-300 (скан владельца)"
+  },
+  "spec": {
+   "t": {
+    "src": "img/scan/c87ce3b4bba6-900.webp",
+    "w": 900,
+    "h": 654
+   },
+   "f": {
+    "src": "img/scan/c87ce3b4bba6-2000.webp",
+    "w": 2000,
+    "h": 1454
+   },
+   "source": "каталог РР-300 (скан владельца)"
+  },
+  "rows": [
+   {
+    "pos": 2,
+    "designation": "353-05-1",
+    "name": "Шайба 8T65Г06 ГОСТ6402-70 Шайба чистая 8",
+    "qty": null,
+    "mass": null,
+    "note": null,
+    "check": false,
+    "part": "353-05-1"
+   },
+   {
+    "pos": 4,
+    "designation": "СБ525-415-1",
+    "name": "Крышка",
+    "qty": null,
+    "mass": null,
+    "note": null,
+    "check": false,
+    "part": "sb525-415-1"
+   }
+  ]
+ },
+ {
+  "id": "rr300-fig19",
+  "figure": 19,
+  "slug": "ris-19",
+  "title": "Установка масляного насоса реверс-редуктора левого вращения",
+  "designation": "СБ525-01-13",
+  "variants": [
+   "-",
+   "-010",
+   "-001",
+   "-011",
+   "-040",
+   "-041",
+   "-004",
+   "-014",
+   "-005",
+   "-015"
+  ],
+  "footnotes": {},
+  "verified": false,
+  "verifiedNote": null,
+  "catalogPages": null,
+  "drawing": {
+   "t": {
+    "src": "img/scan/504e0cc9fa44-900.webp",
+    "w": 900,
+    "h": 654
+   },
+   "f": {
+    "src": "img/scan/504e0cc9fa44-2000.webp",
+    "w": 2000,
+    "h": 1454
+   },
+   "source": "каталог РР-300 (скан владельца)"
+  },
+  "spec": {
+   "t": {
+    "src": "img/scan/8d2218eda05a-900.webp",
+    "w": 900,
+    "h": 654
+   },
+   "f": {
+    "src": "img/scan/8d2218eda05a-2000.webp",
+    "w": 2000,
+    "h": 1454
+   },
+   "source": "каталог РР-300 (скан владельца)"
+  },
+  "rows": [
+   {
+    "pos": 2,
+    "designation": "353-24 353-05-1",
+    "name": "Шайба 8T65Г06 ГОСТ6402-70 Шайба чистая 8",
+    "qty": null,
+    "mass": null,
+    "note": null,
+    "check": true,
+    "part": null
+   },
+   {
+    "pos": 4,
+    "designation": "СБ525-12-104-01",
+    "name": "Насос масляный",
+    "qty": null,
+    "mass": null,
+    "note": null,
+    "check": false,
+    "part": "sb525-12-104-01"
+   },
+   {
+    "pos": 5,
+    "designation": "СБ525-415-1",
+    "name": "Крышка",
+    "qty": null,
+    "mass": null,
+    "note": null,
+    "check": false,
+    "part": "sb525-415-1"
+   }
+  ]
+ },
+ {
+  "id": "rr300-fig20",
+  "figure": 20,
+  "slug": "ris-20",
+  "title": "Насос масляный",
+  "designation": "СБ525-12-104",
+  "variants": [
+   "-",
+   "-01"
+  ],
+  "footnotes": {
+   "1": "Корпус и крышка масляного насоса обрабатываются, применяются и поставляются совместно в узле СБ525-12-105."
+  },
+  "verified": true,
+  "verifiedNote": "2026-10-27, визуальная сверка со сканом",
+  "catalogPages": [
+   56,
+   57
+  ],
+  "drawing": {
+   "t": {
+    "src": "img/scan/f3dde7df61b9-900.webp",
+    "w": 900,
+    "h": 654
+   },
+   "f": {
+    "src": "img/scan/f3dde7df61b9-2000.webp",
+    "w": 2000,
+    "h": 1454
+   },
+   "source": "каталог РР-300 (скан владельца)"
+  },
+  "spec": {
+   "t": {
+    "src": "img/scan/38c8995a6d09-900.webp",
+    "w": 900,
+    "h": 654
+   },
+   "f": {
+    "src": "img/scan/38c8995a6d09-2000.webp",
+    "w": 2000,
+    "h": 1454
+   },
+   "source": "каталог РР-300 (скан владельца)"
+  },
+  "rows": [
+   {
+    "pos": 1,
+    "designation": "351-22-1",
+    "name": "Гайка М16х1,5",
+    "qty": [
+     1,
+     1
+    ],
+    "mass": "0,022",
+    "note": null,
+    "check": false,
+    "part": "351-22-1"
+   },
+   {
+    "pos": 2,
+    "designation": "302-50",
+    "name": "Шайба",
+    "qty": [
+     1,
+     1
+    ],
+    "mass": "0,016",
+    "note": null,
+    "check": false,
+    "part": "302-50"
+   },
+   {
+    "pos": 3,
+    "designation": "525-12-114",
+    "name": "Шестерня",
+    "qty": [
+     1,
+     1
+    ],
+    "mass": "0,494",
+    "note": null,
+    "check": false,
+    "part": "525-12-114"
+   },
+   {
+    "pos": 4,
+    "designation": "525-12-117",
+    "name": "Шестерня",
+    "qty": [
+     1,
+     1
+    ],
+    "mass": "0,422",
+    "note": null,
+    "check": false,
+    "part": "525-12-117"
+   },
+   {
+    "pos": 5,
+    "designation": "315-64",
+    "name": "Шпонка сегментная",
+    "qty": [
+     1,
+     1
+    ],
+    "mass": "0,001",
+    "note": null,
+    "check": false,
+    "part": "315-64"
+   },
+   {
+    "pos": 6,
+    "designation": "525-12-118",
+    "name": "Шестерня",
+    "qty": [
+     1,
+     1
+    ],
+    "mass": "0,265",
+    "note": null,
+    "check": false,
+    "part": "525-12-118"
+   },
+   {
+    "pos": 7,
+    "designation": "525-466",
+    "name": "Кольцо",
+    "qty": [
+     1,
+     1
+    ],
+    "mass": "0,0032",
+    "note": null,
+    "check": false,
+    "part": "525-466"
+   },
+   {
+    "pos": 8,
+    "designation": "СБ525-12-105",
+    "name": "Корпус",
+    "qty": [
+     1,
+     1
+    ],
+    "mass": "2,8",
+    "note": "1",
+    "check": false,
+    "part": "sb525-12-105"
+   },
+   {
+    "pos": 9,
+    "designation": "353-16-1",
+    "name": "Шайба стопорная 8",
+    "qty": [
+     2,
+     2
+    ],
+    "mass": "0,0019",
+    "note": null,
+    "check": false,
+    "part": "353-16-1"
+   },
+   {
+    "pos": 10,
+    "designation": "351-02",
+    "name": "Гайка М8",
+    "qty": [
+     2,
+     2
+    ],
+    "mass": "0,0055",
+    "note": null,
+    "check": false,
+    "part": "351-02"
+   },
+   {
+    "pos": 11,
+    "designation": "525-12-122-1",
+    "name": "Сетка",
+    "qty": [
+     1,
+     1
+    ],
+    "mass": "0,008",
+    "note": null,
+    "check": false,
+    "part": "525-12-122-1"
+   },
+   {
+    "pos": 12,
+    "designation": "525-12-119-1",
+    "name": "Фланец",
+    "qty": [
+     1,
+     1
+    ],
+    "mass": "0,045",
+    "note": null,
+    "check": false,
+    "part": "525-12-119-1"
+   },
+   {
+    "pos": 13,
+    "designation": "584-78-80",
+    "name": "Винт 2М4х6hх12.32 ГОСТ17475-72",
+    "qty": [
+     3,
+     3
+    ],
+    "mass": "0,003",
+    "note": null,
+    "check": false,
+    "part": "584-78-80"
+   },
+   {
+    "pos": 14,
+    "designation": "354-18",
+    "name": "Шплинт 4х36 ГОСТ397-79",
+    "qty": [
+     1,
+     1
+    ],
+    "mass": "0,0037",
+    "note": null,
+    "check": false,
+    "part": "354-18"
+   }
+  ]
+ },
+ {
+  "id": "rr300-fig21",
+  "figure": 21,
+  "slug": "ris-21",
+  "title": "Крышка для датчиков термометров",
+  "designation": "СБ525-415-1",
+  "variants": [
+   "-"
+  ],
+  "footnotes": {},
+  "verified": false,
+  "verifiedNote": null,
+  "catalogPages": null,
+  "drawing": {
+   "t": {
+    "src": "img/scan/478868edebc4-900.webp",
+    "w": 900,
+    "h": 654
+   },
+   "f": {
+    "src": "img/scan/478868edebc4-2000.webp",
+    "w": 2000,
+    "h": 1454
+   },
+   "source": "каталог РР-300 (скан владельца)"
+  },
+  "spec": {
+   "t": {
+    "src": "img/scan/4d0f1b238873-900.webp",
+    "w": 900,
+    "h": 654
+   },
+   "f": {
+    "src": "img/scan/4d0f1b238873-2000.webp",
+    "w": 2000,
+    "h": 1454
+   },
+   "source": "каталог РР-300 (скан владельца)"
+  },
+  "rows": [
+   {
+    "pos": 2,
+    "designation": "537-87 413-94A",
+    "name": "Штуцер приемника аэротермометра Прокладка",
+    "qty": null,
+    "mass": null,
+    "note": null,
+    "check": true,
+    "part": null
+   },
+   {
+    "pos": 4,
+    "designation": "525-463-1 525-466",
+    "name": "Крышка Кольцо",
+    "qty": null,
+    "mass": null,
+    "note": null,
+    "check": true,
+    "part": null
+   },
+   {
+    "pos": 7,
+    "designation": "556-13",
+    "name": "Болт М8x12",
+    "qty": null,
+    "mass": null,
+    "note": null,
+    "check": false,
+    "part": "556-13"
+   }
+  ]
+ },
+ {
+  "id": "rr300-fig22",
+  "figure": 22,
+  "slug": "ris-22",
+  "title": "Охладитель масла",
+  "designation": "СБ525-01-13",
+  "variants": [
+   "-",
+   "-010",
+   "-001",
+   "-011",
+   "-040",
+   "-041",
+   "-004",
+   "-014",
+   "-005",
+   "-015"
+  ],
+  "footnotes": {},
+  "verified": false,
+  "verifiedNote": null,
+  "catalogPages": null,
+  "drawing": {
+   "t": {
+    "src": "img/scan/758b43d41586-900.webp",
+    "w": 900,
+    "h": 654
+   },
+   "f": {
+    "src": "img/scan/758b43d41586-2000.webp",
+    "w": 2000,
+    "h": 1454
+   },
+   "source": "каталог РР-300 (скан владельца)"
+  },
+  "spec": {
+   "t": {
+    "src": "img/scan/68c49228655a-900.webp",
+    "w": 900,
+    "h": 654
+   },
+   "f": {
+    "src": "img/scan/68c49228655a-2000.webp",
+    "w": 2000,
+    "h": 1454
+   },
+   "source": "каталог РР-300 (скан владельца)"
+  },
+  "rows": []
+ },
+ {
+  "id": "rr300-fig23",
+  "figure": 23,
+  "slug": "ris-23",
+  "title": "Установка фильтра масляного",
+  "designation": "СБ525-01-13",
+  "variants": [
+   "-",
+   "-010",
+   "-001",
+   "-011",
+   "-040",
+   "-041",
+   "-004",
+   "-014",
+   "-005",
+   "-015"
+  ],
+  "footnotes": {},
+  "verified": false,
+  "verifiedNote": null,
+  "catalogPages": null,
+  "drawing": {
+   "t": {
+    "src": "img/scan/27ccfe649f2e-900.webp",
+    "w": 900,
+    "h": 654
+   },
+   "f": {
+    "src": "img/scan/27ccfe649f2e-2000.webp",
+    "w": 2000,
+    "h": 1454
+   },
+   "source": "каталог РР-300 (скан владельца)"
+  },
+  "spec": {
+   "t": {
+    "src": "img/scan/91c620beaf56-900.webp",
+    "w": 900,
+    "h": 654
+   },
+   "f": {
+    "src": "img/scan/91c620beaf56-2000.webp",
+    "w": 2000,
+    "h": 1454
+   },
+   "source": "каталог РР-300 (скан владельца)"
+  },
+  "rows": [
+   {
+    "pos": 2,
+    "designation": "525-466 СБ525-13-100-1",
+    "name": "Кольцо",
+    "qty": null,
+    "mass": null,
+    "note": null,
+    "check": true,
+    "part": null
+   },
+   {
+    "pos": 4,
+    "designation": "353-07-1",
+    "name": "Шайба чистая 10",
+    "qty": null,
+    "mass": null,
+    "note": null,
+    "check": false,
+    "part": "353-07-1"
+   }
+  ]
+ },
+ {
+  "id": "rr300-fig24",
+  "figure": 24,
+  "slug": "ris-24",
+  "title": "Фильтр масляный",
+  "designation": "СБ525-13-100-1",
+  "variants": [
+   "-"
+  ],
+  "footnotes": {},
+  "verified": true,
+  "verifiedNote": "2026-10-27, визуальная сверка со сканом",
+  "catalogPages": [
+   64,
+   65
+  ],
+  "drawing": {
+   "t": {
+    "src": "img/scan/d1f132806ed6-900.webp",
+    "w": 900,
+    "h": 654
+   },
+   "f": {
+    "src": "img/scan/d1f132806ed6-2000.webp",
+    "w": 2000,
+    "h": 1454
+   },
+   "source": "каталог РР-300 (скан владельца)"
+  },
+  "spec": {
+   "t": {
+    "src": "img/scan/01693cbb7665-900.webp",
+    "w": 900,
+    "h": 654
+   },
+   "f": {
+    "src": "img/scan/01693cbb7665-2000.webp",
+    "w": 2000,
+    "h": 1454
+   },
+   "source": "каталог РР-300 (скан владельца)"
+  },
+  "rows": [
+   {
+    "pos": 1,
+    "designation": "515-18",
+    "name": "Штифт",
+    "qty": [
+     1
+    ],
+    "mass": "0,0024",
+    "note": null,
+    "check": false,
+    "part": "515-18"
+   },
+   {
+    "pos": 2,
+    "designation": "525-13-113",
+    "name": "Шайба",
+    "qty": [
+     1
+    ],
+    "mass": "0,0114",
+    "note": null,
+    "check": false,
+    "part": "525-13-113"
+   },
+   {
+    "pos": 3,
+    "designation": "584-66-80",
+    "name": "Пружина",
+    "qty": [
+     1
+    ],
+    "mass": "0,042",
+    "note": null,
+    "check": false,
+    "part": "584-66-80"
+   },
+   {
+    "pos": 4,
+    "designation": "СБ525-13-101-1",
+    "name": "Секция щелевая",
+    "qty": [
+     1
+    ],
+    "mass": "0,617",
+    "note": null,
+    "check": false,
+    "part": "sb525-13-101-1"
+   },
+   {
+    "pos": 5,
+    "designation": "525-466",
+    "name": "Кольцо",
+    "qty": [
+     1
+    ],
+    "mass": "0,0032",
+    "note": null,
+    "check": false,
+    "part": "525-466"
+   },
+   {
+    "pos": 6,
+    "designation": "525-13-110",
+    "name": "Крышка",
+    "qty": [
+     1
+    ],
+    "mass": "0,912",
+    "note": null,
+    "check": false,
+    "part": "525-13-110"
+   },
+   {
+    "pos": 7,
+    "designation": "20-55-13Б",
+    "name": "Кольцо уплотнительное",
+    "qty": [
+     1
+    ],
+    "mass": "0,0095",
+    "note": null,
+    "check": false,
+    "part": "20-55-13b"
+   },
+   {
+    "pos": 8,
+    "designation": "525-13-111",
+    "name": "Стержень",
+    "qty": [
+     1
+    ],
+    "mass": "0,42",
+    "note": null,
+    "check": false,
+    "part": "525-13-111"
+   }
+  ]
+ },
+ {
+  "id": "rr300-fig25",
+  "figure": 25,
+  "slug": "ris-25",
+  "title": "Трубопроводы масляные",
+  "designation": "СБ525-01-13",
+  "variants": [
+   "-",
+   "-010",
+   "-001",
+   "-011",
+   "-040",
+   "-041",
+   "-004",
+   "-014",
+   "-005",
+   "-015"
+  ],
+  "footnotes": {},
+  "verified": false,
+  "verifiedNote": null,
+  "catalogPages": null,
+  "drawing": {
+   "t": {
+    "src": "img/scan/5d781a9cd44f-900.webp",
+    "w": 900,
+    "h": 654
+   },
+   "f": {
+    "src": "img/scan/5d781a9cd44f-2000.webp",
+    "w": 2000,
+    "h": 1454
+   },
+   "source": "каталог РР-300 (скан владельца)"
+  },
+  "spec": {
+   "t": {
+    "src": "img/scan/a67b2235dcdd-900.webp",
+    "w": 900,
+    "h": 654
+   },
+   "f": {
+    "src": "img/scan/a67b2235dcdd-2000.webp",
+    "w": 2000,
+    "h": 1454
+   },
+   "source": "каталог РР-300 (скан владельца)"
+  },
+  "rows": [
+   {
+    "pos": 2,
+    "designation": "525-20-117 355-08",
+    "name": "Штуцер Кольцо 18x24 МН4152-62",
+    "qty": null,
+    "mass": null,
+    "note": null,
+    "check": true,
+    "part": null
+   },
+   {
+    "pos": 4,
+    "designation": "С5525-20-103 3327-112",
+    "name": "Труба Зажим",
+    "qty": null,
+    "mass": null,
+    "note": null,
+    "check": true,
+    "part": null
+   },
+   {
+    "pos": 6,
+    "designation": "СБ525-20-102",
+    "name": "Труба",
+    "qty": null,
+    "mass": null,
+    "note": null,
+    "check": false,
+    "part": "sb525-20-102"
+   },
+   {
+    "pos": 7,
+    "designation": "354-22-07",
+    "name": "Проволока стопорная, L=260 мм",
+    "qty": null,
+    "mass": null,
+    "note": null,
+    "check": false,
+    "part": "354-22-07"
+   }
+  ]
+ },
+ {
+  "id": "rr300-fig26",
+  "figure": 26,
+  "slug": "ris-26",
+  "title": "Клапан редукционный",
+  "designation": "СБ525-01-13",
+  "variants": [
+   "-",
+   "-010",
+   "-001",
+   "-011",
+   "-040",
+   "-041",
+   "-004",
+   "-014",
+   "-005",
+   "-015"
+  ],
+  "footnotes": {},
+  "verified": false,
+  "verifiedNote": null,
+  "catalogPages": null,
+  "drawing": {
+   "t": {
+    "src": "img/scan/28d2fa59e983-900.webp",
+    "w": 900,
+    "h": 654
+   },
+   "f": {
+    "src": "img/scan/28d2fa59e983-2000.webp",
+    "w": 2000,
+    "h": 1454
+   },
+   "source": "каталог РР-300 (скан владельца)"
+  },
+  "spec": {
+   "t": {
+    "src": "img/scan/83883aef4108-900.webp",
+    "w": 900,
+    "h": 654
+   },
+   "f": {
+    "src": "img/scan/83883aef4108-2000.webp",
+    "w": 2000,
+    "h": 1454
+   },
+   "source": "каталог РР-300 (скан владельца)"
+  },
+  "rows": [
+   {
+    "pos": 2,
+    "designation": "СБ525-20-100 20-55-10Б",
+    "name": "Корпус клапана Кольцо уплотнительное",
+    "qty": null,
+    "mass": null,
+    "note": null,
+    "check": true,
+    "part": null
+   },
+   {
+    "pos": 4,
+    "designation": "312-12-4",
+    "name": "Пружина клапана редукционного",
+    "qty": null,
+    "mass": null,
+    "note": null,
+    "check": false,
+    "part": "312-12-4"
+   },
+   {
+    "pos": 5,
+    "designation": "525-20-112",
+    "name": "Плунжер",
+    "qty": null,
+    "mass": null,
+    "note": null,
+    "check": false,
+    "part": "525-20-112"
+   }
+  ]
+ }
+]

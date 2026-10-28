@@ -1,0 +1,10 @@
+---
+import Base from "../layouts/Base.astro";
+import { url } from "../lib/site";
+---
+<Base title="Страница не найдена" description="Страница не найдена.">
+  <h1>Страница не найдена</h1>
+  <p class="lead">Адрес изменился или набран с ошибкой. Найдите деталь поиском по обозначению.</p>
+  <form class="search big" role="search" action={url("katalog/")}><label class="sr" for="nq">Поиск по каталогу</label><input id="nq" name="q" type="search" placeholder="Например, 525-16-400"><button class="btn" type="submit">Найти</button></form>
+  <p style="margin-top:24px"><a href={url()}>На главную</a> · <a href={url("katalog/")}>Каталог</a> · <a href={url("kontakty/")}>Контакты</a></p>
+</Base>

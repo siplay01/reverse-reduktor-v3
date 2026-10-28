@@ -1,0 +1,27 @@
+---
+import type { Photo } from "../lib/data";
+import { url } from "../lib/site";
+interface Props { photos: Photo[]; alt: string }
+const { photos, alt } = Astro.props;
+const first = photos[0];
+const sources = [...new Set(photos.map((p) => p.source))];
+---
+<div class="gallery" data-gallery>
+  <div class="main">
+    {first ? (
+      <a href={url(first.f.src)} data-zoom aria-label="Открыть фото в полном размере">
+        <img src={url(first.f.src)} width={first.f.w} height={first.f.h} alt={alt} fetchpriority="high" data-main />
+      </a>
+    ) : <span class="noph">Фотографии этой детали в найденных архивах нет</span>}
+  </div>
+  {photos.length > 1 && (
+    <div class="thumbs" role="group" aria-label="Фотографии">
+      {photos.map((p, i) => (
+        <button type="button" data-thumb={url(p.f.src)} data-w={p.f.w} data-h={p.f.h} aria-current={i === 0 ? "true" : "false"} aria-label={`Фото ${i + 1} из ${photos.length}`}>
+          <img src={url(p.t.src)} width={p.t.w} height={p.t.h} alt="" loading="lazy" />
+        </button>
+      ))}
+    </div>
+  )}
+  {first && <p class="src">Фото: {sources.join(", ")}. Водяные знаки сохранены как в источнике.</p>}
+</div>

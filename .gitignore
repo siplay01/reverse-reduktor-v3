@@ -1,0 +1,8 @@
+node_modules/
+dist/
+.astro/
+.DS_Store
+qa/screenshots/
+qa/lighthouse/
+qa/test-results/
+qa/test-results.json

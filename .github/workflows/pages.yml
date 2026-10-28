@@ -1,0 +1,37 @@
+# Build, test and publish to GitHub Pages on every push to main.
+# Own domain later: set repository variables SITE_URL=https://example.ru and BASE_PATH=/ , INDEXABLE=1,
+# add public/CNAME with the domain, and point DNS to GitHub Pages.
+name: Pages
+on:
+  push: { branches: [main] }
+  workflow_dispatch:
+permissions: { contents: read, pages: write, id-token: write }
+concurrency: { group: pages, cancel-in-progress: true }
+env:
+  SITE_URL: ${{ vars.SITE_URL || format('https://{0}.github.io', github.repository_owner) }}
+  BASE_PATH: ${{ vars.BASE_PATH || format('/{0}/', github.event.repository.name) }}
+  INDEXABLE: ${{ vars.INDEXABLE || '0' }}
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: { node-version: 22, cache: npm }
+      - run: npm ci
+      - run: npm run build
+      - run: node qa/links.mjs
+      - run: node qa/contrast.mjs
+      - run: npx playwright install --with-deps chromium firefox webkit
+      - name: Browser tests (Chromium, Firefox, WebKit, iPhone WebKit)
+        run: npx playwright test
+        env: { PW_BASE: "${{ env.BASE_PATH }}" }
+      - uses: actions/upload-pages-artifact@v3
+        with: { path: dist }
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment: { name: github-pages, url: "${{ steps.deployment.outputs.page_url }}" }
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4

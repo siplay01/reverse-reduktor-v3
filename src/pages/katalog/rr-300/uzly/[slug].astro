@@ -1,0 +1,73 @@
+---
+import Base from "../../../../layouts/Base.astro";
+import { assemblies, partById } from "../../../../lib/data";
+import type { Assembly } from "../../../../lib/data";
+import { url } from "../../../../lib/site";
+export const getStaticPaths = () => assemblies.map((a) => ({ params: { slug: a.slug }, props: { a } }));
+const { a } = Astro.props as { a: Assembly };
+const prev = assemblies.find((x) => x.figure === a.figure - 1);
+const next = assemblies.find((x) => x.figure === a.figure + 1);
+const linked = a.rows.filter((r) => r.part).length;
+---
+<Base title={`РР-300, рис. ${a.figure}. ${a.title}`} section="katalog/"
+  crumbs={[["katalog/", "Каталог"], ["katalog/rr-300/", "РР-300"], ["katalog/rr-300/uzly/", "Узлы"], [`katalog/rr-300/uzly/${a.slug}/`, `Рис. ${a.figure}`]]}
+  description={`Реверс-редуктор РР-300, рис. ${a.figure}: ${a.title}. Чертёж и спецификация по заводскому каталогу, обозначения деталей, запрос запчастей.`}>
+  <h1><span class="muted">Рис. {a.figure}.</span> {a.title}</h1>
+  <p class="lead">РР-300 <span class="sku">СБ525-01-13</span>{a.designation && a.designation !== "СБ525-01-13" && <>, узел <span class="sku">{a.designation}</span></>}.
+    {" "}<span class={a.verified ? "badge ok" : "badge warn"}>{a.verified ? "сверено со сканом" : "распознано, не сверено"}</span></p>
+  <div class="two">
+    <figure class="drawing">
+      <a href={url(a.drawing.f.src)} data-zoom aria-label={`Открыть чертёж рис. ${a.figure} в полном размере`}>
+        <img src={url(a.drawing.t.src)} width={a.drawing.t.w} height={a.drawing.t.h} alt={`Чертёж узла: рис. ${a.figure}, ${a.title}`} fetchpriority="high" />
+      </a>
+      <figcaption>Чертёж из каталога деталей и сборочных единиц РР-300 {a.catalogPages?.length ? ` (стр. ${a.catalogPages.join(", ")})` : ""}. Нажмите, чтобы увеличить.</figcaption>
+    </figure>
+    <div>
+      <p>{a.verified ? "Таблица сверена со сканом каталога построчно, включая количество по исполнениям." : "Таблица получена распознаванием текста и ещё не сверена со сканом. Количество не показано; обозначения с пометкой «проверить» сверяйте по скану спецификации."}</p>
+      <p>Позиций в таблице: {a.rows.length}, из них в каталоге сайта: {linked}. Деталь без ссылки можно запросить по обозначению.</p>
+      <div class="btns">
+        <a class="btn ghost" href={url(a.spec.f.src)} data-zoom aria-label={`Скан спецификации рис. ${a.figure}`}>Скан спецификации</a>
+        <a class="btn ghost" href={url(`katalog/?uzel=${a.figure}`)}>Детали узла в каталоге</a>
+      </div>
+      <nav class="pager" aria-label="Соседние рисунки">
+        {prev ? <a href={url(`katalog/rr-300/uzly/${prev.slug}/`)}>Рис. {prev.figure}: {prev.title}</a> : <span />}
+        {next && <a href={url(`katalog/rr-300/uzly/${next.slug}/`)}>Рис. {next.figure}: {next.title}</a>}
+      </nav>
+    </div>
+  </div>
+
+  <section class="sec" aria-labelledby="h-spec">
+    <div class="sec-head"><h2 id="h-spec">Спецификация</h2></div>
+    {a.rows.length ? (
+      <div class="tbl-wrap" tabindex="0" role="region" aria-label={`Спецификация рис. ${a.figure}, прокручивается по горизонтали`}>
+        <table class="tbl">
+          <caption class="sr">Спецификация к рис. {a.figure}</caption>
+          <thead><tr>
+            <th scope="col" class="pos">Поз.</th><th scope="col">Обозначение</th><th scope="col">Наименование</th>
+            {a.verified && a.variants.map((v) => <th scope="col" class="qty-c" title="Количество для исполнения"><span class="sku">{v}</span></th>)}
+            {a.verified && <><th scope="col" class="num">Масса, кг</th><th scope="col">Прим.</th></>}
+            <th scope="col"><span class="sr">Действие</span></th>
+          </tr></thead>
+          <tbody>
+            {a.rows.map((r, i) => {
+              const p = r.part ? partById.get(r.part) : undefined;
+              return (
+                <tr id={`poz-${r.pos ?? "x" + i}`}>
+                  <td class="pos">{r.pos ?? "?"}</td>
+                  <td>{p ? <a class="sku" href={url(`katalog/detal/${p.id}/`)}>{r.designation}</a> : <span class="sku">{r.designation}</span>}</td>
+                  <td>{r.name}{r.check && <> <span class="badge warn">проверить по скану</span></>}</td>
+                  {a.verified && (r.qty ?? a.variants.map(() => null)).map((q) => <td class="qty-c">{q ?? "–"}</td>)}
+                  {a.verified && <><td class="num">{r.mass ?? ""}</td><td>{r.note ?? ""}</td></>}
+                  <td>{p ? <button type="button" class="btn ghost sm" data-rfq-add data-id={p.id} data-d={p.designation} data-n={p.name}
+                    data-img={p.photos[0] ? url(p.photos[0].t.src) : ""} data-href={url(`katalog/detal/${p.id}/`)} aria-pressed="false">В запрос</button> : ""}</td>
+                </tr>
+              );
+            })}
+          </tbody>
+        </table>
+      </div>
+    ) : <p class="empty">Таблица этого рисунка не распознана. Смотрите <a href={url(a.spec.f.src)} data-zoom>скан спецификации</a>.</p>}
+    {Object.entries(a.footnotes).map(([k, v]) => <p class="src">{k}) {v}</p>)}
+    {a.verified && <p class="src">Колонки «-», «-010» и т.д.: исполнения РР-300 (см. <a href={url("oborudovanie/rr-300/#ispolneniya")}>таблицу исполнений</a>), значение: количество на исполнение; «–» означает, что деталь в исполнение не входит.</p>}
+  </section>
+</Base>

@@ -1,0 +1,27 @@
+---
+import type { Part } from "../lib/data";
+import { modelNames } from "../lib/data";
+import { url } from "../lib/site";
+interface Props { p: Part; order?: number; eager?: boolean }
+const { p, order = 0, eager = false } = Astro.props;
+const href = url(`katalog/detal/${p.id}/`);
+const ph = p.photos[0];
+const mn = modelNames(p.models).join(", ");
+const figs = [...new Set(p.assemblies.map((a) => a.figure))];
+---
+<article class="card" data-card data-id={p.id} data-m={p.models.join(" ")} data-t={p.type} data-a={figs.join(" ")}
+  data-p={ph ? "1" : "0"} data-o={order} data-k={p.spellings.join("|")} data-n={[p.name, ...p.names.map((n) => n.value)].join(" ")}>
+  <a class="ph" href={href} tabindex="-1" aria-hidden="true">
+    {ph ? <img src={url(ph.t.src)} width={ph.t.w} height={ph.t.h} alt="" loading={eager ? "eager" : "lazy"} decoding="async" />
+        : <span class="noph">Фото нет<br />в архиве</span>}
+  </a>
+  <div class="bd">
+    <span class="sku" translate="no" title={p.designation}>{p.designation}</span>
+    <a class="ttl" href={href}>{p.name}</a>
+    <span class="meta">{mn}{figs.length ? `, рис. ${figs.join(", ")}` : ""}</span>
+    <div class="act">
+      <button type="button" class="btn ghost sm" data-rfq-add data-id={p.id} data-d={p.designation} data-n={p.name}
+        data-img={ph ? url(ph.t.src) : ""} data-href={href} aria-pressed="false">В запрос</button>
+    </div>
+  </div>
+</article>

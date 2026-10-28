@@ -1,0 +1,14 @@
+---
+import { COMPANY } from "../lib/site";
+---
+<table class="kv">
+  <tbody>
+    <tr><th scope="row">Организация</th><td>{COMPANY.operator}</td></tr>
+    <tr><th scope="row">ИНН / КПП</th><td class="sku">{COMPANY.inn} / {COMPANY.kpp}</td></tr>
+    <tr><th scope="row">ОГРН</th><td class="sku">{COMPANY.ogrn}</td></tr>
+    <tr><th scope="row">Адрес</th><td>{COMPANY.address}</td></tr>
+    <tr><th scope="row">Телефон</th><td><a href={`tel:${COMPANY.tel}`}>{COMPANY.phone}</a></td></tr>
+    <tr><th scope="row">E-mail</th><td><a href={`mailto:${COMPANY.email}`}>{COMPANY.email}</a></td></tr>
+    <tr><th scope="row">Режим работы</th><td>{COMPANY.hours}, суббота и воскресенье выходные</td></tr>
+  </tbody>
+</table>

@@ -1,0 +1,99 @@
+---
+import Base from "../../../layouts/Base.astro";
+import Gallery from "../../../components/Gallery.astro";
+import PartCard from "../../../components/PartCard.astro";
+import { parts, partById, modelById, asmByFigure, modelNames, ASM_STATUS, manual } from "../../../lib/data";
+import type { Part } from "../../../lib/data";
+import { COMPANY, url } from "../../../lib/site";
+
+export const getStaticPaths = () => parts.map((p) => ({ params: { id: p.id }, props: { p } }));
+const { p } = Astro.props as { p: Part };
+const ms = p.models.map((i) => modelById.get(i)!);
+const mn = modelNames(p.models).join(", ");
+const main = ms[0];
+// Related = other parts of the same assembly drawing (a relation stated by the factory catalog).
+const related: Part[] = [];
+for (const x of p.assemblies) {
+  for (const r of asmByFigure.get(x.figure)?.rows ?? []) {
+    const q = r.part ? partById.get(r.part) : undefined;
+    if (q && q.id !== p.id && !related.includes(q) && related.length < 8) related.push(q);
+  }
+}
+const altNames = [...new Set(p.names.map((n) => n.value))].length > 1 ? p.names : [];
+const altSpell = p.spellings.filter((s) => s !== p.designation);
+const hasManual = p.models.some((m) => manual.models.includes(m));
+const ld = {
+  "@context": "https://schema.org", "@type": "Product", name: `${p.designation} ${p.name}`, sku: p.designation, mpn: p.designation,
+  category: `Запчасти для реверс-редуктора ${mn}`, ...(p.photos[0] ? { image: new URL(url(p.photos[0].f.src), Astro.site).href } : {}),
+  ...(p.description.length ? { description: p.description.join(" ") } : {}),
+};
+---
+<Base title={`${p.designation} ${p.name}: запчасть для реверс-редуктора ${mn}`} section="katalog/"
+  crumbs={[["katalog/", "Каталог"], [`katalog/${main.slug}/`, main.name], [`katalog/detal/${p.id}/`, p.designation]]}
+  description={`${p.designation} ${p.name}, запчасть для судового реверс-редуктора ${mn}.${p.assemblies.length ? ` Узел РР-300, рис. ${p.assemblies.map((a) => a.figure).join(", ")}.` : ""} Фото, сведения, запрос стоимости и наличия.`}
+  image={p.photos[0]?.f.src} jsonld={[ld]}>
+  <div class="prod">
+    <Gallery photos={p.photos} alt={`${p.designation} ${p.name}`} />
+    <div>
+      <h1><span class="sku">{p.designation}</span>{p.name}</h1>
+      <p class="muted">Запчасть для реверс-редуктора {ms.map((m, i) => <>{i > 0 && ", "}<a href={url(`oborudovanie/${m.slug}/`)}>{m.name}</a> <span class="sku small">{m.designation}</span></>)}</p>
+      <div class="buy">
+        <div class="row">
+          <div class="field">
+            <label for="qty">Количество, шт.</label>
+            <div class="qty"><button type="button" data-step="-1" aria-label="Уменьшить количество">−</button><input id="qty" type="number" inputmode="numeric" min="1" max="9999" value="1"><button type="button" data-step="1" aria-label="Увеличить количество">+</button></div>
+          </div>
+          <button type="button" class="btn" data-rfq-add data-qty="#qty" data-id={p.id} data-d={p.designation} data-n={p.name}
+            data-img={p.photos[0] ? url(p.photos[0].t.src) : ""} data-href={url(`katalog/detal/${p.id}/`)}>Добавить в запрос</button>
+        </div>
+        <p class="status" data-in-list={p.id} hidden><b data-in-list-text></b> <a href={url("zapros/")}>Открыть список</a></p>
+        <p class="status muted">Цена и наличие по запросу. Список сохраняется в этом браузере; письмо с перечнем формируется на странице <a href={url("zapros/")}>запроса</a>.</p>
+        <p class="status">Вопрос по детали: <a href={`tel:${COMPANY.tel}`}>{COMPANY.phone}</a>, <a href={`mailto:${COMPANY.email}?subject=${encodeURIComponent(`Вопрос по ${p.designation}`)}`}>{COMPANY.email}</a></p>
+      </div>
+      {p.description.length > 0 && <>{p.description.map((l) => <p>{l}</p>)}</>}
+      {p.assemblies.length > 0 && (
+        <>
+          <h2 class="h3">Где применяется</h2>
+          <ul>{p.assemblies.map((x) => {
+            const a = asmByFigure.get(x.figure);
+            return a && <li><a href={url(`katalog/rr-300/uzly/${a.slug}/${x.pos ? `#poz-${x.pos}` : ""}`)}>РР-300, рис. {a.figure}. {a.title}</a>{x.pos ? `, поз. ${x.pos}` : ""} <span class="badge">{ASM_STATUS[x.status] ?? x.status}</span></li>;
+          })}</ul>
+        </>
+      )}
+    </div>
+  </div>
+
+  <section class="sec" aria-labelledby="h-info">
+    <div class="sec-head"><h2 id="h-info">Сведения о детали</h2></div>
+    <table class="kv">
+      <tbody>
+        <tr><th scope="row">Обозначение</th><td><span class="sku">{p.designation}</span></td></tr>
+        <tr><th scope="row">Наименование</th><td>{altNames.length ? altNames.map((n) => <div class="val">{n.value}<span class="src">{n.source}</span></div>) : p.name}</td></tr>
+        {altSpell.length > 0 && <tr><th scope="row">Другие написания</th><td>{altSpell.map((s, i) => <>{i > 0 && ", "}<span class="sku">{s}</span></>)}</td></tr>}
+        <tr><th scope="row">Модель</th><td>{ms.map((m) => `${m.name} (${m.designation})`).join(", ")}</td></tr>
+        <tr><th scope="row">Тип детали</th><td>{p.type}</td></tr>
+        <tr><th scope="row">Достоверность данных</th><td>{p.confidence}</td></tr>
+        <tr><th scope="row">Источники</th><td>{p.sources.join("; ")}</td></tr>
+        <tr><th scope="row">Технические характеристики</th><td class="muted">В найденных материалах не указаны. Размеры и материал уточняйте по запросу.</td></tr>
+      </tbody>
+    </table>
+    {p.models.includes("3d6") && p.models.includes("3d12") && <p class="src">Применимость к 3Д6 и 3Д12 указана по названию в источнике («3Д6 3Д12»); отдельно для каждой модели не подтверждена.</p>}
+  </section>
+
+  {(hasManual || p.assemblies.length > 0) && (
+    <section class="sec" aria-labelledby="h-docs">
+      <div class="sec-head"><h2 id="h-docs">Документация</h2></div>
+      <ul>
+        {hasManual && <li><a href={url(manual.href)}>{manual.title}</a> <span class="muted small">PDF, {manual.pages} стр.</span></li>}
+        {p.assemblies.length > 0 && <li><a href={url("dokumentaciya/katalog-rr-300/")}>Каталог деталей и сборочных единиц РР-300</a> <span class="muted small">сканы, 89 стр.</span></li>}
+      </ul>
+    </section>
+  )}
+
+  {related.length > 0 && (
+    <section class="sec" aria-labelledby="h-rel">
+      <div class="sec-head"><h2 id="h-rel">Детали того же узла</h2><a href={url(`katalog/rr-300/uzly/${asmByFigure.get(p.assemblies[0].figure)!.slug}/`)}>Весь узел на чертеже</a></div>
+      <div class="grid">{related.map((q, i) => <PartCard p={q} order={i} />)}</div>
+    </section>
+  )}
+</Base>

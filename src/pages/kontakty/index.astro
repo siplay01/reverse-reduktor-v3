@@ -1,0 +1,20 @@
+---
+import Base from "../../layouts/Base.astro";
+import Requisites from "../../components/Requisites.astro";
+import { COMPANY, url } from "../../lib/site";
+const ld = { "@context": "https://schema.org", "@type": "Organization", name: COMPANY.operator, telephone: COMPANY.phone, email: COMPANY.email, taxID: COMPANY.inn,
+  address: { "@type": "PostalAddress", addressLocality: "Барнаул", addressRegion: "Алтайский край", streetAddress: "пос. Южный, ул. Зоотехническая, 24ж", addressCountry: "RU" } };
+---
+<Base title="Контакты" section="kontakty/" crumbs={[["kontakty/", "Контакты"]]} jsonld={[ld]}
+  description={`Контакты ${COMPANY.operator}, Барнаул: телефон ${COMPANY.phone}, e-mail, адрес, реквизиты. Запрос стоимости реверс-редукторов и запчастей.`}>
+  <h1>Контакты</h1>
+  <div class="contact-grid">
+    <a class="cc" href={`tel:${COMPANY.tel}`}><span>Телефон</span><b>{COMPANY.phone}</b><span>{COMPANY.hours}</span></a>
+    <a class="cc" href={`mailto:${COMPANY.email}`}><span>E-mail</span><b>{COMPANY.email}</b><span>заявки, вопросы по деталям и ремонту</span></a>
+    <a class="cc" href={`https://yandex.ru/maps/?text=${encodeURIComponent(COMPANY.address)}`} target="_blank" rel="noopener"><span>Адрес</span><b>Барнаул, пос. Южный, ул. Зоотехническая, 24ж</b><span>Открыть на Яндекс Картах</span></a>
+  </div>
+  <div class="split">
+    <div><h2>Реквизиты</h2><Requisites /></div>
+    <div><h2>Запрос предложения</h2><p>Соберите детали в списке запроса: письмо с обозначениями и количеством сформируется автоматически.</p><a class="btn" href={url("zapros/")}>Открыть список запроса</a></div>
+  </div>
+</Base>

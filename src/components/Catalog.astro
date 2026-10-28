@@ -1,0 +1,78 @@
+---
+// Searchable, filterable list. Every card is server-rendered (plain links for search engines);
+// app.ts only hides/reorders cards and mirrors the state in the URL.
+import PartCard from "./PartCard.astro";
+import type { Part } from "../lib/data";
+import { modelsInOrder, asmByFigure } from "../lib/data";
+import { COMPANY, url } from "../lib/site";
+interface Props { list: Part[]; showModels?: boolean }
+const { list, showModels = true } = Astro.props;
+const count = <T,>(f: (p: Part) => T[]) => {
+  const m = new Map<T, number>();
+  list.forEach((p) => new Set(f(p)).forEach((v) => m.set(v, (m.get(v) ?? 0) + 1)));
+  return m;
+};
+const byModel = count((p) => p.models);
+const byType = [...count((p) => [p.type])].sort((a, b) => (a[0] === "Прочие детали" ? 1 : b[0] === "Прочие детали" ? -1 : b[1] - a[1]));
+const byFig = [...count((p) => p.assemblies.map((a) => a.figure))].sort((a, b) => a[0] - b[0]);
+const withPhoto = list.filter((p) => p.photos.length).length;
+---
+<div data-catalog>
+  <div class="cat-top">
+    <form class="search big" role="search" data-search action="">
+      <label class="sr" for="cq">Поиск по обозначению или названию</label>
+      <input id="cq" name="q" type="search" placeholder="Обозначение или название" autocomplete="off" spellcheck="false" enterkeyhint="search">
+      <button class="btn" type="submit">Найти</button>
+    </form>
+    <p class="hint">Пробелы, дефисы, регистр и латинские буквы вместо русских не важны: <span class="sku">SB525</span> = <span class="sku">СБ525</span>.</p>
+  </div>
+  <button type="button" class="btn ghost filters-toggle" aria-expanded="false" aria-controls="filters" data-filters-toggle>Фильтры<span data-fcount></span></button>
+  <div class="cat">
+    <div class="filters" id="filters" aria-label="Фильтры">
+      {showModels && (
+        <fieldset class="fgroup"><legend>Модель</legend><div class="chips">
+          <button type="button" class="chip" data-f="model" data-v="" aria-pressed="true">Все <span class="c">{list.length}</span></button>
+          {modelsInOrder.filter((m) => byModel.has(m.id)).map((m) => (
+            <button type="button" class="chip" data-f="model" data-v={m.id} aria-pressed="false">{m.name} <span class="c">{byModel.get(m.id)}</span></button>
+          ))}
+        </div></fieldset>
+      )}
+      <fieldset class="fgroup"><legend>Тип детали</legend>
+        {byType.map(([t, n]) => (
+          <label class="check"><input type="checkbox" data-f="type" value={t}>{t}<span class="c">{n}</span></label>
+        ))}
+      </fieldset>
+      {byFig.length > 0 && (
+        <div class="fgroup"><label class="flabel" for="f-uzel">Узел РР-300 (рисунок каталога)</label>
+          <select id="f-uzel" data-f="uzel">
+            <option value="">Все узлы</option>
+            {byFig.map(([f, n]) => <option value={f}>Рис. {f}. {asmByFigure.get(f)?.title} ({n})</option>)}
+          </select>
+        </div>
+      )}
+      <div class="fgroup"><label class="check"><input type="checkbox" data-f="photo" value="1">Только с фото<span class="c">{withPhoto}</span></label></div>
+      <button type="button" class="btn ghost sm" data-reset>Сбросить фильтры</button>
+    </div>
+    <div>
+      <div class="cat-bar">
+        <p class="count" data-count aria-live="polite">Позиций: {list.length}</p>
+        <label class="sort">Сортировка
+          <select data-sort>
+            <option value="">сначала с фото</option>
+            <option value="d">по обозначению</option>
+            <option value="n">по названию</option>
+          </select>
+        </label>
+      </div>
+      <div class="grid" data-results>
+        {list.map((p, i) => <PartCard p={p} order={i} eager={i < 4} />)}
+      </div>
+      <p class="more-wrap"><button type="button" class="btn ghost" data-more hidden>Показать ещё</button></p>
+      <div class="empty" data-empty hidden>
+        <p><b>Ничего не найдено.</b></p>
+        <p>Проверьте обозначение или уберите часть фильтров. Если детали нет в каталоге, отправьте запрос по номеру с детали или из заводского каталога: <a href={`mailto:${COMPANY.email}`}>{COMPANY.email}</a>, <a href={`tel:${COMPANY.tel}`}>{COMPANY.phone}</a>.</p>
+        <p><button type="button" class="btn ghost sm" data-reset>Сбросить поиск и фильтры</button> <a class="btn ghost sm" href={url("katalog/rr-300/uzly/")}>Искать по узлам РР-300</a></p>
+      </div>
+    </div>
+  </div>
+</div>

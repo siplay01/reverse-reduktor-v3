@@ -1,0 +1,13 @@
+---
+import Base from "../../layouts/Base.astro";
+import Catalog from "../../components/Catalog.astro";
+import { sortedParts, modelsInOrder, partsOf } from "../../lib/data";
+import { url } from "../../lib/site";
+---
+<Base title="Каталог запчастей к реверс-редукторам РР-300, РР-238, 3Д6, 3Д12" section="katalog/" crumbs={[["katalog/", "Каталог"]]}
+  description={`Поиск запчастей к судовым реверс-редукторам по заводскому обозначению и названию: ${sortedParts.length} позиций, фото, узлы РР-300, фильтры по модели и типу детали.`}>
+  <h1>Каталог запчастей</h1>
+  <p class="lead">{sortedParts.length} заводских обозначений к реверс-редукторам {modelsInOrder.map((m) => m.name).join(", ")}. Цена и наличие по запросу.</p>
+  <p class="small">Разделы: {modelsInOrder.map((m, i) => <>{i > 0 && " · "}<a href={url(`katalog/${m.slug}/`)}>{m.name} ({partsOf(m.id).length})</a></>)} · <a href={url("katalog/rr-300/uzly/")}>узлы РР-300 по чертежам</a></p>
+  <Catalog list={sortedParts} />
+</Base>
